@@ -1,3 +1,4 @@
+import { Button } from "../utils/Button";
 import "./Home.css";
 
 function Home() {
@@ -17,6 +18,10 @@ function Home() {
                         <p>&amp;</p>
                         <p>Photography Enthusiast</p> */}
                     </div>
+                </div>
+
+                <div className="explore">
+                    <Button title="Explore" type="primary" />
                 </div>
             </div>
         </section>
