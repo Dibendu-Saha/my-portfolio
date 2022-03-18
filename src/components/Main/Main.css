@@ -31,7 +31,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: var(--font-color);
-  max-width: 160rem;
+  /* max-width: 1600px; */
 }
   
   
@@ -80,7 +80,10 @@ body {
   color: var(--light-bg);
   background: var(--secondary-color);
 }
-
+.btn--secondary {
+  color: var(--secondary-color);
+  background: var(--light-bg);
+}
 
 
 

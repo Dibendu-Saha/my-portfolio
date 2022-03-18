@@ -1,3 +1,4 @@
+import { Button } from "../utils/Button";
 import "./About.css"
 
 function About() {
@@ -32,9 +33,7 @@ function About() {
                     <div className="know-more">
                         <div className="flex flex--know-more">
                             <p>Here's a peek at my professional background . . .</p>
-                            <a href className="btn btn--primary">
-                                Know more
-                            </a>
+                            <Button title="Know more" type="primary" />
                         </div>
                     </div>
                 </div>
