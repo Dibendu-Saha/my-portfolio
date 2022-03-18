@@ -1,11 +1,11 @@
-import About from "../About/About";
-import Header from "../Header/Header";
-import Home from "../Home/Home";
+import About from "../about/About";
+import Header from "../header/Header";
+import Home from "../home/Home";
 import "./Main.css"
 
 function Main() {
     return (
-        <>            
+        <>
             <Header />
 
             <main>
