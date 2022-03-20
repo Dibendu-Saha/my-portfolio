@@ -4,8 +4,10 @@ import "./About.css"
 function About() {
     return (
         <section id="section-about" className="section-about">
-            <div className="container">
-                <div className="flex flex--about-container">
+            <div className="container-about">
+                {/* Commented code | Previous design */}
+                <>
+                    {/* <div className="flex flex--about-container">
                     <div className="flex flex--personal-info">
                         <div className="info-card">
                             <p>Myself,</p>
@@ -36,7 +38,21 @@ function About() {
                             <Button title="Know more" type="primary" />
                         </div>
                     </div>
+                </div> */}
+                </>
+
+                <div className="grid grid--cols-3 grid--about">
+                    <div className="about-section personal-info">
+                        <span>Personal</span>
+                    </div>
+                    <div className="about-section education-info">
+                        <span>Education</span>
+                    </div>
+                    <div className="about-section professional-info">
+                        <span>Professional</span>
+                    </div>
                 </div>
+
             </div>
         </section>
     )

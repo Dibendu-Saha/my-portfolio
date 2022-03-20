@@ -10,13 +10,10 @@ function Home() {
             <h1>Hey there!</h1>
             <p>I'm Dibendu</p>
           </div>
-          <div className="flex flex--hobbies intro-about">
+          <div className="flex flex--hobbies grid--intro-about">
             <p>...and I'm a</p>
             <p>Full Stack Developer</p>
             <p>by profession</p>
-            {/* <p>Full Stack Developer</p>
-                        <p>&amp;</p>
-                        <p>Photography Enthusiast</p> */}
           </div>
         </div>
 

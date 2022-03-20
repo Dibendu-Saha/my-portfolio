@@ -1,13 +1,55 @@
-.container {
-  margin: 0 auto;
-  padding: 10rem 24rem 0;
-}
-
 .section-about {
   height: 100vh;
   background-image: linear-gradient(to top right, var(--light-bg) 0%, var(--light-bg) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
 }
 
+.container-about {
+  margin: 0 auto;
+  padding: 10rem 24rem;
+  border: 1px solid blue;
+}
+
+/* REVIEW: gap px or % */
+.grid--about {
+  row-gap: 80px;
+  /* row-gap: 26%; */
+  border: 1px solid red;
+ }
+
+.about-section {
+  height: 10rem;
+  width: 20rem;
+  background: var(--light-bg);
+  color: var(--secondary-shade);
+  font-size: 2.4rem;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  transition: background-color 0.2s;
+}
+
+.about-section:hover {
+  background: var(--secondary-shade);
+  color: var(--light-bg);
+  border: 1px solid var(--light-bg);
+}
+
+.about-section > span {
+  display: inline-block;
+  padding-top: 50%;
+  transform: translateY(-50%);
+}
+
+.education-info {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.professional-info {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* ____________________________________________________ Previous design (to be removed) ____________________________________________________________________*/
 .flex--about-container {
   /* margin-top: 11.5rem; */
   gap: 10px;
