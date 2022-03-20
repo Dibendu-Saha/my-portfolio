@@ -1,7 +1,7 @@
 .section-home {
   height: 100vh; /*89.2vh;*/
   min-height: 100%;
-  background-image: linear-gradient(to bottom right, var(--light-bg) 0%, var(--light-bg) 50%, var(--primary-color) 50%, var(--primary-color) 100%)
+  background-image: linear-gradient(120deg, var(--light-bg) 0%, var(--light-bg) 50%, var(--primary-color) 50%, var(--primary-color) 100%)
 }
   
 /* REVIEW: PADDING 9.6rem */
@@ -10,7 +10,6 @@
   /* padding-top: 5%;
   padding-left: 5%; */
   margin: 0 auto;
-  border: 1px solid green;
 }
   
 .grid--intro {

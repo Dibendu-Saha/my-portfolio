@@ -5,15 +5,16 @@
 
 .container-about {
   margin: 0 auto;
-  padding: 10rem 24rem;
-  border: 1px solid blue;
+  padding: 10rem 24rem;  
 }
 
 /* REVIEW: gap px or % */
 .grid--about {
+  margin-top: 16px;
   row-gap: 80px;
+  column-gap: 80px;
   /* row-gap: 26%; */
-  border: 1px solid red;
+  /* border: 1px solid red;   */
  }
 
 .about-section {
