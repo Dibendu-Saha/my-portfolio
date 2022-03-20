@@ -21,7 +21,7 @@ function Home() {
         </div>
 
         <div className="explore">
-          <Button title="Explore" type="primary" />
+          <Button title="Let's Explore" type="primary" />
         </div>
       </div>
     </section>
