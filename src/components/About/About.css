@@ -1,6 +1,6 @@
 .section-about {
   height: 100vh;
-  background-image: linear-gradient(to top right, var(--light-bg) 0%, var(--light-bg) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
+  background-image: linear-gradient(60deg, var(--light-bg) 0%, var(--light-bg) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
 }
 
 .container-about {
@@ -8,7 +8,7 @@
   padding: 10rem 24rem;  
 }
 
-/* REVIEW: gap px or % */
+/* TODO: gap px or % */
 .grid--about {
   margin-top: 16px;
   row-gap: 80px;
@@ -38,6 +38,11 @@
   display: inline-block;
   padding-top: 50%;
   transform: translateY(-50%);
+}
+
+.personal-info {
+  background: var(--primary-color);
+  color: var(--secondary-shade);
 }
 
 .education-info {

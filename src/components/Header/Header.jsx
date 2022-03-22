@@ -5,7 +5,7 @@ function Header() {
         <>
             <header>
                 <div className="menu-area">
-                    <nav className="nav-bar">
+                    <nav>
                         <ul className="nav-links-container">
                             <li>
                                 <a href="#" className="nav-link">
