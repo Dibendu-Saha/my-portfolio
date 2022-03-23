@@ -4,6 +4,7 @@
   width: 100%;
   background: rgba(255, 255, 255, 0);
 }
+
 .nav-links-container {
   display: flex;
   justify-content: space-around;
