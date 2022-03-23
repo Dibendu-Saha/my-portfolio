@@ -1,4 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Button } from "../../utils/Button";
 import "./About.css"
 
