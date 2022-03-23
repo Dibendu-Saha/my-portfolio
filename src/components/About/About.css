@@ -17,7 +17,9 @@
   /* border: 1px solid red;   */
  }
 
-.about-section {
+.flex--about-section {
+  justify-content: center;
+  align-items: center;
   height: 10rem;
   width: 20rem;
   background: var(--light-bg);
@@ -27,21 +29,23 @@
   border: 1px solid var(--primary-color);
   transition: background-color 0.2s;
 }
-
-.about-section:hover {
-  background: var(--secondary-shade);
+.flex--about-section:hover {
+  background: var(--primary-shade);
   color: var(--light-bg);
   border: 1px solid var(--light-bg);
 }
 
-.about-section > span {
-  display: inline-block;
-  padding-top: 50%;
-  transform: translateY(-50%);
-}
-
 .personal-info {
   background: var(--primary-color);
+  color: var(--secondary-shade);
+}
+
+.professional-info {
+  background: var(--primary-shade);
+  color: var(--light-bg);
+}
+.professional-info:hover {
+  background: var(--light-bg);
   color: var(--secondary-shade);
 }
 

@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Button } from "../../utils/Button";
 import "./About.css"
 
@@ -42,14 +43,24 @@ function About() {
                 </>
 
                 <div className="grid grid--cols-3 grid--about">
-                    <div className="about-section personal-info">
-                        <span>Personal</span>
+                    <div className="flex flex--about-section personal-info">
+                        <Button
+                            title="Personal"
+                            type="none"
+                            onClick={() => alert('Personal')}
+                        />
                     </div>
-                    <div className="about-section education-info">
-                        <span>Education</span>
+                    <div className="flex flex--about-section education-info">
+                        <Button
+                            title="Education"
+                            type="none"
+                        />
                     </div>
-                    <div className="about-section professional-info">
-                        <span>Professional</span>
+                    <div className="flex flex--about-section professional-info">
+                        <Button
+                            title="Professional"
+                            type="none"
+                        />
                     </div>
                 </div>
 
