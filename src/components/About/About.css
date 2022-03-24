@@ -35,12 +35,12 @@
   border: 1px solid var(--light-bg);
 }
 
-.personal-info {
+.personal-info, .personal-info > a {
   background: var(--primary-color);
   color: var(--secondary-shade);
 }
 
-.professional-info {
+.professional-info, .professional-info > a {
   background: var(--primary-shade);
   color: var(--light-bg);
 }
