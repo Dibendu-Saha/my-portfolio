@@ -46,7 +46,8 @@ function About() {
                         <Button
                             title="Personal"
                             type="none"
-                            onClick={() => alert('Personal')}
+                            // onClick={() => alert('Personal')}
+                            link="/personal"
                         />
                     </div>
                     <div className="flex flex--about-section education-info">

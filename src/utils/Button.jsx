@@ -1,20 +1,37 @@
+import { Link } from "react-router-dom"
 
-export const Button = ({ title, type, style, onClick }) => {
+export const Button = ({ title, type, style, link, onClick }) => {
 	return (
-		<a href
-			className={
-				style !== ""
-					? style
-					: `btn${type === "primary"
-						? " btn--primary"
-						: type === "none"
-							? ""
-							: " btn--secondary"}`
-			}
-			onClick={onClick}
-		>
-			{title}
-		</a>
+		link
+			? <Link to={link}
+				className={
+					style !== ""
+						? style
+						: `btn${type === "primary"
+							? " btn--primary"
+							: type === "none"
+								? ""
+								: " btn--secondary"}`
+				}
+			>
+				{title}
+			</Link>
+
+
+			: <a href
+				className={
+					style !== ""
+						? style
+						: `btn${type === "primary"
+							? " btn--primary"
+							: type === "none"
+								? ""
+								: " btn--secondary"}`
+				}
+				onClick={onClick}
+			>
+				{title}
+			</a>
 	)
 }
 

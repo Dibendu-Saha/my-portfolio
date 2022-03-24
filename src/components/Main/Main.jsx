@@ -1,6 +1,7 @@
-import About from "../about/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../header/Header";
-import Home from "../home/Home";
+import LandingComponent from "../landing-component/LandingComponent";
+import PersonalDetails from "../about-details/personal-details/PersonalDetails";
 import "./Main.css"
 
 function Main() {
@@ -9,8 +10,12 @@ function Main() {
             <Header />
 
             <main>
-                <Home />
-                <About />
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<LandingComponent />} exact />
+                        <Route path="/personal" element={<PersonalDetails />} exact />
+                    </Routes>
+                </BrowserRouter>
             </main>
         </>
     );
