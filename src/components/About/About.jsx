@@ -54,6 +54,7 @@ function About() {
                         <Button
                             title="Education"
                             type="none"
+                            link=""
                         />
                     </div>
                     <div className="flex flex--about-section professional-info">
