@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export const Button = ({ title, type, style, link, onClick }) => {
+export const Button = ({ title, type, style, href, link, onClick }) => {
 	return (
 		link
 			? <Link to={link}
@@ -18,7 +18,7 @@ export const Button = ({ title, type, style, link, onClick }) => {
 			</Link>
 
 
-			: <a href
+			: <a href={href}
 				className={
 					style !== ""
 						? style
@@ -38,5 +38,6 @@ export const Button = ({ title, type, style, link, onClick }) => {
 Button.defaultProps = {
 	title: "Button",
 	type: "secondary",
-	style: ""
+	style: "",
+	link: ""
 }
