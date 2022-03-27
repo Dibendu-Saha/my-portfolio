@@ -1,9 +1,10 @@
-import { Button } from "../../utils/Button";
+import { Section } from "../common/section-wrapper/Section";
+import { Button } from "../../utils/Button/Button";
 import "./Home.css";
 
 function Home() {
     return (
-        <section className="section-home">
+        <Section linearGradientDegree="120">
             <div className="container-home">
                 <div className="grid grid--intro">
                     <div className="intro-me">
@@ -20,7 +21,7 @@ function Home() {
                     <Button title="Let's Explore" type="primary" href="#section-about" />
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }
 

@@ -1,9 +1,10 @@
-import { Button } from "../../utils/Button";
+import { Section } from "../common/section-wrapper/Section";
+import { Button } from "../../utils/Button/Button";
 import "./About.css"
 
 function About() {
     return (
-        <section id="section-about" className="section-about">
+        <Section id="section-about" linearGradientDegree="60">
             <div className="container-about">
                 {/* Commented code | Previous design */}
                 <>
@@ -46,7 +47,6 @@ function About() {
                         <Button
                             title="Personal"
                             type="none"
-                            // onClick={() => alert('Personal')}
                             link="/personal"
                         />
                     </div>
@@ -66,7 +66,7 @@ function About() {
                 </div>
 
             </div>
-        </section>
+        </Section>
     )
 }
 
