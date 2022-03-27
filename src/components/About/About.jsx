@@ -1,11 +1,11 @@
-import { Section } from "../common/section-wrapper/Section";
+import { Section, Container } from "../common/wrapper/WrapperComponents";
 import { Button } from "../../utils/Button/Button";
 import "./About.css"
 
 function About() {
     return (
         <Section id="section-about" linearGradientDegree="60">
-            <div className="container-about">
+            <Container>
                 {/* Commented code | Previous design */}
                 <>
                     {/* <div className="flex flex--about-container">
@@ -65,7 +65,7 @@ function About() {
                     </div>
                 </div>
 
-            </div>
+            </Container>
         </Section>
     )
 }

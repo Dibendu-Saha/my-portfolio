@@ -18,3 +18,22 @@ export function Section({ children, id, className, linearGradientDegree }) {
         </section>
     )
 }
+
+export function Container({ children, id, className }) {
+    const styles = {
+        container: {
+            margin: "0 auto",
+            padding: "10rem 24rem"
+        }
+    }
+
+    return (
+        <div
+            id={id ?? id}
+            style={styles.container}
+            className={className ?? className}
+        >
+            {children}
+        </div>
+    )
+}
