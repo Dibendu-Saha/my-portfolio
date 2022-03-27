@@ -16,8 +16,7 @@ function Home() {
                         <p>by profession</p>
                     </div>
                 </div>
-
-                <div className="explore">
+                <div className="flex flex--explore">
                     <Button title="Let's Explore" type="primary" href="#section-about" />
                 </div>
             </div>

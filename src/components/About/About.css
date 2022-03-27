@@ -10,9 +10,10 @@
 
 /* TODO: gap px or % */
 .grid--about {
-  margin-top: 16px;
-  row-gap: 80px;
-  column-gap: 80px;
+  margin-top: 5.6rem;
+  margin-left: 5.6rem;
+  row-gap: 8rem;
+  column-gap: 8rem; 
   /* row-gap: 26%; */
   /* border: 1px solid red;   */
  }
