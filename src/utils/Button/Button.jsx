@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export const Button = ({ title, type, style, href, link, onClick }) => {
 	return (

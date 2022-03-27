@@ -1,4 +1,4 @@
-export const Section = ({ children, id, className, linearGradientDegree }) => {
+export function Section({ children, id, className, linearGradientDegree }) {
     const styles = {
         section: {
             height: "100vh",
@@ -19,7 +19,8 @@ export const Section = ({ children, id, className, linearGradientDegree }) => {
     )
 }
 
-export const Container = ({ children, id, className }) => {
+
+export function Container({ children, id, className }) {
     const styles = {
         container: {
             margin: "0 auto",
@@ -37,3 +38,8 @@ export const Container = ({ children, id, className }) => {
         </div>
     )
 }
+
+
+Section.defaultProps = {
+    linearGradientDegree: 0
+};
