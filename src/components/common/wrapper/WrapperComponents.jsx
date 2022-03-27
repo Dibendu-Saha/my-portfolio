@@ -1,4 +1,4 @@
-export function Section({ children, id, className, linearGradientDegree }) {
+export const Section = ({ children, id, className, linearGradientDegree }) => {
     const styles = {
         section: {
             height: "100vh",
@@ -19,7 +19,7 @@ export function Section({ children, id, className, linearGradientDegree }) {
     )
 }
 
-export function Container({ children, id, className }) {
+export const Container = ({ children, id, className }) => {
     const styles = {
         container: {
             margin: "0 auto",
