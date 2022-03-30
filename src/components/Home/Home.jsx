@@ -4,7 +4,7 @@ import "./Home.css";
 
 function Home() {
     return (
-        <Section linearGradientDegree="120">
+        <Section bgLinearGradientDegree="120">
             <Container>
                 <div className="grid grid--intro">
                     <div className="intro-me">

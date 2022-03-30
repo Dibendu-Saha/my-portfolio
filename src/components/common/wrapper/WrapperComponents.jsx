@@ -1,8 +1,8 @@
-export function Section({ children, id, className, linearGradientDegree }) {
+export function Section({ children, id, className, bgLinearGradientDegree }) {
     const styles = {
         section: {
             height: "100vh",
-            backgroundImage: `linear-gradient(${linearGradientDegree}deg, 
+            backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
                 var(--light-bg) 0%, var(--light-bg) 50%, 
                 var(--primary-color) 50%, var(--primary-color) 100%)`
         }
@@ -41,5 +41,5 @@ export function Container({ children, id, className }) {
 
 
 Section.defaultProps = {
-    linearGradientDegree: 0
+    bgLinearGradientDegree: 0
 };

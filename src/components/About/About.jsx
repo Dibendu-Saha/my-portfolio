@@ -4,7 +4,7 @@ import "./About.css"
 
 function About() {
     return (
-        <Section id="section-about" linearGradientDegree="60">
+        <Section id="section-about" bgLinearGradientDegree="60">
             <Container>
                 {/* Commented code | Previous design */}
                 <>
