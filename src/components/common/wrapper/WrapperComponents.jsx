@@ -39,7 +39,23 @@ export function Container({ children, id, className }) {
     )
 }
 
+export function H1({ children, weight }) {
+    return (
+        weight === "light"
+            ? <p style={{ fontSize: "8rem", fontWeight: "100" }}>
+                {children}
+            </p>
+            : <h1 style={{ fontSize: "8rem", letterSpacing: "-3px" }}>
+                {children}
+            </h1>
+    )
+}
+
 
 Section.defaultProps = {
     bgLinearGradientDegree: 0
 };
+
+H1.defaultProps = {
+    weight: ""
+}

@@ -1,0 +1,23 @@
+.flex--about-personal {
+    justify-content: space-between;
+    margin-top: 6.4rem;
+}
+
+.flex div {    
+    border: 1px solid;
+}
+
+.welcome-back { 
+    font-size: 2.6rem !important;
+    font-weight: 200;
+    letter-spacing: 1px; 
+    margin-top: 1.6rem;
+}
+
+.ellipsis { letter-spacing: 7px; }
+
+.profile-picture {
+    height: 40rem !important;
+    width: 30rem !important;
+    /* overflow: scroll; */
+}

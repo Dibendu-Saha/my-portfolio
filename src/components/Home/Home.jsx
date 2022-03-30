@@ -1,4 +1,4 @@
-import { Section, Container } from "../common/wrapper/WrapperComponents";
+import { Section, Container, H1 } from "../common/wrapper/WrapperComponents";
 import { Button } from "../../utils/button/Button";
 import "./Home.css";
 
@@ -8,8 +8,8 @@ function Home() {
             <Container>
                 <div className="grid grid--intro">
                     <div className="intro-me">
-                        <h1>Hey there!</h1>
-                        <p>I'm Dibendu</p>
+                        <H1>Hey there!</H1>
+                        <H1 weight="light">I'm Dibendu</H1>
                     </div>
                     <div className="flex flex--hobbies grid--intro-about">
                         <p>...and I'm a</p>
