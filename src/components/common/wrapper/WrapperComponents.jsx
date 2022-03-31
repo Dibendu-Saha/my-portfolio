@@ -1,17 +1,13 @@
 export function Section({ children, id, className, bgLinearGradientDegree }) {
-    const styles = {
-        section: {
-            height: "100vh",
-            backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
-                var(--light-bg) 0%, var(--light-bg) 50%, 
-                var(--primary-color) 50%, var(--primary-color) 100%)`
-        }
-    }
-
     return (
         <section
             id={id ?? id}
-            style={styles.section}
+            style={{
+                height: "100vh",
+                backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
+                var(--light-bg) 0%, var(--light-bg) 50%, 
+                var(--primary-color) 50%, var(--primary-color) 100%)`
+            }}
             className={className ?? className}
         >
             {children}
@@ -22,17 +18,13 @@ export function Section({ children, id, className, bgLinearGradientDegree }) {
 
 
 export function Container({ children, id, className }) {
-    const styles = {
-        container: {
-            margin: "0 auto",
-            padding: "10rem"
-        }
-    }
-
     return (
         <div
             id={id ?? id}
-            style={styles.container}
+            style={{
+                margin: "0 auto",
+                padding: "10rem"
+            }}
             className={className ?? className}
         >
             {children}
