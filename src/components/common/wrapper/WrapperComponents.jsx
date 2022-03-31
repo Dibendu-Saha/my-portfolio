@@ -24,7 +24,7 @@ export function Container({ children, id, className }) {
     const styles = {
         container: {
             margin: "0 auto",
-            padding: "10rem 24rem"
+            padding: "10rem"
         }
     }
 

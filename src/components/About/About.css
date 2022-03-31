@@ -3,10 +3,11 @@
   margin-top: 5.6rem;
   margin-left: 5.6rem;
   row-gap: 8rem;
-  column-gap: 8rem; 
+  column-gap: 8rem;
+  padding: 0 14rem;
   /* row-gap: 26%; */
   /* border: 1px solid red;   */
- }
+}
 
 .flex--about-section {
   justify-content: center;
@@ -18,6 +19,7 @@
   box-shadow: 1px 1px 5px var(--dark-bg);
   transition: all 0.2s;
 }
+
 .flex--about-section:hover {
   font-size: 2.6rem;
   background: var(--dark-bg);
@@ -25,7 +27,9 @@
   box-shadow: none;
 }
 
-.flex--about-section > a { color: var(--light-bg) }
+.flex--about-section>a {
+  color: var(--light-bg)
+}
 
 .education-info {
   grid-column: 2;
@@ -58,7 +62,9 @@
   background-image: linear-gradient(rgba(230, 230, 230, 0.9), rgba(230, 230, 230, 0.9));
 }
 
-.flex--personal-info div:first-child { border: none; }
+.flex--personal-info div:first-child {
+  border: none;
+}
 
 .info-card {
   font-weight: 300;

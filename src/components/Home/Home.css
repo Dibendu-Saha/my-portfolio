@@ -4,6 +4,7 @@
   justify-items: center;
   margin-top: 6.4rem;
   color: var(--secondary-shade);
+  padding: 0 14rem;
 }
 
 .grid--intro-about {
@@ -24,6 +25,6 @@
 }
 
 .flex--explore {
-  margin-top: 10rem; 
+  margin-top: 10rem;
   justify-content: center;
 }
