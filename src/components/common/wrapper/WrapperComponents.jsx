@@ -20,6 +20,7 @@ export function Section({ children, id, className, bgLinearGradientDegree }) {
 }
 
 
+
 export function Container({ children, id, className }) {
     const styles = {
         container: {
@@ -39,6 +40,8 @@ export function Container({ children, id, className }) {
     )
 }
 
+
+
 export function H1({ children, weight }) {
     return (
         weight === "light"
@@ -52,10 +55,33 @@ export function H1({ children, weight }) {
 }
 
 
+
+export function Card({ children, style }) {
+    return (
+        <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "20rem",
+            background: style === "dark" && ("var(--primary-shade)"),
+            color: style === "dark" && ("var(--light-bg)")
+        }}>
+            <span style={{ padding: "20% 0" }}>
+                {children}
+            </span>
+        </div>
+    )
+}
+
+
 Section.defaultProps = {
     bgLinearGradientDegree: 0
 };
 
 H1.defaultProps = {
     weight: ""
+}
+
+Card.defaultProps = {
+    style: ""
 }

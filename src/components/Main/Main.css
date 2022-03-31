@@ -17,8 +17,8 @@
 /* ********************************************************************** */
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -33,9 +33,9 @@ body {
   color: var(--font-color);
   /* max-width: 1600px; */
 }
-  
-  
-  
+
+
+
 /* ********************************************************************** */
 /* **********************  GLOBAL DECLARATIONS  ************************* */
 /* ********************************************************************** */
@@ -57,17 +57,41 @@ body {
 /* ********************************************************************** */
 /* ************************  UTILITY CLASSES  *************************** */
 /* ********************************************************************** */
-.border-red { border: 1px solid red; }
-.border-green { border: 1px solid green; }
-.border-blue { border: 1px solid blue; }
-.border-strong { border: 3px solid black; }
+.border-red {
+  border: 1px solid red;
+}
 
-.flex { display: flex; }
+.border-green {
+  border: 1px solid green;
+}
 
-.grid { display: grid; }
-.grid--cols-2 { grid-template-columns: repeat(2, 1fr); }
-.grid--cols-3 { grid-template-columns: repeat(3, 1fr); }
-.grid--cols-4 { grid-template-columns: repeat(4, 1fr); }
+.border-blue {
+  border: 1px solid blue;
+}
+
+.border-strong {
+  border: 3px solid black;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .btn {
   display: inline-block;
@@ -75,10 +99,12 @@ body {
   font-weight: 300;
   text-decoration: none;
 }
+
 .btn--primary {
   color: var(--light-bg);
   background: var(--secondary-color);
 }
+
 .btn--secondary {
   color: var(--secondary-color);
   background: var(--light-bg);
@@ -101,4 +127,3 @@ body {
 /* ********************************************************************** */
 /* *************************  BODY (ABOUT)  ***************************** */
 /* ********************************************************************** */
-  
