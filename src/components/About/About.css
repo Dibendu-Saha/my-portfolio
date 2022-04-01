@@ -26,16 +26,16 @@
   box-shadow: 1px 1px 5px var(--dark-bg);
 }
 
-.flex--about-section>a {
+.flex--about-section > a {
   color: var(--light-bg)
 }
 
-.education-info {
+.grid--education-info {
   grid-column: 2;
   grid-row: 2;
 }
 
-.professional-info {
+.grid--professional-info {
   grid-column: 3;
   grid-row: 3;
 }

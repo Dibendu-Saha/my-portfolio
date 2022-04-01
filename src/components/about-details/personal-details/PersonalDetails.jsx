@@ -1,4 +1,5 @@
 import { Section, Container, H1, Card } from "../../common/wrapper/WrapperComponents";
+import { Button } from "../../../utils/button/Button";
 import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./PersonalDetails.css";
 
@@ -46,7 +47,12 @@ function PersonalDetails() {
 							</div>
 							<div>
 								<Card height="15" width="30">
-									Know more about professional xp...
+									<Button
+										title="Know about my professional experience..."
+										type="none"
+										href="/"
+									/>
+									{/* Know about my professional experience... */}
 								</Card>
 							</div>
 						</div>

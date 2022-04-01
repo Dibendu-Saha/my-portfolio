@@ -43,21 +43,21 @@ function About() {
                 </>
 
                 <div className="grid grid--cols-3 grid--about">
-                    <div className="flex flex--about-section personal-info">
+                    <div className="flex flex--about-section">
                         <Button
                             title="Personal"
                             type="none"
                             link="/personal"
                         />
                     </div>
-                    <div className="flex flex--about-section education-info">
+                    <div className="flex flex--about-section grid--education-info">
                         <Button
                             title="Education"
                             type="none"
                             link=""
                         />
                     </div>
-                    <div className="flex flex--about-section professional-info">
+                    <div className="flex flex--about-section grid--professional-info">
                         <Button
                             title="Professional"
                             type="none"
