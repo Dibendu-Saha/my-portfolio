@@ -6,7 +6,8 @@ export function Section({ children, id, className, bgLinearGradientDegree }) {
                 height: "100vh",
                 backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
                 var(--light-bg) 0%, var(--light-bg) 50%, 
-                var(--primary-color) 50%, var(--primary-color) 100%)`
+                var(--primary-color) 50%, var(--primary-color) 100%)`,
+                // border: "2px solid red"
             }}
             className={className ?? className}
         >
@@ -23,7 +24,8 @@ export function Container({ children, id, className }) {
             id={id ?? id}
             style={{
                 margin: "0 auto",
-                padding: "10rem"
+                padding: "10rem 10rem 0rem 10rem",
+                // border: "1px solid green"
             }}
             className={className ?? className}
         >
@@ -48,20 +50,23 @@ export function H1({ children, weight }) {
 
 
 
-export function Card({ children, style }) {
+export function Card({ children, style, height, width, margin }) {
     return (
         <div style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "20rem",
-            background: style === "dark" && ("var(--primary-shade)"),
-            color: style === "dark" && ("var(--light-bg)")
+            width: `${width}rem`,
+            height: `${height}rem`,
+            maxHeight: "20rem",
+            margin: `${margin}rem`,
+            background: style === "dark" ? ("var(--primary-shade)") : ("var(--medium-bg)"),
+            color: style === "dark" ? ("var(--light-bg)") : ("var(--font-color)")
         }}>
-            <span style={{ padding: "20% 0" }}>
+            <span style={{ padding: "4.4rem 2rem", textAlign: "center" }}>
                 {children}
             </span>
-        </div>
+        </div >
     )
 }
 
@@ -75,5 +80,8 @@ H1.defaultProps = {
 }
 
 Card.defaultProps = {
-    style: ""
+    style: "",
+    height: "10",
+    width: "20",
+    margin: "0"
 }

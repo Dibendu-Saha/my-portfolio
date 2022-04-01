@@ -48,6 +48,7 @@ body {
   --secondary-shade: #6b5d4a;
 
   --light-bg: #e6e6e6;
+  --medium-bg: #b8b8b8;
   --dark-bg: #454545;
   --font-color: #454545;
 }
@@ -57,6 +58,10 @@ body {
 /* ********************************************************************** */
 /* ************************  UTILITY CLASSES  *************************** */
 /* ********************************************************************** */
+.border-light {
+  border: 1px solid var(--medium-bg);
+}
+
 .border-red {
   border: 1px solid red;
 }
