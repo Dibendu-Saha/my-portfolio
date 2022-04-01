@@ -1,6 +1,6 @@
 import { Section, Container, H1, Card } from "../../common/wrapper/WrapperComponents";
-import { Button } from "../../../utils/button/Button";
-import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
+import { Button } from "../../../utils/Button/Button";
+// import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./PersonalDetails.css";
 
 function PersonalDetails() {
