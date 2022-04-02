@@ -3,8 +3,8 @@
     /* margin-top: 6.4rem; */
 }
 
-.flex > div {
-    /* border: 1px solid var(--medium-bg); */
+.flex > div:last-child {
+    border: 1px solid #000;
 }
 
 .grid--about-me-content {
@@ -12,6 +12,8 @@
     row-gap: 2.6rem;
     margin-top: 5.6rem;
 }
+
+.btn-wrapper a { color: var(--font-color); }
 
 .profile-picture {
     height: 40rem !important;

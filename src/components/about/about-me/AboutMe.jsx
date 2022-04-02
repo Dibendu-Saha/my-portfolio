@@ -36,13 +36,15 @@ function AboutMe() {
                             (no, no, it's a good thing).
                         </Card>
 
-                        <Card height="15" width="30">
-                            <Button
-                                title="Know about my professional experience..."
-                                type="none"
-                                link="/work"
-                            />
-                        </Card>
+                        <div className="btn-wrapper">
+                            <Card height="15" width="30">
+                                <Button
+                                    title="Know about my professional experience..."
+                                    type="none"
+                                    link="/work"
+                                />
+                            </Card>
+                        </div>
                     </div>
 
                     <div className="profile-picture">

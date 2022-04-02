@@ -63,7 +63,12 @@ export function Card({ children, style, height, width, margin }) {
             background: style === "dark" ? "var(--primary-shade)" : "",
             color: style === "dark" ? "var(--light-bg)" : "var(--font-color)"
         }}>
-            <span style={{ padding: "4.4rem 2rem", textAlign: "center" }}>
+            <span style={{
+                padding: "4.4rem 2rem",
+                textAlign: "center",
+                fontWeight: "200",
+                letterSpacing: "0.5px"
+            }}>
                 {children}
             </span>
         </div >
