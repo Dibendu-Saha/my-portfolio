@@ -1,5 +1,5 @@
 import Home from "../home/Home";
-import PersonalDetails from "../about-details/personal-details/PersonalDetails";
+import PersonalDetails from "../xx-about-details/personal-details/PersonalDetails";
 
 function LandingComponent() {
     return (

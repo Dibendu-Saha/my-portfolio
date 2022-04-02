@@ -3,7 +3,8 @@ import Header from "../header/Header";
 import LandingComponent from "../landing-component/LandingComponent";
 import Home from "../home/Home";
 import AboutMe from "../about/about-me/AboutMe";
-import PersonalDetails from "../about-details/personal-details/PersonalDetails";
+import PersonalDetails from "../xx-about-details/personal-details/PersonalDetails";
+import TechSkills from "../about/tech-skills/TechSkills";
 import "./Main.css"
 
 function Main() {
@@ -18,6 +19,7 @@ function Main() {
 
                         <Route path="/" element={<Home />} exact />
                         <Route path="/about" element={<AboutMe />} exact />
+                        <Route path="/work" element={<TechSkills />} exact />
                     </Routes>
                 </BrowserRouter>
             </main>

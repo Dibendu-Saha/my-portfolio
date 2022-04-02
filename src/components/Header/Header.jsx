@@ -19,9 +19,9 @@ function Header() {
 								</Link>
 							</li>
 							<li>
-								<a href="#" className="nav-link">
+								<Link to="/work" className="nav-link">
 									Work
-								</a>
+								</Link>
 							</li>
 							<li>
 								<a href="#" className="nav-link">
