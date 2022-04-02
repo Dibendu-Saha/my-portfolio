@@ -1,0 +1,36 @@
+.flex--about-me {
+    justify-content: space-between;
+    /* margin-top: 6.4rem; */
+}
+
+.flex > div {
+    /* border: 1px solid var(--medium-bg); */
+}
+
+.welcome-back {
+    font-size: 2.6rem !important;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1.6rem;
+}
+
+.first-letter {
+    font-size: 3.2rem;
+}
+
+.ellipsis {
+    letter-spacing: 7px;
+}
+
+.grid--about-me-content {
+    column-gap: 2rem;
+    row-gap: 2.6rem;
+    margin-top: 5.6rem;
+}
+
+.profile-picture {
+    height: 40rem !important;
+    width: 30rem !important;
+    /* overflow: scroll; */
+}

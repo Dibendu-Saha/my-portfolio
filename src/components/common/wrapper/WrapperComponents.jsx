@@ -60,8 +60,8 @@ export function Card({ children, style, height, width, margin }) {
             height: `${height}rem`,
             maxHeight: "20rem",
             margin: `${margin}rem`,
-            background: style === "dark" ? ("var(--primary-shade)") : ("var(--medium-bg)"),
-            color: style === "dark" ? ("var(--light-bg)") : ("var(--font-color)")
+            background: style === "dark" ? "var(--primary-shade)" : "",
+            color: style === "dark" ? "var(--light-bg)" : "var(--font-color)"
         }}>
             <span style={{ padding: "4.4rem 2rem", textAlign: "center" }}>
                 {children}
