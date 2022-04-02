@@ -23,8 +23,7 @@ function Content() {
             <br />
             <p>
                 At present, I'm working again as a full-stack developer since Oct'21 working on the modern
-                tech stack &#8212; <strong>HTML5, CSS3</strong> and <strong>React</strong> for the UI/UX and
-                <strong>C#, ASP.NET Core</strong> and <strong>Web API</strong> for the server-side.
+                tech stack &#8212; <strong>HTML5, CSS3</strong> and <strong>React</strong> for the UI/UX and <strong>C#, ASP.NET Core</strong> and <strong>Web API</strong> for the server-side.
             </p>
         </>
     )

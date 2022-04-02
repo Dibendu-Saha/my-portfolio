@@ -3,10 +3,6 @@
     /* margin-top: 6.4rem; */
 }
 
-.flex > div:last-child {
-    border: 1px solid #000;
-}
-
 .grid--about-me-content {
     column-gap: 2rem;
     row-gap: 2.6rem;

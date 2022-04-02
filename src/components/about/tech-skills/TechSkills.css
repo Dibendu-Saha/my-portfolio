@@ -2,14 +2,18 @@
 
 .flex--tech-overview { 
     justify-content: space-between; 
-    gap: 1.2rem;
+    gap: 5.6rem;
 }
 
 .tech-background { 
     flex: 1; 
     letter-spacing: 0.5px;
     line-height: 26px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
-.skill-icon { flex: 1; }
+.grid--skills { 
+    flex: 1; 
+    justify-items: center;
+    align-items: center;
+}
