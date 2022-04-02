@@ -1,5 +1,5 @@
 import { Section, Container, H1, Card } from "../../common/wrapper/WrapperComponents";
-import { Button } from "../../../utils/Button/Button";
+import { Button } from "../../common/utils/Button";
 // import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./AboutMe.css";
 
