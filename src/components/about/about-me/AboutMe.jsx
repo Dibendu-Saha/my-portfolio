@@ -33,7 +33,7 @@ function AboutMe() {
                         <Card height="15" width="30" style="dark">
                             Graduated with a Bachelor's degree in
                             Electronics &amp; Communication, yet landed up in IT
-                            (no, no, it's a good thing).
+                            (it's still a good thing).
                         </Card>
 
                         <div className="btn-wrapper">

@@ -8,6 +8,7 @@ import jquery_icon from "../../../assets/images/icon-jquery.svg";
 import react_icon from "../../../assets/images/icon-react.svg";
 import redux_icon from "../../../assets/images/icon-redux.svg";
 import csharp_icon from "../../../assets/images/icon-c-sharp.svg";
+import db_icon from "../../../assets/images/icon-database.svg";
 
 import IconTile from "./IconTile";
 import "./TechSkills.css";
@@ -32,7 +33,7 @@ function TechSkills() {
                         <IconTile icon={csharp_icon} />
                         <IconTile icon={html_icon} />
 
-                        <IconTile icon={js_icon} />
+                        <IconTile icon={db_icon} />
                         <IconTile icon={js_icon} />
                     </div>
                 </div>
