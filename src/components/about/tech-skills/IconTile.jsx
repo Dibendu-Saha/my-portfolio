@@ -1,15 +1,14 @@
-function IconTile({ icon }) {
+function IconTile({ icon, title }) {
     return (
-        <div>
-            <img
-                src={icon}
-                alt={`Icon_${icon}`}
-                style={{
-                    height: "12rem",
-                    width: "12rem"
-                }}
-            />
-        </div>
+        <img
+            src={icon}
+            title={title}
+            alt={`Icon_${icon}`}
+            style={{
+                height: "12rem",
+                width: "12rem"
+            }}
+        />
     )
 }
 

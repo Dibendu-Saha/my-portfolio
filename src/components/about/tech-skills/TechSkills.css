@@ -15,3 +15,6 @@
     justify-items: center;
     align-items: center;
 }
+
+.grid-item-col-2 { grid-column: 2; }
+.grid-item-col-3 { grid-column: 3; }
