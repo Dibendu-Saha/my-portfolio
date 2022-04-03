@@ -5,8 +5,8 @@ function IconTile({ icon, title, height, width }) {
             title={title}
             alt={`Icon_${icon}`}
             style={{
-                height: height ?? "12rem",
-                width: width ?? "12rem"
+                height: height ?? "11rem",
+                width: width ?? "11rem"
             }}
         />
     )

@@ -56,10 +56,10 @@ export function Card({ children, style, height, width, margin }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: `${width}rem`,
-            height: `${height}rem`,
+            width: `${width}`,
+            height: `${height}`,
             maxHeight: "20rem",
-            margin: `${margin}rem`,
+            margin: `${margin}`,
             background: style === "dark" ? "var(--primary-shade)" : "",
             color: style === "dark" ? "var(--light-bg)" : "var(--font-color)"
         }}>
@@ -86,7 +86,7 @@ H1.defaultProps = {
 
 Card.defaultProps = {
     style: "",
-    height: "10",
-    width: "20",
+    height: "10rem",
+    width: "20rem",
     margin: "0"
 }
