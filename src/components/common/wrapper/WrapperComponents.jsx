@@ -5,9 +5,8 @@ export function Section({ children, id, className, bgLinearGradientDegree }) {
             style={{
                 height: "100vh",
                 backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
-                var(--light-bg) 0%, var(--light-bg) 50%, 
-                var(--primary-color) 50%, var(--primary-color) 100%)`,
-                // border: "2px solid red"
+                        var(--light-bg) 0%, var(--light-bg) 50%, 
+                        var(--primary-color) 50%, var(--primary-color) 100%)`
             }}
             className={className ?? className}
         >

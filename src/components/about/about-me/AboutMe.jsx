@@ -5,7 +5,7 @@ import "./AboutMe.css";
 
 function AboutMe() {
     return (
-        <Section bgLinearGradientDegree="120">
+        <Section id="about" bgLinearGradientDegree="60">
             <Container>
                 <H1 weight="light">My personal space</H1>
                 <div className="flex flex--about-me">

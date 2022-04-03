@@ -9,19 +9,19 @@ function Header() {
 					<nav>
 						<ul className="nav-links-container">
 							<li>
-								<Link to="/" className="nav-link">
+								<a href="#" className="nav-link">
 									Home
-								</Link>
+								</a>
 							</li>
 							<li>
-								<Link to="/about" className="nav-link">
+								<a href="#about" className="nav-link">
 									About me
-								</Link>
+								</a>
 							</li>
 							<li>
-								<Link to="/work" className="nav-link">
+								<a href="#work" className="nav-link">
 									Work
-								</Link>
+								</a>
 							</li>
 							<li>
 								<a href="#" className="nav-link">

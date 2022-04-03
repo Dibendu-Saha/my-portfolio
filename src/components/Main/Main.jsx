@@ -10,16 +10,16 @@ import "./Main.css"
 function Main() {
     return (
         <>
+            <Header />
             <main>
                 <BrowserRouter>
-                    <Header />
-                    <Routes>
-                        {/* <Route path="/" element={<LandingComponent />} exact />
-                        <Route path="/personal" element={<PersonalDetails />} exact /> */}
 
-                        <Route path="/" element={<Home />} exact />
+                    <Routes>
+                        <Route path="/" element={<LandingComponent />} exact />
+
+                        {/* <Route path="/" element={<Home />} exact />
                         <Route path="/about" element={<AboutMe />} exact />
-                        <Route path="/work" element={<TechSkills />} exact />
+                        <Route path="/work" element={<TechSkills />} exact /> */}
                     </Routes>
                 </BrowserRouter>
             </main>

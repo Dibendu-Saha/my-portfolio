@@ -5,7 +5,7 @@ import "./TechSkills.css";
 
 function TechSkills() {
     return (
-        <Section bgLinearGradientDegree="120">
+        <Section id="work" bgLinearGradientDegree="120">
             <Container>
                 <H1 weight="light">Tech expertise</H1>
                 <div className="flex flex--tech-overview">
