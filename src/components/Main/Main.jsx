@@ -10,10 +10,9 @@ import "./Main.css"
 function Main() {
     return (
         <>
-            <Header />
             <main>
                 <BrowserRouter>
-
+                    <Header />
                     <Routes>
                         <Route path="/" element={<LandingComponent />} exact />
 
