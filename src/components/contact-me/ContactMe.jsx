@@ -6,7 +6,7 @@ function ContactMe() {
     return (
         <Section id="contact-me" bgLinearGradientDegree="60">
             <Container>
-                <H1 weight="light">Contact me</H1>
+                <H1 weight="light">Let's talk</H1>
                 <div className="flex contact-me">
 
 
@@ -24,7 +24,7 @@ function ContactMe() {
                                 <input id="email" name="email" type="text" />
 
                                 <label htmlFor="message">Message</label>
-                                <textarea id="message" name="message" rows="8" columns="10" />
+                                <textarea id="message" name="message" rows="6" columns="10" />
 
                                 <div className="empty"></div>
                                 <div className="send-button-wrapper border">
