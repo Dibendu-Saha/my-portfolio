@@ -23,8 +23,7 @@ export function Container({ children, id, className }) {
             id={id ?? id}
             style={{
                 margin: "0 auto",
-                padding: "10rem 10rem 0rem 10rem",
-                // border: "1px solid green"
+                padding: "10rem 10rem 0rem 10rem"
             }}
             className={className ?? className}
         >
