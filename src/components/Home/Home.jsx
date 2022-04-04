@@ -18,7 +18,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="flex flex--explore">
-                    <Button title="Let's Explore" type="primary" href="#section-about" />
+                    <Button title="Let's Explore" type="primary" href="#about" />
                 </div>
             </Container>
         </Section>
