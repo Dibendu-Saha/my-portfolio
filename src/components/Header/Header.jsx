@@ -24,7 +24,7 @@ function Header() {
 								</a>
 							</li>
 							<li>
-								<a href="#" className="nav-link">
+								<a href="#contact-me" className="nav-link">
 									Contact
 								</a>
 							</li>
