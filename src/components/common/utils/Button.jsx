@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-export const Button = ({ title, type, style, href, link, onClick }) => {
+export const Button = ({ title, type, bsPrefix, href, link, onClick }) => {
 	return (
 		link
 			? <Link to={link}
 				className={
-					style !== ""
-						? style
+					bsPrefix !== ""
+						? bsPrefix
 						: `btn${type === "primary"
 							? " btn--primary"
 							: type === "none"
@@ -20,8 +20,8 @@ export const Button = ({ title, type, style, href, link, onClick }) => {
 
 			: <a href={href}
 				className={
-					style !== ""
-						? style
+					bsPrefix !== ""
+						? bsPrefix
 						: `btn${type === "primary"
 							? " btn--primary"
 							: type === "none"
@@ -38,6 +38,6 @@ export const Button = ({ title, type, style, href, link, onClick }) => {
 Button.defaultProps = {
 	title: "Button",
 	type: "secondary",
-	style: "",
+	bsPrefix: "",
 	link: ""
 }
