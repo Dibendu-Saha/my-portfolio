@@ -1,26 +1,26 @@
-.contact-me { height: 500px; }
-
 .contact-form-container { 
     flex: 1; 
-    padding-top: 56px;
-    padding-left: 14px;
+    padding-top: 5.6rem;
+    padding-left: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2.8rem;
 }
 
 .contact-options { flex: 1; }
 
 .contact-form { 
-    width: 600px; 
-    margin-top: 32px;
+    width: 60rem; 
+    margin-top: 3.2rem;
 }
 
 .grid--contact-form-layout { 
-    row-gap: 20px; 
+    row-gap: 2rem; 
     align-items: center;
 }
 
 .contact-form input { 
-    height: 32px;
-    width: 400px;     
+    height: 3.2rem;
+    width: 40rem;     
 } 
 
 .btn--send-message { 
