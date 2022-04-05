@@ -38,11 +38,10 @@
     font-family: 'Poppins';
     padding: 0 6px;
     border: 1px solid var(--medium-bg);
+    transition: all 0.2s;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-    box-shadow: 2px 2px 8px var(--secondary-color);
-}
+.contact-form input:focus, .contact-form textarea:focus,
 .contact-form input:hover, .contact-form textarea:hover {
     box-shadow: 2px 2px 8px var(--secondary-color);
 }
