@@ -11,10 +11,8 @@ function ContactMe() {
         <Section id="contact-me" bgLinearGradientDegree="60">
             <Container>
                 <H1 weight="light">Let's talk</H1>
-                <div className="flex contact-me">
-
-
-                    <div className="contact-form-container border">
+                <div className="flex flex--contact-me">
+                    <div className="contact-form-container">
                         <div>
                             <p>Interested to collaborate &amp; work together?</p>
                             <p>Send me a message</p>
@@ -42,26 +40,23 @@ function ContactMe() {
                         </div>
                     </div>
 
-                    <div className="contact-options border">
+                    <div className="contact-social">
                         <p>Follow me</p>
-                        <div className="grid grid--cols-4">
-                            <div className="linkedin">
+                        <div className="grid grid--cols-4 grid--social-icons">
+                            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank">
                                 <IconTile icon={linkedin_icon} />
-                            </div>
-                            <div className="instagram">
+                            </a>
+                            <a href="https://www.instagram.com/?hl=en" target="_blank">
                                 <IconTile icon={ig_icon} />
-                            </div>
-                            <div className="facebook">
+                            </a>
+                            <a href="https://www.facebook.com/dibendu03" target="_blank">
                                 <IconTile icon={fb_icon} />
-                            </div>
-                            <div className="github">
+                            </a>
+                            <a href="https://github.com/Dibendu-Saha" target="_blank">
                                 <IconTile icon={github_icon} />
-                            </div>
+                            </a>
                         </div>
                     </div>
-
-
-
                 </div>
             </Container>
         </Section>

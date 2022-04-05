@@ -1,4 +1,4 @@
-.contact-form-container, .contact-options { 
+.contact-form-container, .contact-social { 
     flex: 1; 
     padding-top: 3.2rem;
     padding-left: 0.8rem;
@@ -6,11 +6,13 @@
     line-height: 2.8rem;
 }
 
-.contact-options p:first-child { 
+.contact-social p:first-child { 
     text-align: center; 
     font-size: 3.2rem;
     font-weight: 200;
 }
+
+.flex--contact-me { gap: 6.4rem; }
 
 .contact-form { 
     width: 60rem; 
@@ -36,4 +38,9 @@
 .btn--send-message { 
     width: 100%; 
     text-align: center;
+}
+
+.grid--social-icons { 
+    justify-items: center; 
+    margin-top: 9rem; 
 }
