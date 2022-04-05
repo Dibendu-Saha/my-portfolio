@@ -9,7 +9,7 @@ import csharp_icon from "../../../assets/images/icon-c-sharp.svg";
 import api_icon from "../../../assets/images/icon-api.svg";
 import db_icon from "../../../assets/images/icon-database.svg";
 
-import IconTile from "./IconTile";
+import { IconTile } from "../../common/wrapper/WrapperComponents";
 
 function IconsTech() {
     return (
