@@ -1,5 +1,9 @@
-import { Section, Container, H1 } from "../common/wrapper/WrapperComponents";
+import { Section, Container, H1, IconTile } from "../common/wrapper/WrapperComponents";
 import { Button } from "../common/utils/Button";
+import linkedin_icon from "../../assets/images/icon-linkedin.svg";
+import fb_icon from "../../assets/images/icon-facebook.svg";
+import ig_icon from "../../assets/images/icon-instagram.svg";
+import github_icon from "../../assets/images/icon-github.svg";
 import "./ContactMe.css"
 
 function ContactMe() {
@@ -10,8 +14,8 @@ function ContactMe() {
                 <div className="flex contact-me">
 
 
-                    <div className="contact-form-container">
-                        <div className="collab-message">
+                    <div className="contact-form-container border">
+                        <div>
                             <p>Interested to collaborate &amp; work together?</p>
                             <p>Send me a message</p>
                         </div>
@@ -38,7 +42,22 @@ function ContactMe() {
                         </div>
                     </div>
 
-                    <div className="contact-options">
+                    <div className="contact-options border">
+                        <p>Follow me</p>
+                        <div className="grid grid--cols-4">
+                            <div className="linkedin">
+                                <IconTile icon={linkedin_icon} />
+                            </div>
+                            <div className="instagram">
+                                <IconTile icon={ig_icon} />
+                            </div>
+                            <div className="facebook">
+                                <IconTile icon={fb_icon} />
+                            </div>
+                            <div className="github">
+                                <IconTile icon={github_icon} />
+                            </div>
+                        </div>
                     </div>
 
 
