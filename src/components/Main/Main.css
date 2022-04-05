@@ -97,7 +97,13 @@ body {
 .btn--secondary {
   color: var(--secondary-color);
   background: var(--light-bg);
+  transition: all 0.2s;
 }
+.btn--secondary:hover {
+  color: var(--light-bg);
+  background: var(--secondary-color);
+}
+
 
 
 

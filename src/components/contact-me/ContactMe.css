@@ -43,6 +43,9 @@
 .contact-form input:focus, .contact-form textarea:focus {
     box-shadow: 2px 2px 8px var(--secondary-color);
 }
+.contact-form input:hover, .contact-form textarea:hover {
+    box-shadow: 2px 2px 8px var(--secondary-color);
+}
 
 .btn--send-message { 
     width: 100%; 
