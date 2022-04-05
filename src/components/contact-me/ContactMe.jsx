@@ -41,7 +41,7 @@ function ContactMe() {
                     </div>
 
                     <div className="contact-social">
-                        <p>Follow me</p>
+                        <p>Follow me on</p>
                         <div className="grid grid--cols-4 grid--social-icons">
                             <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank">
                                 <IconTile icon={linkedin_icon} />

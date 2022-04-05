@@ -26,13 +26,22 @@
 
 .contact-form input { 
     height: 3.2rem;
-    width: 40rem;     
+    width: 40rem;        
 } 
 
-.contact-form textarea { 
+.contact-form input { letter-spacing: 1.2px; }
+.contact-form textarea { resize: none; }
+
+.contact-form input, .contact-form textarea {
+    font-size: 16px;
+    color: var(--dark-bg); 
     font-family: 'Poppins';
-    font-size: 1.3rem;
-    resize: none; 
+    padding: 0 6px;
+    border: 1px solid var(--medium-bg);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 2px 2px 8px var(--secondary-color);
 }
 
 .btn--send-message { 
