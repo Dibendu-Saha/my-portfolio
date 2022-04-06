@@ -5,22 +5,22 @@ import { Button } from "../../common/utils/Button";
 import "./AboutMe.css";
 
 function AboutMe() {
-    const sectionAbout = useRef(null);
+    const sectionAbout = useRef(),
+        revealDiv = useRef();
 
     let options = {
         root: null,
         threshold: 0.5
     };
 
-    let obs = new IntersectionObserver(entries => {
+    const obs = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            let revealDiv = document.querySelector('.reveal-about');
             if (entry.isIntersecting) {
-                if (!revealDiv.classList.contains("active"))
-                    revealDiv.classList.add("active");
+                if (!revealDiv.current.classList.contains("active"))
+                    revealDiv.current.classList.add("active");
             } else {
-                if (revealDiv.classList.contains("active"))
-                    revealDiv.classList.remove("active");
+                if (revealDiv.current.classList.contains("active"))
+                    revealDiv.current.classList.remove("active");
             }
         })
     }, options);
@@ -32,10 +32,11 @@ function AboutMe() {
     }, [sectionAbout.current]);
 
 
+
     return (
         <Section id="about" bgLinearGradientDegree="60" reactRef={sectionAbout} >
             <Container>
-                <div className="reveal-about">
+                <div className="reveal-about" ref={revealDiv}>
                     <H1 weight="light">My personal space</H1>
                     <div className="flex flex--about-me">
                         <div className="grid grid--cols-3 grid--about-me-content">
