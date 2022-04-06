@@ -5,17 +5,17 @@ import { Button } from "../../common/utils/Button";
 import "./AboutMe.css";
 
 function AboutMe() {
-    const sectionAbout = useRef(),
-        revealDiv = useRef();
+    const sectionAbout = useRef();
+    const revealDiv = useRef();
 
     let options = {
         root: null,
-        threshold: 0.5
+        threshold: 0.7
     };
 
-    const obs = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
+    const obs = new IntersectionObserver(intersectionParams => {
+        intersectionParams.forEach(param => {
+            if (param.isIntersecting) {
                 if (!revealDiv.current.classList.contains("active"))
                     revealDiv.current.classList.add("active");
             } else {

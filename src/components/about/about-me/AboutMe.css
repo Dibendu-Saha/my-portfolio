@@ -18,9 +18,9 @@
 }
 
 .reveal-about { 
-    transform: translateY(250px);
+    transform: translateY(120px);
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 1.2s ease-out;
 }
 .reveal-about.active { 
     transform: translateY(0);
