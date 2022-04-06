@@ -1,4 +1,4 @@
-export function Section({ children, id, className, bgLinearGradientDegree }) {
+export function Section({ children, id, className, reactRef, bgLinearGradientDegree }) {
     return (
         <section
             id={id ?? id}
@@ -9,6 +9,7 @@ export function Section({ children, id, className, bgLinearGradientDegree }) {
                         var(--primary-color) 50%, var(--primary-color) 100%)`
             }}
             className={className ?? className}
+            ref={reactRef}
         >
             {children}
         </section>

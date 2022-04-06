@@ -16,3 +16,13 @@
     width: 30rem !important;
     /* overflow: scroll; */
 }
+
+.reveal-about { 
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1.5s;
+}
+.reveal-about.active { 
+    transform: translateY(0);
+    opacity: 1;
+}
