@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import { useReveal } from "../../common/hooks/AppHooks";
 import { Section, Container, H1, Card } from "../../common/wrapper/WrapperComponents";
 import { Button } from "../../common/utils/Button";
 // import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./AboutMe.css";
-import { useReveal } from "../../common/hooks/AppHooks";
 
 function AboutMe() {
     const sectionAbout = useRef();
