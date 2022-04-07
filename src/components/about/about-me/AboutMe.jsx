@@ -24,7 +24,8 @@ function AboutMe() {
                     <H1
                         weight="light"
                         className="reveal-about-header"
-                        reactRef={refHeader}>
+                        reactRef={refHeader}
+                    >
                         My personal space
                     </H1>
 
