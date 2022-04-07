@@ -1,35 +1,18 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Section, Container, H1, Card } from "../../common/wrapper/WrapperComponents";
 import { Button } from "../../common/utils/Button";
 // import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./AboutMe.css";
+import { useReveal } from "../../common/hooks/AppHooks";
 
 function AboutMe() {
     const sectionAbout = useRef();
     const revealDiv = useRef();
+    const [_, setDummy] = useState("");
 
-    let options = {
-        root: null,
-        threshold: 0.7
-    };
+    useEffect(() => { setDummy("dummy"); }, []);
 
-    const obs = new IntersectionObserver(intersectionParams => {
-        intersectionParams.forEach(param => {
-            if (param.isIntersecting) {
-                if (!revealDiv.current.classList.contains("active"))
-                    revealDiv.current.classList.add("active");
-            } else {
-                if (revealDiv.current.classList.contains("active"))
-                    revealDiv.current.classList.remove("active");
-            }
-        })
-    }, options);
-
-    useEffect(() => {
-        if (sectionAbout.current) {
-            obs.observe(sectionAbout.current);
-        }
-    }, [sectionAbout.current]);
+    useReveal(sectionAbout.current, revealDiv.current);
 
 
 
