@@ -6,28 +6,29 @@ import { Button } from "../../common/utils/Button";
 import "./AboutMe.css";
 
 function AboutMe() {
-    const sectionAbout = useRef();
-    const revealDiv = useRef();
-    const revealContentDiv = useRef();
+    const refSection = useRef();
+    const refHeader = useRef();
+    const refContent = useRef();
+
     const [_, setDummy] = useState("");
 
     useEffect(() => { setDummy("...to trigger a re-render"); }, []);
 
-    useReveal(sectionAbout.current, revealDiv.current);
-    useReveal(sectionAbout.current, revealContentDiv.current);
+    useReveal(refSection.current, refHeader.current);
+    useReveal(refSection.current, refContent.current);
 
     return (
-        <Section id="about" bgLinearGradientDegree="60" reactRef={sectionAbout} >
+        <Section id="about" bgLinearGradientDegree="60" reactRef={refSection} >
             <Container>
                 <div>
                     <H1
                         weight="light"
                         className="reveal-about-header"
-                        reactRef={revealDiv}>
+                        reactRef={refHeader}>
                         My personal space
                     </H1>
 
-                    <div className="flex flex--about-me reveal-about-content" ref={revealContentDiv}>
+                    <div className="flex flex--about-me reveal-about-content" ref={refContent}>
                         <div className="grid grid--cols-3 grid--about-me-content">
                             <Card height="15rem" width="30rem" style="dark">
                                 <p>My name is Dibendu Saha.</p>
