@@ -8,18 +8,26 @@ import "./AboutMe.css";
 function AboutMe() {
     const sectionAbout = useRef();
     const revealDiv = useRef();
+    const revealContentDiv = useRef();
     const [_, setDummy] = useState("");
 
     useEffect(() => { setDummy("...to trigger a re-render"); }, []);
 
     useReveal(sectionAbout.current, revealDiv.current);
+    useReveal(sectionAbout.current, revealContentDiv.current);
 
     return (
         <Section id="about" bgLinearGradientDegree="60" reactRef={sectionAbout} >
             <Container>
-                <div className="reveal-about" ref={revealDiv}>
-                    <H1 weight="light">My personal space</H1>
-                    <div className="flex flex--about-me">
+                <div>
+                    <H1
+                        weight="light"
+                        className="reveal-about-header"
+                        reactRef={revealDiv}>
+                        My personal space
+                    </H1>
+
+                    <div className="flex flex--about-me reveal-about-content" ref={revealContentDiv}>
                         <div className="grid grid--cols-3 grid--about-me-content">
                             <Card height="15rem" width="30rem" style="dark">
                                 <p>My name is Dibendu Saha.</p>

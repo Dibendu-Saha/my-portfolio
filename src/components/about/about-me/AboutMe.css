@@ -17,12 +17,22 @@
     /* overflow: scroll; */
 }
 
-.reveal-about { 
+.reveal-about-header { 
     transform: translateY(120px);
     opacity: 0;
     transition: all 1.2s ease-out;
 }
-.reveal-about.active { 
+.reveal-about-header.active { 
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-about-content { 
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+.reveal-about-content.active { 
     transform: translateY(0);
     opacity: 1;
 }
