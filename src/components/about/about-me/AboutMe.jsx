@@ -10,11 +10,9 @@ function AboutMe() {
     const revealDiv = useRef();
     const [_, setDummy] = useState("");
 
-    useEffect(() => { setDummy("dummy"); }, []);
+    useEffect(() => { setDummy("...to trigger a re-render"); }, []);
 
     useReveal(sectionAbout.current, revealDiv.current);
-
-
 
     return (
         <Section id="about" bgLinearGradientDegree="60" reactRef={sectionAbout} >
