@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { Section, Container, H1 } from "../../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex } from "../../common/wrapper/AppComponents";
 import Content from "./Content";
 import IconsTech from "./IconsTech";
 import "./TechSkills.css";
@@ -27,14 +27,14 @@ function TechSkills() {
                 >
                     Tech expertise
                 </H1>
-                <div className="flex flex--tech-overview reveal-skills-content" ref={refContent}>
+                <Flex className="flex--tech-overview reveal-skills-content" reactRef={refContent}>
                     <div className="tech-background">
                         <Content />
                     </div>
                     <div className="grid grid--cols-4 grid--skills">
                         <IconsTech />
                     </div>
-                </div>
+                </Flex>
             </Container>
         </Section >
     )

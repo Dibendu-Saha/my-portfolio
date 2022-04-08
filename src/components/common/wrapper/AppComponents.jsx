@@ -61,6 +61,18 @@ export function H1({ children, className, reactRef, weight }) {
 }
 
 
+export function Flex({ children, id, className, reactRef }) {
+    return (
+        <div
+            id={id}
+            className={className ? `flex ${className}` : "flex"}
+            ref={reactRef}
+        >
+            {children}
+        </div>
+    )
+}
+
 
 export function Card({ children, style, height, width, margin }) {
     return (
@@ -86,6 +98,8 @@ export function Card({ children, style, height, width, margin }) {
         </div >
     )
 }
+
+
 
 export function IconTile({ icon, title, height, width }) {
     return (

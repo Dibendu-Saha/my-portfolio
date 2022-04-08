@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../common/hooks/AppHooks";
-import { Section, Container, H1, IconTile } from "../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, IconTile } from "../common/wrapper/AppComponents";
 import linkedin_icon from "../../assets/images/icon-linkedin.svg";
 import fb_icon from "../../assets/images/icon-facebook.svg";
 import ig_icon from "../../assets/images/icon-instagram.svg";
@@ -30,7 +30,7 @@ function ContactMe() {
                 >
                     Let's talk
                 </H1>
-                <div className="flex flex--contact-me reveal-contact-content" ref={refContent}>
+                <Flex className="flex--contact-me reveal-contact-content" reactRef={refContent}>
                     <div className="contact-form-container">
                         <div>
                             <p>Interested to collaborate &amp; work together?</p>
@@ -58,7 +58,7 @@ function ContactMe() {
                             </a>
                         </div>
                     </div>
-                </div>
+                </Flex>
             </Container>
         </Section>
     )

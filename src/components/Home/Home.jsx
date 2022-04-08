@@ -1,4 +1,4 @@
-import { Section, Container, H1, Button } from "../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, Button } from "../common/wrapper/AppComponents";
 import "./Home.css";
 
 function Home() {
@@ -10,15 +10,15 @@ function Home() {
                         <H1>Hey there!</H1>
                         <H1 weight="light">I'm Dibendu</H1>
                     </div>
-                    <div className="flex flex--hobbies grid--intro-about">
+                    <Flex className="flex--hobbies grid--intro-about">
                         <p>...and I'm a</p>
                         <p>Full Stack Developer</p>
                         <p>by profession</p>
-                    </div>
+                    </Flex>
                 </div>
-                <div className="flex flex--explore">
+                <Flex className="flex--explore">
                     <Button title="Let's Explore" type="primary" href="#about" />
-                </div>
+                </Flex>
             </Container>
         </Section>
     )
