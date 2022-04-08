@@ -21,7 +21,7 @@
 
 /* ------- R E V E A L   A N I M A T I O N ------- */
 .reveal-skills-header {
-    transform: translateY(150px);
+    transform: translateY(15rem);
     opacity: 0;
     transition: all 1.2s ease-out;
 }
@@ -31,7 +31,7 @@
 }
 
 .reveal-skills-content {
-    transform: translateY(64px);
+    transform: translateY(6.4rem);
     opacity: 0;
     transition: all 2s ease-out;
     transition-delay: 0.5s;

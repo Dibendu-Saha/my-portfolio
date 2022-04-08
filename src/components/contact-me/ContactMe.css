@@ -21,7 +21,7 @@
 
 /* ------- R E V E A L   A N I M A T I O N ------- */
 .reveal-contact-header { 
-    transform: translateY(120px);
+    transform: translateY(12rem);
     opacity: 0;
     transition: all 1.2s ease-out;
 }
@@ -31,7 +31,7 @@
 }
 
 .reveal-contact-content { 
-    transform: translateY(150px);
+    transform: translateY(15rem);
     opacity: 0;
     transition: all 2s ease-out;
     transition-delay: 0.5s;
