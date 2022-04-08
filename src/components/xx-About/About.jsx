@@ -1,4 +1,4 @@
-import { Section, Container } from "../common/wrapper/WrapperComponents";
+import { Section, Container } from "../common/wrapper/AppComponents";
 import { Button } from "../common/utils/Button";
 import "./About.css"
 

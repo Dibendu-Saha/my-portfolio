@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { Section, Container, H1 } from "../../common/wrapper/WrapperComponents";
+import { Section, Container, H1 } from "../../common/wrapper/AppComponents";
 import Content from "./Content";
 import IconsTech from "./IconsTech";
 import "./TechSkills.css";

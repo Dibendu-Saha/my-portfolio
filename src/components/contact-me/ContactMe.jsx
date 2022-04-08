@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../common/hooks/AppHooks";
-import { Section, Container, H1, IconTile } from "../common/wrapper/WrapperComponents";
+import { Section, Container, H1, IconTile } from "../common/wrapper/AppComponents";
 import linkedin_icon from "../../assets/images/icon-linkedin.svg";
 import fb_icon from "../../assets/images/icon-facebook.svg";
 import ig_icon from "../../assets/images/icon-instagram.svg";
