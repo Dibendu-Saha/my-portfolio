@@ -1,5 +1,4 @@
-import { Section, Container, H1 } from "../common/wrapper/AppComponents";
-import { Button } from "../common/utils/Button";
+import { Section, Container, H1, Button } from "../common/wrapper/AppComponents";
 import "./Home.css";
 
 function Home() {

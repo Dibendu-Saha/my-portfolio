@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Section({ children, id, className, reactRef, bgLinearGradientDegree }) {
     return (
         <section
@@ -100,6 +102,43 @@ export function IconTile({ icon, title, height, width }) {
 }
 
 
+
+export function Button({ title, type, bsPrefix, href, link, onClick }) {
+    return (
+        link
+            ? <Link to={link}
+                className={
+                    bsPrefix !== ""
+                        ? bsPrefix
+                        : `btn${type === "primary"
+                            ? " btn--primary"
+                            : type === "none"
+                                ? ""
+                                : " btn--secondary"}`
+                }
+            >
+                {title}
+            </Link>
+
+
+            : <a href={href}
+                className={
+                    bsPrefix !== ""
+                        ? bsPrefix
+                        : `btn${type === "primary"
+                            ? " btn--primary"
+                            : type === "none"
+                                ? ""
+                                : " btn--secondary"}`
+                }
+                onClick={onClick}
+            >
+                {title}
+            </a>
+    )
+}
+
+
 Section.defaultProps = {
     bgLinearGradientDegree: 0
 };
@@ -113,4 +152,11 @@ Card.defaultProps = {
     height: "10rem",
     width: "20rem",
     margin: "0"
+}
+
+Button.defaultProps = {
+    title: "Button",
+    type: "secondary",
+    bsPrefix: "",
+    link: ""
 }

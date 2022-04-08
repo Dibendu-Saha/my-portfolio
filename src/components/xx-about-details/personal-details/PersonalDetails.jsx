@@ -1,5 +1,4 @@
-import { Section, Container, H1, Card } from "../../common/wrapper/AppComponents";
-import { Button } from "../../common/utils/Button";
+import { Section, Container, H1, Card, Button } from "../../common/wrapper/AppComponents";
 // import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./PersonalDetails.css";
 

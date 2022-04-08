@@ -1,5 +1,4 @@
-import { Section, Container } from "../common/wrapper/AppComponents";
-import { Button } from "../common/utils/Button";
+import { Section, Container, Button } from "../common/wrapper/AppComponents";
 import "./About.css"
 
 function About() {

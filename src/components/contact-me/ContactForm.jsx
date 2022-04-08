@@ -1,4 +1,4 @@
-import { Button } from "../common/utils/Button";
+import { Button } from "../common/wrapper/AppComponents";
 import "./ContactForm.css";
 
 function ContactForm() {
