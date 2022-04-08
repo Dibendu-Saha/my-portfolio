@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { Section, Container, H1, Flex } from "../../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, Grid } from "../../common/wrapper/AppComponents";
 import Content from "./Content";
 import IconsTech from "./IconsTech";
 import "./TechSkills.css";
@@ -31,9 +31,9 @@ function TechSkills() {
                     <div className="tech-background">
                         <Content />
                     </div>
-                    <div className="grid grid--cols-4 grid--skills">
+                    <Grid col="4" className="grid--skills">
                         <IconsTech />
-                    </div>
+                    </Grid>
                 </Flex>
             </Container>
         </Section >

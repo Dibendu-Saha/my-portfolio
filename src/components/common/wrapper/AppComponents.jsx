@@ -74,6 +74,20 @@ export function Flex({ children, id, className, reactRef }) {
 }
 
 
+export function Grid({ children, id, className, col, reactRef }) {
+    return (
+        <div
+            id={id}
+            className={className ? `grid grid--cols-${col} ${className}` : `grid grid--cols-${col}`}
+            ref={reactRef}
+        >
+            {children}
+        </div>
+    )
+}
+
+
+
 export function Card({ children, style, height, width, margin }) {
     return (
         <div style={{
@@ -159,6 +173,10 @@ Section.defaultProps = {
 
 H1.defaultProps = {
     weight: ""
+}
+
+Grid.defaultProps = {
+    col: "2"
 }
 
 Card.defaultProps = {

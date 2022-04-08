@@ -1,9 +1,9 @@
-import { Button } from "../common/wrapper/AppComponents";
+import { Grid, Button } from "../common/wrapper/AppComponents";
 import "./ContactForm.css";
 
 function ContactForm() {
     return (
-        <div className="grid grid--cols-2 grid--contact-form-layout contact-form">
+        <Grid className="grid--contact-form-layout contact-form">
             <label htmlFor="name">Name</label>
             <input id="name" name="name" type="text" />
 
@@ -21,7 +21,7 @@ function ContactForm() {
                     onClick={() => alert('submit')}
                 />
             </div>
-        </div>
+        </Grid>
     )
 }
 

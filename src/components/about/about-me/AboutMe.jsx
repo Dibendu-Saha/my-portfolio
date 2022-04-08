@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { Section, Container, H1, Flex, Card, Button } from "../../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, Grid, Card, Button } from "../../common/wrapper/AppComponents";
 // import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./AboutMe.css";
 
@@ -29,7 +29,7 @@ function AboutMe() {
                     </H1>
 
                     <Flex className="flex--about-me reveal-about-content" reactRef={refContent}>
-                        <div className="grid grid--cols-3 grid--about-me-content">
+                        <Grid col="3" className="grid--about-me-content">
                             <Card height="15rem" width="30rem" style="dark">
                                 <p>My name is Dibendu Saha.</p>
                                 <p>But you can just call me Deb.</p>
@@ -65,7 +65,7 @@ function AboutMe() {
                                     />
                                 </Card>
                             </div>
-                        </div>
+                        </Grid>
 
                         <div className="profile-picture">
                             <img src="" alt="portfolio" />

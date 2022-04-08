@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../common/hooks/AppHooks";
-import { Section, Container, H1, Flex, IconTile } from "../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, Grid, IconTile } from "../common/wrapper/AppComponents";
 import linkedin_icon from "../../assets/images/icon-linkedin.svg";
 import fb_icon from "../../assets/images/icon-facebook.svg";
 import ig_icon from "../../assets/images/icon-instagram.svg";
@@ -43,7 +43,7 @@ function ContactMe() {
 
                     <div className="contact-social">
                         <p>Follow me on</p>
-                        <div className="grid grid--cols-4 grid--social-icons">
+                        <Grid col="4" className="grid--social-icons">
                             <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank">
                                 <IconTile icon={linkedin_icon} />
                             </a>
@@ -56,7 +56,7 @@ function ContactMe() {
                             <a href="https://github.com/Dibendu-Saha" target="_blank">
                                 <IconTile icon={github_icon} />
                             </a>
-                        </div>
+                        </Grid>
                     </div>
                 </Flex>
             </Container>

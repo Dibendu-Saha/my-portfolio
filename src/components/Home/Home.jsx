@@ -1,11 +1,11 @@
-import { Section, Container, H1, Flex, Button } from "../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, Grid, Button } from "../common/wrapper/AppComponents";
 import "./Home.css";
 
 function Home() {
     return (
         <Section bgLinearGradientDegree="120">
             <Container>
-                <div className="grid grid--intro">
+                <Grid className="grid--intro">
                     <div className="intro-me">
                         <H1>Hey there!</H1>
                         <H1 weight="light">I'm Dibendu</H1>
@@ -15,7 +15,7 @@ function Home() {
                         <p>Full Stack Developer</p>
                         <p>by profession</p>
                     </Flex>
-                </div>
+                </Grid>
                 <Flex className="flex--explore">
                     <Button title="Let's Explore" type="primary" href="#about" />
                 </Flex>
