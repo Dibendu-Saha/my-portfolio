@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+import { useReveal } from "../common/hooks/AppHooks";
 import { Section, Container, H1, IconTile } from "../common/wrapper/WrapperComponents";
 import linkedin_icon from "../../assets/images/icon-linkedin.svg";
 import fb_icon from "../../assets/images/icon-facebook.svg";
@@ -7,11 +9,28 @@ import ContactForm from "./ContactForm";
 import "./ContactMe.css"
 
 function ContactMe() {
+    const refSection = useRef();
+    const refHeader = useRef();
+    const refContent = useRef();
+
+    const [_, setDummy] = useState("");
+
+    useEffect(() => setDummy("...to trigger a re-render"), []);
+
+    useReveal(refSection.current, refHeader.current);
+    useReveal(refSection.current, refContent.current);
+
     return (
-        <Section id="contact-me" bgLinearGradientDegree="60">
+        <Section id="contact-me" bgLinearGradientDegree="60" reactRef={refSection}>
             <Container>
-                <H1 weight="light">Let's talk</H1>
-                <div className="flex flex--contact-me">
+                <H1
+                    weight="light"
+                    className="reveal-contact-header"
+                    reactRef={refHeader}
+                >
+                    Let's talk
+                </H1>
+                <div className="flex flex--contact-me reveal-contact-content" ref={refContent}>
                     <div className="contact-form-container">
                         <div>
                             <p>Interested to collaborate &amp; work together?</p>

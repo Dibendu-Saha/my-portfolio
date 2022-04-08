@@ -12,7 +12,7 @@ function AboutMe() {
 
     const [_, setDummy] = useState("");
 
-    useEffect(() => { setDummy("...to trigger a re-render"); }, []);
+    useEffect(() => setDummy("...to trigger a re-render"), []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);

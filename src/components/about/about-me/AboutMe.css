@@ -17,6 +17,7 @@
     /* overflow: scroll; */
 }
 
+/* ------- R E V E A L   A N I M A T I O N ------- */
 .reveal-about-header { 
     transform: translateY(120px);
     opacity: 0;
@@ -28,9 +29,10 @@
 }
 
 .reveal-about-content { 
-    transform: translateY(120px);
+    transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease-out;
+    transition-delay: 0.5s;
 }
 .reveal-about-content.active { 
     transform: translateY(0);
