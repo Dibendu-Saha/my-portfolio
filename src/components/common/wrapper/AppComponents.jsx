@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import "./AppComponents.css"
 
 export function Section({ children, id, className, reactRef, bgLinearGradientDegree }) {
     return (
         <section
             id={id ?? id}
             style={{
-                height: "100vh",
+                minHeight: "100vh",
                 backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
                         var(--light-bg) 0%, var(--light-bg) 50%, 
                         var(--primary-color) 50%, var(--primary-color) 100%)`
@@ -24,11 +25,7 @@ export function Container({ children, id, className }) {
     return (
         <div
             id={id ?? id}
-            style={{
-                margin: "0 auto",
-                padding: "10rem 10rem 0rem 10rem"
-            }}
-            className={className ?? className}
+            className={className ? `app-container ${className}` : "app-container"}
         >
             {children}
         </div>
@@ -42,19 +39,14 @@ export function H1({ children, className, reactRef, weight }) {
         weight === "light"
             ? <p
                 ref={reactRef}
-                className={className}
-                style={{
-                    fontSize: "8rem",
-                    fontWeight: "100"
-                }}>
+                className={className ? `app-header-light ${className}` : "app-header-light"}
+            >
                 {children}
             </p>
             : <h1
                 ref={reactRef}
-                className={className}
-                style={{
-                    fontSize: "8rem", letterSpacing: "-3px"
-                }}>
+                className={className ? `app-header ${className}` : "app-header"}
+            >
                 {children}
             </h1>
     )
@@ -90,23 +82,17 @@ export function Grid({ children, id, className, col, reactRef }) {
 
 export function Card({ children, style, height, width, margin }) {
     return (
-        <div style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: `${width}`,
-            height: `${height}`,
-            maxHeight: "20rem",
-            margin: `${margin}`,
-            background: style === "dark" ? "var(--primary-shade)" : "",
-            color: style === "dark" ? "var(--light-bg)" : "var(--font-color)"
-        }}>
-            <span style={{
-                padding: "4.4rem 2rem",
-                textAlign: "center",
-                fontWeight: "200",
-                letterSpacing: "0.5px"
-            }}>
+        <div
+            className="app-card"
+            style={{
+                width: `${width}`,
+                height: `${height}`,
+                margin: `${margin}`,
+                background: style === "dark" ? "var(--primary-shade)" : "",
+                color: style === "dark" ? "var(--light-bg)" : "var(--font-color)"
+            }}
+        >
+            <span className="app-card-text">
                 {children}
             </span>
         </div >

@@ -1,0 +1,28 @@
+.app-container {
+    margin: 0 auto;
+    padding: 10rem 10rem 0 10rem;
+}
+
+.app-header {
+    font-size: 8rem;
+    letter-spacing: -3px;
+}
+
+.app-header-light {
+    font-size: 8rem;
+    font-weight: 100;
+}
+
+.app-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 20rem;            
+}
+
+.app-card-text {
+    padding: 4.4rem 2rem;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
