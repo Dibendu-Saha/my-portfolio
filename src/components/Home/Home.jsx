@@ -10,7 +10,7 @@ function Home() {
                         <H1>Hey there!</H1>
                         <H1 weight="light">I'm Dibendu</H1>
                     </div>
-                    <Flex className="flex--hobbies grid--intro-about">
+                    <Flex className="flex--profession grid--intro-about">
                         <p>...and I'm a</p>
                         <p>Full Stack Developer</p>
                         <p>by profession</p>
