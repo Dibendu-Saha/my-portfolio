@@ -1,13 +1,13 @@
 .flex--tech-overview { 
     justify-content: space-between; 
-    gap: 5.6rem;
+    gap: 5.6rem;    
 }
 
 .tech-background { 
     flex: 1; 
     letter-spacing: 0.5px;
-    line-height: 2.6rem;
-    /* text-align: justify; */
+    line-height: 2.6rem;   
+    text-align: justify; 
 }
 
 .grid--skills { 
@@ -16,8 +16,9 @@
     align-items: center;
 }
 
-.grid-item-col-2 { grid-column: 2; }
-.grid-item-col-3 { grid-column: 3; }
+.grid-item-api { grid-column: 2; }
+.grid-item-sql { grid-column: 3; }
+
 
 /* ------- R E V E A L   A N I M A T I O N ------- */
 .reveal-skills-header {
@@ -39,4 +40,56 @@
 .reveal-skills-content.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+
+
+/* ********************************************************************** */
+/* *************************  MEDIA QUERIES  **************************** */
+/* ********************************************************************** */
+@media (max-width: 1200px) {    
+    .grid--skills img { width: 10rem; }
+    
+    .flex--tech-overview { gap: 0 !important; }
+
+    .tech-background { 
+        letter-spacing: 0;
+        line-height: 2.4rem;
+        text-align: justify;
+    }
+
+    .reveal-skills-header, 
+    .reveal-skills-content {
+        transform: translateY(0);
+        opacity: 1;        
+    }    
+}
+
+@media (max-width: 1122px) {
+    .reveal-skills-header { font-size: 4.8rem; }
+    .tech-background p { font-size: 1.4rem; }
+
+    .flex--tech-overview { display: block !important; }
+
+    .grid--skills img { width: 7rem; }
+
+    .tech-background { 
+        letter-spacing: 0.5px;
+        line-height: 2.2rem;   
+        text-align: justify; 
+    }
+    .grid--skills {
+        grid-template-columns: repeat(6, auto) !important;        
+        row-gap: 2.4rem;     
+        margin-top: 1.6rem;   
+    }
+    .grid-item-net-core { grid-column: 2; }
+    .grid-item-c-sharp { grid-column: 3; }
+    .grid-item-api { grid-column: 4; }
+    .grid-item-sql { grid-column: 5; }
+}    
+
+@media (max-width: 1028px) {
+    .reveal-skills-header { font-size: 4rem; }
+    .tech-background p { font-size: 1.4rem; }
 }

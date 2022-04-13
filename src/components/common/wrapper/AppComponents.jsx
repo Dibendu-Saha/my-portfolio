@@ -107,10 +107,7 @@ export function IconTile({ icon, title, height, width }) {
             src={icon}
             title={title}
             alt={`Icon_${icon}`}
-            style={{
-                height: height ?? "11rem",
-                width: width ?? "11rem"
-            }}
+            className="app-icon"
         />
     )
 }
