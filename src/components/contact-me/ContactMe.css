@@ -40,3 +40,26 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+
+
+
+/* ********************************************************************** */
+/* *************************  MEDIA QUERIES  **************************** */
+/* ********************************************************************** */
+@media (max-width: 1122px) {
+    .grid--contact-form-layout { column-gap: 10px; }
+    .contact-social img { width: 10rem; }
+}    
+
+@media (max-width: 1028px) {
+    .contact-social img { width: 9rem; }
+}
+
+@media (max-width: 945px) {
+    
+}
+
+@media (max-width: 800px) {
+    
+}
