@@ -11,7 +11,7 @@ export function Section({ children, id, className, reactRef, bgLinearGradientDeg
                         var(--light-bg) 0%, var(--light-bg) 50%, 
                         var(--primary-color) 50%, var(--primary-color) 100%)`
             }}
-            className={className ?? className}
+            className={className ?? ""}
             ref={reactRef}
         >
             {children}
