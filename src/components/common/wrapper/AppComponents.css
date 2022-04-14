@@ -1,6 +1,7 @@
 .app-container {
     margin: 0 auto;
-    padding: 10rem;    
+    /* padding: 10rem; */
+    padding: 10rem 6%;
 }
 
 .app-header {

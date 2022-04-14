@@ -3,7 +3,7 @@ import "./ContactForm.css";
 
 function ContactForm() {
     return (
-        <Grid className="grid--contact-form-layout contact-form">
+        <div className="grid grid--contact-form-layout contact-form">
             <label htmlFor="name">Name</label>
             <input id="name" name="name" type="text" />
 
@@ -21,7 +21,7 @@ function ContactForm() {
                     onClick={() => alert('submit')}
                 />
             </div>
-        </Grid>
+        </div>
     )
 }
 
