@@ -2,7 +2,6 @@
   justify-items: center;
   margin-top: 6.4rem;
   color: var(--secondary-shade);
-  /* padding: 0 14rem; */
 }
 
 .grid--intro-about {
@@ -22,9 +21,12 @@
   align-items: center;
 }
 
-.flex--explore {
-  margin-top: 10rem;
+.flex--explore {  
   justify-content: center;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -32,17 +34,18 @@
 /* *************************  MEDIA QUERIES  **************************** */
 /* ********************************************************************** */
 @media (max-width: 1400px) {
+  .grid--intro { margin-top: 8rem; }
   .intro-me h1, .intro-me p { font-size: 6.4rem; }
 }
 
 @media (max-width: 1122px) {
-  .intro-me h1, .intro-me p { font-size: 4.8rem; }
-  .grid--intro-about p { font-size: 2rem; }
+  .grid--intro { margin-top: 9.6rem; }
 }
 
 @media (max-width: 1028px) {
-  .intro-me h1, .intro-me p { font-size: 4rem; }
-  .grid--intro-about p { font-size: 1.6rem; }
+  .grid--intro { margin-top: 11.2rem; }
+  .intro-me h1, .intro-me p { font-size: 4.8rem; }
+  .grid--intro-about p { font-size: 2rem; }
 }
 
 @media (max-width: 800px) {
@@ -51,5 +54,8 @@
     text-align: center;
   }
   
-  .flex--profession { display: block !important }
+  .flex--profession { 
+    display: block !important;
+    margin-top: 3.2rem;
+  }
 }
