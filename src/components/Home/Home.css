@@ -21,8 +21,7 @@
   align-items: center;
 }
 
-.flex--explore {  
-  justify-content: center;
+.explore-btn-wrapper {  
   position: absolute;
   top: 85%;
   left: 50%;

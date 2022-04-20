@@ -11,14 +11,16 @@ function Home() {
                         <H1 weight="light">I'm Dibendu</H1>
                     </div>
                     <Flex className="flex--profession grid--intro-about">
-                        <p>...and I'm a</p>
+                        {/* <p>...and I'm a</p>
                         <p>Full Stack Developer</p>
-                        <p>by profession</p>
+                        <p>by profession</p> */}
+                        <p>Developer.</p>
+                        <p>Design Enthusiast.</p>
                     </Flex>
                 </Grid>
-                <Flex className="flex--explore">
+                <div className="explore-btn-wrapper">
                     <Button title="Let's Explore" type="primary" href="#about" />
-                </Flex>
+                </div>
             </Container>
         </Section>
     )
