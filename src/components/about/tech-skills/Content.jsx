@@ -9,7 +9,7 @@ function Content() {
             <p>
                 I was mostly into the backend jargons fiddling with the server codes in C#, Entity Framework and the
                 Web API other than the usual jQuery but since I'm passionate about web design, graphics and design in
-                general, I managed to get my hands dirty in the world of UI/UX.
+                general, I managed to get my hands dirty into the world of UI/UX.
             </p>
 
             <p>
@@ -20,8 +20,7 @@ function Content() {
             </p>
 
             <p>
-                At present, I'm working as a full-stack developer working on the modern tech stack &#8212;
-                <strong>HTML5, CSS3, React</strong> for the frontend and <strong>C#, ASP.NET Core, Web API</strong> for the server-side.
+                At present, I'm working as a full-stack developer working on the modern tech stack &#8212; <strong>HTML5, CSS3, React</strong> for the frontend and <strong>C#, ASP.NET Core, Web API</strong> for the server-side.
             </p>
         </>
     )

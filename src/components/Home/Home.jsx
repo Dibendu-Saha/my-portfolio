@@ -32,7 +32,7 @@ function Home() {
                     </Flex>
                 </Grid>
                 <div className="explore-btn-wrapper">
-                    <Button title="Let's Explore" type="primary" href="#about" />
+                    <Button title="Let's Explore" type="primary" link="about" />
                 </div>
             </Container>
         </Section>

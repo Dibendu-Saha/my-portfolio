@@ -39,7 +39,7 @@ function AboutMe() {
                 </Flex>
 
                 <div className="know-work-btn-wrapper">
-                    <Button title="Know more" type="primary" href="#work" />
+                    <Button title="Know more" type="primary" link="/work" />
                 </div>
             </Container>
         </Section>
