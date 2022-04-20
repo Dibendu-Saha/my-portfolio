@@ -39,24 +39,23 @@ function Content() {
             </div> */}
             </>
 
-            <p>Hi, I'm Dibendu Saha. Welcome to my page. I hail from northeast India and currently based in Bangalore.</p>
+            <p>Hi, I'm Dibendu Saha. I hail from northeast India and currently based in Bangalore.</p>
 
             <p>
                 I design web user interfaces and hook them up with backend API's to build complete data-driven solutions
-                for end-clients. Currently working for client, Hewlett Packard Enterprise on a resource engagement and
-                SOW platform.
+                for end-clients. Currently I'm a Technical Consultant at Hewlett Packard Enterprise.
             </p>
 
             <p>
-                Over the years, I've earned quite a few recognitions with 'Employee of the Quarter' and 'Team Recognition'
-                for my work and the successful release cycles. I also hold a certification in Azure Fundamentals from Microsoft.
+                I've earned quite a few recognitions for my work and the successful release cycles. I also hold a certification
+                in Azure Fundamentals from Microsoft.
             </p>
 
             <p>
-                Professional stuffs aside, I speak four languages &#8212; English, Hindi, Assamese and my native-tongue &#8212; Bengali.
-                I enjoy cooking to make wholesome foods for my loved ones. You would find my YouTube history littered in recipe videos
+                I speak four languages &#8212; English, Hindi, Assamese and my native-tongue &#8212; Bengali.
+                Enjoy cooking to make wholesome foods for my loved ones. You would find my YouTube history littered in recipe videos
                 from many food vloggers. I'm also into biking and occasionally nowhere to be found on weekends. I'm part of a professional
-                rider's groups. So, both Solo trips and group rides.
+                rider's groups. So, both solo trips and group rides.
             </p>
         </>
     )
