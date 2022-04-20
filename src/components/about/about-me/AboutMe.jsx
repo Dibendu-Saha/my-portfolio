@@ -18,7 +18,7 @@ function AboutMe() {
     useReveal(refSection.current, refContent.current);
 
     return (
-        <Section id="about" bgLinearGradientDegree="60" reactRef={refSection} >
+        <Section id="about" bgLinearGradientDegree="120" reactRef={refSection} >
             <Container>
                 <H1
                     weight="light"
