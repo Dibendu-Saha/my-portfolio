@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
 import { Section, Container, H1, Flex, Grid, Card, Button } from "../../common/wrapper/AppComponents";
 import Content from "./Content";
-// import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
+import profilePhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./AboutMe.css";
 
 function AboutMe() {
@@ -35,7 +35,7 @@ function AboutMe() {
                         </div>
 
                         <div className="profile-picture">
-                            <img src="" alt="portfolio" />
+                            <img src={profilePhoto} alt="portfolio" />
                         </div>
                     </Flex>
                 </div>
