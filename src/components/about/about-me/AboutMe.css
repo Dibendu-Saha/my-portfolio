@@ -1,12 +1,15 @@
-.flex--about-me {
-    justify-content: space-between;
-    /* margin-top: 6.4rem; */
+.flex--about-me { justify-content: space-between; }
+
+.about-me-content { 
+    margin-top: 2.8rem; 
+    flex: 0.8;
 }
 
-.grid--about-me-content {
-    column-gap: 2rem;
-    row-gap: 2.6rem;
-    margin-top: 5.6rem;
+.about-me-content > p { 
+    margin-bottom: 2.4rem; 
+    letter-spacing: 0.5px;
+    line-height: 2.6rem;   
+    text-align: justify;
 }
 
 .btn-wrapper a { color: var(--font-color); }

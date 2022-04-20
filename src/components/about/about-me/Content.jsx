@@ -3,15 +3,14 @@ import { Button, Card } from "../../common/wrapper/AppComponents";
 function Content() {
     return (
         <>
-            <Card height="15rem" width="30rem" style="dark">
+            <>
+                {/* <Card height="15rem" width="30rem" style="dark">
                 <p>Hi, I'm Dibendu Saha.</p>
-                {/* <p>But you can just call me Deb.</p> */}
             </Card>
 
             <Card height="15rem" width="30rem">
                 Crash-landed on earth around three decades back,
                 somewhere in the year 1990...
-                {/* Been around on this planet for a while now.. 31 years, 11 months, 10 days to be exact! */}
             </Card>
 
             <Card height="15rem" width="30rem" style="dark">
@@ -37,7 +36,28 @@ function Content() {
                         link="/work"
                     />
                 </Card>
-            </div>
+            </div> */}
+            </>
+
+            <p>Hi, I'm Dibendu Saha. Welcome to my page. I hail from northeast India and currently based in Bangalore.</p>
+
+            <p>
+                I design web user interfaces and hook them up with backend API's to build complete data-driven solutions
+                for end-clients. Currently working for client, Hewlett Packard Enterprise on a resource engagement and
+                SOW platform.
+            </p>
+
+            <p>
+                Over the years, I've earned quite a few recognitions with 'Employee of the Quarter' and 'Team Recognition'
+                for my work and the successful release cycles. I also hold a certification in Azure Fundamentals from Microsoft.
+            </p>
+
+            <p>
+                Professional stuffs aside, I speak four languages &#8212; English, Hindi, Assamese and my native-tongue &#8212; Bengali.
+                I enjoy cooking to make wholesome foods for my loved ones. You would find my YouTube history littered in recipe videos
+                from many food vloggers. I'm also into biking and occasionally nowhere to be found on weekends. I'm part of a professional
+                rider's groups. So, both Solo trips and group rides.
+            </p>
         </>
     )
 }

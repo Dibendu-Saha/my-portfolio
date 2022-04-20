@@ -30,9 +30,9 @@ function AboutMe() {
                     </H1>
 
                     <Flex className="flex--about-me reveal-about-content" reactRef={refContent}>
-                        <Grid col="3" className="grid--about-me-content">
+                        <div className="about-me-content">
                             <Content />
-                        </Grid>
+                        </div>
 
                         <div className="profile-picture">
                             <img src="" alt="portfolio" />
