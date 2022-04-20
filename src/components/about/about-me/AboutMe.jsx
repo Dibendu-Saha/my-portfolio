@@ -20,24 +20,26 @@ function AboutMe() {
     return (
         <Section id="about" bgLinearGradientDegree="60" reactRef={refSection} >
             <Container>
-                <div>
-                    <H1
-                        weight="light"
-                        className="reveal-about-header"
-                        reactRef={refHeader}
-                    >
-                        My personal space
-                    </H1>
+                <H1
+                    weight="light"
+                    className="reveal-about-header"
+                    reactRef={refHeader}
+                >
+                    My personal space
+                </H1>
 
-                    <Flex className="flex--about-me reveal-about-content" reactRef={refContent}>
-                        <div className="about-me-content">
-                            <Content />
-                        </div>
+                <Flex className="flex--about-me reveal-about-content" reactRef={refContent}>
+                    <div className="about-me-content">
+                        <Content />
+                    </div>
 
-                        <div className="profile-picture">
-                            <img src={profilePhoto} alt="portfolio" />
-                        </div>
-                    </Flex>
+                    <div className="profile-picture">
+                        <img src={profilePhoto} alt="portfolio" />
+                    </div>
+                </Flex>
+
+                <div className="know-work-btn-wrapper">
+                    <Button title="Know more" type="primary" href="#work" />
                 </div>
             </Container>
         </Section>

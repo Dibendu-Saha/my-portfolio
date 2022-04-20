@@ -39,7 +39,10 @@ function Content() {
             </div> */}
             </>
 
-            <p>Hi, I'm <span className="highlight">Dibendu Saha</span>. I hail from northeast India and currently based in Bangalore.</p>
+            <p>
+                Hi, I'm <span className="highlight">Dibendu Saha</span>. I hail from the northeast Indian state of Assam and currently
+                based in Bangalore.
+            </p>
 
             <p>
                 I design web user interfaces and hook them up with backend API's to build complete data-driven solutions
@@ -55,10 +58,9 @@ function Content() {
             </p>
 
             <p>
-                I speak four languages &#8212; English, Hindi, Assamese and my native-tongue &#8212; Bengali.
-                Enjoy cooking to make wholesome foods for my loved ones. You would find my YouTube history littered in recipe videos
-                from many food vloggers. I'm also into biking and occasionally nowhere to be found on weekends. I'm part of a professional
-                rider's groups. So, both solo trips and group rides.
+                I speak four languages &#8212; English, Hindi, Assamese and Bengali &#8212; my native-tongue.
+                Enjoy cooking to make wholesome foods for my loved ones. I'm also into biking and occasionally nowhere to be found on weekends.
+                I'm part of a professional rider's groups. So, both solo trips and group rides.
             </p>
         </>
     )
