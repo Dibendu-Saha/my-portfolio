@@ -11,6 +11,12 @@
     text-align: justify;
 }
 
+.about-me-content > p a { color: var(--font-color); } 
+.about-me-content > p a:hover { 
+    text-decoration: underline; 
+    color: #0000EE;
+} 
+
 .about-me-content span.highlight { font-weight: 500; }
 
 .btn-wrapper a { color: var(--font-color); }

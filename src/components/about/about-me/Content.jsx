@@ -50,7 +50,8 @@ function Content() {
 
             <p>
                 I've earned quite a few recognitions for my work and the successful release cycles. I also hold a certification
-                in Azure Fundamentals from Microsoft.
+                in <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank">Azure Fundamentals</a> from
+                Microsoft.
             </p>
 
             <p>
