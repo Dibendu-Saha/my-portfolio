@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Added to prevent the temporary iFrame to render */
+iframe {
+  pointer-events: none;
+}
