@@ -22,29 +22,6 @@
 .grid-item-sql { grid-column: 3; }
 
 
-/* ------- R E V E A L   A N I M A T I O N ------- */
-.reveal-skills-header {
-    transform: translateY(15rem);
-    opacity: 0;
-    transition: all 1.2s ease-out;
-}
-.reveal-skills-header.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.reveal-skills-content {
-    transform: translateY(6.4rem);
-    opacity: 0;
-    transition: all 2s ease-out;
-    transition-delay: 0.5s;
-}
-.reveal-skills-content.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
 
 /* ********************************************************************** */
 /* *************************  MEDIA QUERIES  **************************** */

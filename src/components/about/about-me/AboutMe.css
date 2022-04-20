@@ -33,32 +33,11 @@
 
 .know-work-btn-wrapper {
   position: absolute;
-  top: 190%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* ------- R E V E A L   A N I M A T I O N ------- */
-.reveal-about-header { 
-    transform: translateY(2rem);
-    opacity: 0;
-    transition: all 1s ease-out;
-}
-.reveal-about-header.active { 
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.reveal-about-content { 
-    transform: translateY(2rem);
-    opacity: 0;
-    transition: all 1s ease-out;
-    transition-delay: 0.2s;
-}
-.reveal-about-content.active { 
-    transform: translateY(0);
-    opacity: 1;
-}
 
 
 /* ********************************************************************** */

@@ -108,9 +108,28 @@ body {
 
 
 /* ********************************************************************** */
-/* ****************************  HEADER  ******************************** */
+/* *****************  R E V E A L   A N I M A T I O N  ****************** */
 /* ********************************************************************** */
+.reveal-header {
+  transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.reveal-header.active { 
+    transform: translateY(0);
+    opacity: 1;
+}
 
+.reveal-content { 
+  transform: translateY(2rem);
+  opacity: 0;
+  transition: all 1s ease-out;
+  transition-delay: 0.2s;
+}
+.reveal-content.active { 
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 /* ********************************************************************** */

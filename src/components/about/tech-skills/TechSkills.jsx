@@ -23,11 +23,11 @@ function TechSkills() {
                 <H1
                     weight="light"
                     reactRef={refHeader}
-                    className="reveal-skills-header"
+                    className="reveal-header"
                 >
                     Tech expertise
                 </H1>
-                <Flex className="flex--tech-overview reveal-skills-content" reactRef={refContent}>
+                <Flex className="flex--tech-overview reveal-content" reactRef={refContent}>
                     <div className="tech-background">
                         <Content />
                     </div>

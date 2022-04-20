@@ -19,29 +19,6 @@
     margin-top: 9rem; 
 }
 
-/* ------- R E V E A L   A N I M A T I O N ------- */
-.reveal-contact-header { 
-    transform: translateY(12rem);
-    opacity: 0;
-    transition: all 1.2s ease-out;
-}
-.reveal-contact-header.active { 
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.reveal-contact-content { 
-    transform: translateY(15rem);
-    opacity: 0;
-    transition: all 2s ease-out;
-    transition-delay: 0.5s;
-}
-.reveal-contact-content.active { 
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
 
 
 /* ********************************************************************** */

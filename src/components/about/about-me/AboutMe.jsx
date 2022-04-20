@@ -22,13 +22,13 @@ function AboutMe() {
             <Container>
                 <H1
                     weight="light"
-                    className="reveal-about-header"
+                    className="reveal-header"
                     reactRef={refHeader}
                 >
                     My personal space
                 </H1>
 
-                <Flex className="flex--about-me reveal-about-content" reactRef={refContent}>
+                <Flex className="flex--about-me reveal-content" reactRef={refContent}>
                     <div className="about-me-content">
                         <Content />
                     </div>
