@@ -3,11 +3,13 @@
     gap: 5.6rem;    
 }
 
-.tech-background { 
-    flex: 1; 
+.tech-background { flex: 1; }
+
+.tech-background > p { 
+    margin-bottom: 2.4rem; 
     letter-spacing: 0.5px;
     line-height: 2.6rem;   
-    text-align: justify; 
+    text-align: justify;
 }
 
 .grid--skills { 
