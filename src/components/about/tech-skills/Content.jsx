@@ -14,7 +14,7 @@ function Content() {
 
             <p>
                 Fast forward to 2018, when the world was already moving at lightning speed, I was finally
-                able to catch up &#8212; working excluively on the frontend tech stack &#8212; HTML5, CSS3,
+                able to catch up &#8212; working exclusively on the frontend tech stack &#8212; HTML5, CSS3,
                 JavaScript and React. Yes, I was finally a part of the exclusive club where pages
                 were not getting generated from server-side codes anymore! (you know what I mean...)
             </p>
