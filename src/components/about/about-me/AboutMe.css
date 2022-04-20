@@ -11,6 +11,8 @@
     text-align: justify;
 }
 
+.about-me-content span.highlight { font-weight: 600; }
+
 .btn-wrapper a { color: var(--font-color); }
 
 .profile-picture { 
