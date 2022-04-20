@@ -44,7 +44,7 @@ function Content() {
             <p>
                 I design web user interfaces and hook them up with backend API's to build complete data-driven solutions
                 for end-clients. I've worked with organizations like <span className="highlight">Wells Fargo</span> and
-                had offers from the likes of <span className="highlight">EY</span> and <span className="highlight">Siemens</span>.
+                had offers from the likes of <span className="highlight">EY, Danske Bank</span> and <span className="highlight">Siemens</span>.
                 Currently I'm a Technical Consultant at <span className="highlight">Hewlett Packard Enterprise</span>.
             </p>
 

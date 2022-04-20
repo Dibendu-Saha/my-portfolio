@@ -11,7 +11,7 @@
     text-align: justify;
 }
 
-.about-me-content span.highlight { font-weight: 600; }
+.about-me-content span.highlight { font-weight: 500; }
 
 .btn-wrapper a { color: var(--font-color); }
 
