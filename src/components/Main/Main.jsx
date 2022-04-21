@@ -3,8 +3,8 @@ import Header from "../header/Header";
 import LandingComponent from "../landing-component/LandingComponent";
 import Home from "../home/Home";
 import AboutMe from "../about/about-me/AboutMe";
-import PersonalDetails from "../xx-about-details/personal-details/PersonalDetails";
 import TechSkills from "../about/tech-skills/TechSkills";
+import ContactMe from "../contact-me/ContactMe";
 import "./Main.css"
 
 function Main() {
@@ -14,11 +14,12 @@ function Main() {
                 <BrowserRouter>
                     <Header />
                     <Routes>
-                        <Route path="/" element={<LandingComponent />} exact />
+                        {/* <Route path="/" element={<LandingComponent />} exact /> */}
 
-                        {/* <Route path="/" element={<Home />} exact />
+                        <Route path="/" element={<Home />} exact />
                         <Route path="/about" element={<AboutMe />} exact />
-                        <Route path="/work" element={<TechSkills />} exact /> */}
+                        <Route path="/work" element={<TechSkills />} exact />
+                        <Route path="/contact-me" element={<ContactMe />} exact />
                     </Routes>
                 </BrowserRouter>
             </main>

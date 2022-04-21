@@ -33,17 +33,17 @@ function IconsTech() {
             <div>
                 <IconTile icon={redux_icon} title="Redux" />
             </div>
-            <div>
+            <div className="grid-item-net-core">
                 <IconTile icon={netcore_icon} title=".NET Core" />
             </div>
-            <div>
+            <div className="grid-item-c-sharp">
                 <IconTile icon={csharp_icon} title="C#" />
             </div>
 
-            <div className="grid-item-col-2">
+            <div className="grid-item-api">
                 <IconTile icon={api_icon} title="Web API" />
             </div>
-            <div className="grid-item-col-3">
+            <div className="grid-item-sql">
                 <IconTile icon={db_icon} title="SQL Server" />
             </div>
         </>

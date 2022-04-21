@@ -1,16 +1,17 @@
 .grid--contact-form-layout { 
+    grid-template-columns: 1fr 2fr;
     row-gap: 2rem; 
     align-items: center;
 }
 
 .contact-form { 
-    width: 60rem; 
+    max-width: 60rem; 
     margin-top: 3.2rem;
 }
 
-.contact-form input { 
-    height: 3.2rem;
-    width: 40rem;        
+.contact-form input {
+    max-width: 40rem; 
+    height: 3.2rem;            
 } 
 
 .contact-form input { letter-spacing: 1.2px; }

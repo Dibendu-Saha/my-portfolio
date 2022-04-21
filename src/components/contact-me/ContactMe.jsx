@@ -21,16 +21,16 @@ function ContactMe() {
     useReveal(refSection.current, refContent.current);
 
     return (
-        <Section id="contact-me" bgLinearGradientDegree="60" reactRef={refSection}>
+        <Section id="contact-me" bgLinearGradientDegree="120" reactRef={refSection}>
             <Container>
                 <H1
                     weight="light"
-                    className="reveal-contact-header"
+                    className="reveal-header"
                     reactRef={refHeader}
                 >
                     Let's talk
                 </H1>
-                <Flex className="flex--contact-me reveal-contact-content" reactRef={refContent}>
+                <Flex className="flex--contact-me reveal-content" reactRef={refContent}>
                     <div className="contact-form-container">
                         <div>
                             <p>Interested to collaborate &amp; work together?</p>

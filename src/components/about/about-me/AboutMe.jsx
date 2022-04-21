@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
 import { Section, Container, H1, Flex, Grid, Card, Button } from "../../common/wrapper/AppComponents";
-// import myPhoto from "../../../assets/images/portfolio_4_by_3.jpg";
+import Content from "./Content";
+import profilePhoto from "../../../assets/images/portfolio_4_by_3.jpg";
 import "./AboutMe.css";
 
 function AboutMe() {
@@ -17,60 +18,28 @@ function AboutMe() {
     useReveal(refSection.current, refContent.current);
 
     return (
-        <Section id="about" bgLinearGradientDegree="60" reactRef={refSection} >
+        <Section id="about" bgLinearGradientDegree="120" reactRef={refSection} >
             <Container>
-                <div>
-                    <H1
-                        weight="light"
-                        className="reveal-about-header"
-                        reactRef={refHeader}
-                    >
-                        My personal space
-                    </H1>
+                <H1
+                    weight="light"
+                    className="reveal-header"
+                    reactRef={refHeader}
+                >
+                    My personal space
+                </H1>
 
-                    <Flex className="flex--about-me reveal-about-content" reactRef={refContent}>
-                        <Grid col="3" className="grid--about-me-content">
-                            <Card height="15rem" width="30rem" style="dark">
-                                <p>My name is Dibendu Saha.</p>
-                                <p>But you can just call me Deb.</p>
-                            </Card>
+                <Flex className="flex--about-me reveal-content" reactRef={refContent}>
+                    <div className="about-me-content">
+                        <Content />
+                    </div>
 
-                            <Card height="15rem" width="30rem">
-                                Crash-landed on earth around three decades back,
-                                somewhere in the year 1990...
-                                {/* Been around on this planet for a while now.. 31 years, 11 months, 10 days to be exact! */}
-                            </Card>
+                    <div className="profile-picture">
+                        <img src={profilePhoto} alt="portfolio" />
+                    </div>
+                </Flex>
 
-                            <Card height="15rem" width="30rem" style="dark">
-                                ...and the crash site? Far in North-east India, in the state of Assam!
-                            </Card>
-
-                            <Card height="15rem" width="30rem">
-                                I love to Sketch. Capture shots. Ride.
-                                Oh and yes. Cook. Big Fan of Jamie Oliver (alright. alright. Gordon Ramsay too!)
-                            </Card>
-
-                            <Card height="15rem" width="30rem" style="dark">
-                                Graduated with a Bachelor's degree in
-                                Electronics &amp; Communication, yet landed up in IT
-                                (it's still a good thing).
-                            </Card>
-
-                            <div className="btn-wrapper">
-                                <Card height="15rem" width="30rem">
-                                    <Button
-                                        title="Know about my professional experience..."
-                                        type="none"
-                                        link="/work"
-                                    />
-                                </Card>
-                            </div>
-                        </Grid>
-
-                        <div className="profile-picture">
-                            <img src="" alt="portfolio" />
-                        </div>
-                    </Flex>
+                <div className="know-work-btn-wrapper">
+                    <Button title="Know more" type="primary" link="/work" />
                 </div>
             </Container>
         </Section>
