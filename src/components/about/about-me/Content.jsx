@@ -1,4 +1,4 @@
-import { Button, Card } from "../../common/wrapper/AppComponents";
+import { Button, Card, Highlight } from "../../common/wrapper/AppComponents";
 
 function Content() {
     return (
@@ -40,15 +40,15 @@ function Content() {
             </>
 
             <p>
-                Hi, I'm <span className="highlight">Dibendu Saha</span>. I hail from the northeast Indian state of Assam and currently
+                Hi, I'm <Highlight>Dibendu Saha</Highlight>. I hail from the northeast Indian state of Assam and currently
                 based in Bangalore.
             </p>
 
             <p>
                 I design web user interfaces and hook them up with backend API's to build complete data-driven solutions
-                for end-clients. I've worked with organizations like <span className="highlight">Wells Fargo</span> and
-                had offers from the likes of <span className="highlight">EY, Danske Bank</span> and <span className="highlight">Siemens</span>.
-                Currently I'm a Technical Consultant at <span className="highlight">Hewlett Packard Enterprise</span>.
+                for end-clients. I've worked with organizations like <Highlight>Wells Fargo</Highlight> and had offers from
+                the likes of <Highlight>EY, Danske Bank</Highlight> and <Highlight>Siemens</Highlight>. Currently I'm a
+                Technical Consultant at <Highlight>Hewlett Packard Enterprise</Highlight>.
             </p>
 
             <p>
@@ -58,7 +58,7 @@ function Content() {
             </p>
 
             <p>
-                I speak four languages &#8212; English, Hindi, Assamese and Bengali &#8212; my native-tongue.
+                I'm well-versed in four languages &#8212; English, Hindi, Assamese and Bengali &#8212; my native-tongue.
                 Enjoy cooking to make wholesome foods for my loved ones. I'm also into biking and occasionally nowhere to be found on weekends.
                 I'm part of a professional rider's groups. So, both solo trips and group rides.
             </p>

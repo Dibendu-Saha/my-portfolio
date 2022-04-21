@@ -52,6 +52,17 @@ export function H1({ children, className, reactRef, weight }) {
     )
 }
 
+export function Highlight({ children, id, className }) {
+    return (
+        <span
+            id={id ?? ""}
+            className={className ? `highlight ${className}` : `highlight`}
+        >
+            {children}
+        </span>
+    )
+}
+
 
 export function Flex({ children, id, className, reactRef }) {
     return (
