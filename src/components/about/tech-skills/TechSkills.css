@@ -28,13 +28,30 @@
 
 
 /* ********************************************************************** */
+/* ************* I C O N S   H O V E R   A N I M A T I O N  ************* */
+/* ********************************************************************** */
+.html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
+.redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper {    
+    transition: transform 0.1s !important; 
+}
+
+
+:is(.html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
+.redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper):hover {    
+    transform: scale(1.1) !important;    
+    transition-delay: 0s !important;
+}
+
+
+
+/* ********************************************************************** */
 /* ************ I C O N S   R E V E A L   A N I M A T I O N  ************ */
 /* ********************************************************************** */
 .html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
 .redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper {
     transform: translateY(2rem);
     opacity: 0;
-    transition: all 1s ease-out;
+    transition: transform, opacity 1s ease-out;
 }
 
 :is(.html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
