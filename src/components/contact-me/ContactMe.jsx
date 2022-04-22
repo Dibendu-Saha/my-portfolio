@@ -55,7 +55,7 @@ function ContactMe() {
                             <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" className="linkedin-wrapper" ref={refLinkedIn}>
                                 <IconTile icon={linkedin_icon} className="linkedin-icon" />
                             </a>
-                            <a href="https://www.instagram.com/?hl=en" target="_blank" className="ig-wrapper" ref={refInstagram}>
+                            <a href="https://www.instagram.com/dibendu.s/" target="_blank" className="ig-wrapper" ref={refInstagram}>
                                 <IconTile icon={ig_icon} className="ig-icon" />
                             </a>
                             <a href="https://www.facebook.com/dibendu03" target="_blank" className="fb-wrapper" ref={refFacebook}>

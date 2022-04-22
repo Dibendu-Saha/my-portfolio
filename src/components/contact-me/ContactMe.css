@@ -25,11 +25,10 @@
 /* ************* I C O N S   H O V E R   A N I M A T I O N  ************* */
 /* ********************************************************************** */
 .linkedin-icon, .ig-icon, .fb-icon, .github-icon {
-    transition: 0.1s;
+    transition: transform 0.2s;
 }
 :is(.linkedin-icon, .ig-icon, .fb-icon, .github-icon):hover {
-    transform: scale(1.1);    
-    transition-delay: 0s;
+    transform: translateY(-1rem);    
 }
 
 
