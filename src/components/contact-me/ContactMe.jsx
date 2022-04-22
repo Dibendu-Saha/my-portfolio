@@ -52,17 +52,17 @@ function ContactMe() {
                     <div className="contact-social">
                         <p>Follow me on</p>
                         <Grid col="4" className="grid--social-icons">
-                            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" className="icon-linkedin" ref={refLinkedIn}>
-                                <IconTile icon={linkedin_icon} />
+                            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" className="linkedin-wrapper" ref={refLinkedIn}>
+                                <IconTile icon={linkedin_icon} className="linkedin-icon" />
                             </a>
-                            <a href="https://www.instagram.com/?hl=en" target="_blank" className="icon-ig" ref={refInstagram}>
-                                <IconTile icon={ig_icon} />
+                            <a href="https://www.instagram.com/?hl=en" target="_blank" className="ig-wrapper" ref={refInstagram}>
+                                <IconTile icon={ig_icon} className="ig-icon" />
                             </a>
-                            <a href="https://www.facebook.com/dibendu03" target="_blank" className="icon-fb" ref={refFacebook}>
-                                <IconTile icon={fb_icon} />
+                            <a href="https://www.facebook.com/dibendu03" target="_blank" className="fb-wrapper" ref={refFacebook}>
+                                <IconTile icon={fb_icon} className="fb-icon" />
                             </a>
-                            <a href="https://github.com/Dibendu-Saha" target="_blank" className="icon-github" ref={refGithub}>
-                                <IconTile icon={github_icon} />
+                            <a href="https://github.com/Dibendu-Saha" target="_blank" className="github-wrapper" ref={refGithub}>
+                                <IconTile icon={github_icon} className="github-icon" />
                             </a>
                         </Grid>
                     </div>
