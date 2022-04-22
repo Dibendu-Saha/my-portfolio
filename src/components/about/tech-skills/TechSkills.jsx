@@ -32,7 +32,7 @@ function TechSkills() {
                         <Content />
                     </div>
                     <Grid col="4" className="grid--skills">
-                        <IconsTech />
+                        <IconsTech sectionRef={refSection.current} />
                     </Grid>
                 </Flex>
             </Container>

@@ -1,3 +1,6 @@
+import { useState, useEffect, useRef } from "react";
+import { useReveal } from "../../common/hooks/AppHooks";
+
 import html_icon from "../../../assets/images/icon-html.svg";
 import css_icon from "../../../assets/images/icon-css3.svg";
 import js_icon from "../../../assets/images/icon-javascript.svg";
@@ -11,39 +14,65 @@ import db_icon from "../../../assets/images/icon-database.svg";
 
 import { IconTile } from "../../common/wrapper/AppComponents";
 
-function IconsTech() {
+function IconsTech({ sectionRef }) {
+    const refHtml = useRef(),
+        refCss = useRef(),
+        refJs = useRef(),
+        refJquery = useRef(),
+        refReact = useRef(),
+        refRedux = useRef(),
+        refNetCore = useRef(),
+        refCsharp = useRef(),
+        refApi = useRef(),
+        refDb = useRef();
+
+    const [_, setDummy] = useState("");
+
+    useEffect(() => setDummy("...to trigger a re-render"), []);
+
+    useReveal(sectionRef, refHtml.current);
+    useReveal(sectionRef, refCss.current);
+    useReveal(sectionRef, refJs.current);
+    useReveal(sectionRef, refJquery.current);
+    useReveal(sectionRef, refReact.current);
+    useReveal(sectionRef, refRedux.current);
+    useReveal(sectionRef, refNetCore.current);
+    useReveal(sectionRef, refCsharp.current);
+    useReveal(sectionRef, refApi.current);
+    useReveal(sectionRef, refDb.current);
+
     return (
         <>
-            <div>
+            <div className="html-wrapper" ref={refHtml}>
                 <IconTile icon={html_icon} title="HTML5" />
             </div>
-            <div>
+            <div className="css-wrapper" ref={refCss}>
                 <IconTile icon={css_icon} title="CSS3" />
             </div>
-            <div>
+            <div className="js-wrapper" ref={refJs}>
                 <IconTile icon={js_icon} title="JavaScript" />
             </div>
-            <div>
+            <div className="jquery-wrapper" ref={refJquery}>
                 <IconTile icon={jquery_icon} title="jQuery" />
             </div>
 
-            <div>
+            <div className="react-wrapper" ref={refReact}>
                 <IconTile icon={react_icon} title="React" />
             </div>
-            <div>
+            <div className="redux-wrapper" ref={refRedux}>
                 <IconTile icon={redux_icon} title="Redux" />
             </div>
-            <div className="grid-item-net-core">
+            <div className="netcore-wrapper grid-item-net-core" ref={refNetCore}>
                 <IconTile icon={netcore_icon} title=".NET Core" />
             </div>
-            <div className="grid-item-c-sharp">
+            <div className="csharp-wrapper grid-item-c-sharp" ref={refCsharp}>
                 <IconTile icon={csharp_icon} title="C#" />
             </div>
 
-            <div className="grid-item-api">
+            <div className="api-wrapper grid-item-api" ref={refApi}>
                 <IconTile icon={api_icon} title="Web API" />
             </div>
-            <div className="grid-item-sql">
+            <div className="db-wrapper grid-item-sql" ref={refDb}>
                 <IconTile icon={db_icon} title="SQL Server" />
             </div>
         </>
