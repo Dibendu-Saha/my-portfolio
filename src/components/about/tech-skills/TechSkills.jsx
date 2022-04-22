@@ -20,12 +20,8 @@ function TechSkills() {
     return (
         <Section id="work" bgLinearGradientDegree="120" reactRef={refSection}>
             <Container>
-                <H1
-                    weight="light"
-                    reactRef={refHeader}
-                    className="reveal-header"
-                >
-                    Tech expertise
+                <H1 weight="light" reactRef={refHeader} className="reveal-header">
+                    Tech overview
                 </H1>
                 <Flex className="flex--tech-overview reveal-content" reactRef={refContent}>
                     <div className="tech-background">

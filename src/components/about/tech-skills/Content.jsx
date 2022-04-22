@@ -16,7 +16,7 @@ function Content() {
             </p>
 
             <p>
-                At present, I'm working as a full-stack developer, developing the user interface components
+                At present, I'm working as a full-stack developer, developing user interface components
                 with HTML5, CSS3, React, and the Web API with C#, ASP.NET Core and SQL Server.
             </p>
         </>

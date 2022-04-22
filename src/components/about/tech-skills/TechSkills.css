@@ -51,7 +51,7 @@
 .redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper {
     transform: translateY(2rem);
     opacity: 0;
-    transition: transform, opacity 1s ease-out;
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 :is(.html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
