@@ -10,6 +10,7 @@ function AboutMe() {
     const refHeader = useRef();
     const refContent = useRef();
     const refProfilePhoto = useRef();
+    const refButton = useRef();
 
     const [_, setDummy] = useState("");
 
@@ -18,6 +19,7 @@ function AboutMe() {
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
     useReveal(refSection.current, refProfilePhoto.current);
+    useReveal(refSection.current, refButton.current);
 
     return (
         <Section id="about" bgLinearGradientDegree="120" reactRef={refSection} >
@@ -40,7 +42,7 @@ function AboutMe() {
                     </div>
                 </Flex>
 
-                <div className="know-work-btn-wrapper">
+                <div className="know-work-btn-wrapper" ref={refButton}>
                     <Button title="Know more" type="primary" link="/work" />
                 </div>
             </Container>

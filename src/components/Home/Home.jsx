@@ -7,6 +7,7 @@ function Home() {
     const refSection = useRef();
     const refHeader = useRef();
     const refContent = useRef();
+    const refButton = useRef();
 
     const [_, setDummy] = useState("");
 
@@ -14,6 +15,7 @@ function Home() {
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
+    useReveal(refSection.current, refButton.current);
 
     return (
         <Section bgLinearGradientDegree="120" reactRef={refSection}>
@@ -31,7 +33,7 @@ function Home() {
                         <p>Design Enthusiast.</p>
                     </Flex>
                 </Grid>
-                <div className="explore-btn-wrapper">
+                <div className="explore-btn-wrapper" ref={refButton}>
                     <Button title="Let's Explore" type="primary" link="about" />
                 </div>
             </Container>

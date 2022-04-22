@@ -34,6 +34,12 @@
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0;  
+  transition: all 1s ease-out;
+}
+.know-work-btn-wrapper.active {  
+  top: 85%;
+  opacity: 1;  
 }
 
 
