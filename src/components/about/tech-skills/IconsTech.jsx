@@ -44,36 +44,36 @@ function IconsTech({ sectionRef }) {
     return (
         <>
             <div className="html-wrapper" ref={refHtml}>
-                <IconTile icon={html_icon} title="HTML5" />
+                <IconTile icon={html_icon} title="HTML5" className="html-icon" />
             </div>
             <div className="css-wrapper" ref={refCss}>
-                <IconTile icon={css_icon} title="CSS3" />
+                <IconTile icon={css_icon} title="CSS3" className="css-icon" />
             </div>
             <div className="js-wrapper" ref={refJs}>
-                <IconTile icon={js_icon} title="JavaScript" />
+                <IconTile icon={js_icon} title="JavaScript" className="js-icon" />
             </div>
             <div className="jquery-wrapper" ref={refJquery}>
-                <IconTile icon={jquery_icon} title="jQuery" />
+                <IconTile icon={jquery_icon} title="jQuery" className="jquery-icon" />
             </div>
 
             <div className="react-wrapper" ref={refReact}>
-                <IconTile icon={react_icon} title="React" />
+                <IconTile icon={react_icon} title="React" className="react-icon" />
             </div>
             <div className="redux-wrapper" ref={refRedux}>
-                <IconTile icon={redux_icon} title="Redux" />
+                <IconTile icon={redux_icon} title="Redux" className="redux-icon" />
             </div>
             <div className="netcore-wrapper grid-item-net-core" ref={refNetCore}>
-                <IconTile icon={netcore_icon} title=".NET Core" />
+                <IconTile icon={netcore_icon} title=".NET Core" className="netcore-icon" />
             </div>
             <div className="csharp-wrapper grid-item-c-sharp" ref={refCsharp}>
-                <IconTile icon={csharp_icon} title="C#" />
+                <IconTile icon={csharp_icon} title="C#" className="csharp-icon" />
             </div>
 
             <div className="api-wrapper grid-item-api" ref={refApi}>
-                <IconTile icon={api_icon} title="Web API" />
+                <IconTile icon={api_icon} title="Web API" className="api-icon" />
             </div>
             <div className="db-wrapper grid-item-sql" ref={refDb}>
-                <IconTile icon={db_icon} title="SQL Server" />
+                <IconTile icon={db_icon} title="SQL Server" className="db-icon" />
             </div>
         </>
     )

@@ -30,14 +30,14 @@
 /* ********************************************************************** */
 /* ************* I C O N S   H O V E R   A N I M A T I O N  ************* */
 /* ********************************************************************** */
-.html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
-.redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper {    
-    transition: transform 0.1s !important; 
+.html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
+.redux-icon, .netcore-icon, .csharp-icon, .api-icon, .db-icon {    
+    transition: transform 0.2s !important; 
 }
 
 
-:is(.html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
-.redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper):hover {    
+:is(.html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
+.redux-icon, .netcore-icon, .csharp-icon, .api-icon, .db-icon):hover {    
     transform: scale(1.1) !important;    
     transition-delay: 0s !important;
 }

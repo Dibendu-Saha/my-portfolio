@@ -112,13 +112,13 @@ export function Card({ children, style, height, width, margin }) {
 
 
 
-export function IconTile({ icon, title, height, width }) {
+export function IconTile({ icon, title, height, width, className }) {
     return (
         <img
             src={icon}
             title={title}
             alt={`Icon_${icon}`}
-            className="app-icon"
+            className={className ? `app-icon ${className}` : "app-icon"}
         />
     )
 }
