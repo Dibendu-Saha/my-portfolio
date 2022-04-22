@@ -30,8 +30,6 @@
 /* ********************************************************************** */
 /* ************ I C O N S   R E V E A L   A N I M A T I O N  ************ */
 /* ********************************************************************** */
-
-/* Tech icons */
 .html-wrapper, .css-wrapper, .js-wrapper, .jquery-wrapper, .react-wrapper, 
 .redux-wrapper, .netcore-wrapper, .csharp-wrapper, .api-wrapper, .db-wrapper {
     transform: translateY(2rem);

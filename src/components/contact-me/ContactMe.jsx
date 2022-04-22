@@ -12,6 +12,10 @@ function ContactMe() {
     const refSection = useRef();
     const refHeader = useRef();
     const refContent = useRef();
+    const refLinkedIn = useRef();
+    const refInstagram = useRef();
+    const refFacebook = useRef();
+    const refGithub = useRef();
 
     const [_, setDummy] = useState("");
 
@@ -19,6 +23,10 @@ function ContactMe() {
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
+    useReveal(refSection.current, refLinkedIn.current);
+    useReveal(refSection.current, refInstagram.current);
+    useReveal(refSection.current, refFacebook.current);
+    useReveal(refSection.current, refGithub.current);
 
     return (
         <Section id="contact-me" bgLinearGradientDegree="120" reactRef={refSection}>
@@ -44,16 +52,16 @@ function ContactMe() {
                     <div className="contact-social">
                         <p>Follow me on</p>
                         <Grid col="4" className="grid--social-icons">
-                            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank">
+                            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" className="icon-linkedin" ref={refLinkedIn}>
                                 <IconTile icon={linkedin_icon} />
                             </a>
-                            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                            <a href="https://www.instagram.com/?hl=en" target="_blank" className="icon-ig" ref={refInstagram}>
                                 <IconTile icon={ig_icon} />
                             </a>
-                            <a href="https://www.facebook.com/dibendu03" target="_blank">
+                            <a href="https://www.facebook.com/dibendu03" target="_blank" className="icon-fb" ref={refFacebook}>
                                 <IconTile icon={fb_icon} />
                             </a>
-                            <a href="https://github.com/Dibendu-Saha" target="_blank">
+                            <a href="https://github.com/Dibendu-Saha" target="_blank" className="icon-github" ref={refGithub}>
                                 <IconTile icon={github_icon} />
                             </a>
                         </Grid>

@@ -9,6 +9,7 @@ function AboutMe() {
     const refSection = useRef();
     const refHeader = useRef();
     const refContent = useRef();
+    const refProfilePhoto = useRef();
 
     const [_, setDummy] = useState("");
 
@@ -16,6 +17,7 @@ function AboutMe() {
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
+    useReveal(refSection.current, refProfilePhoto.current);
 
     return (
         <Section id="about" bgLinearGradientDegree="120" reactRef={refSection} >
@@ -33,7 +35,7 @@ function AboutMe() {
                         <Content />
                     </div>
 
-                    <div className="profile-picture">
+                    <div className="profile-picture" ref={refProfilePhoto}>
                         <img src={profilePhoto} alt="portfolio" />
                     </div>
                 </Flex>
