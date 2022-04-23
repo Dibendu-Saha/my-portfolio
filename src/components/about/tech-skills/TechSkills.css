@@ -22,6 +22,18 @@
     align-items: center;
 }
 
+.grid--skills > div { position: relative; }
+.grid--skills > div > p {
+    width: 100%;
+    position: absolute;
+    bottom: -20%;
+    text-align: center;
+    color: var(--font-color);
+    font-weight: 400;    
+    opacity: 0;
+    transition: bottom 0.2s, opacity 0.2s;    
+}
+
 .grid-item-api { grid-column: 2; }
 .grid-item-sql { grid-column: 3; }
 
@@ -35,11 +47,16 @@
     transition: transform 0.2s; 
 }
 
-
 :is(.html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
 .redux-icon, .netcore-icon, .csharp-icon, .api-icon, .db-icon):hover {    
-    transform: scale(1.1);    
+    transform: translateY(-1rem);
     transition-delay: 0s;
+}
+
+:is(.html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
+.redux-icon, .netcore-icon, .csharp-icon, .api-icon, .db-icon):hover + p {
+    bottom: -10%;
+    opacity: 1;    
 }
 
 
@@ -98,6 +115,8 @@
     .flex--tech-overview { display: block !important; }
 
     .grid--skills img { width: 7rem; }
+
+    .grid--skills > div > p { font-size: 1.2rem; }
 
     .tech-background { 
         letter-spacing: 0.5px;
