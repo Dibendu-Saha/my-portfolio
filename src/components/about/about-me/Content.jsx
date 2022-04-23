@@ -58,7 +58,7 @@ function Content() {
             </p>
 
             <p>
-                I'm well-versed in four languages &#8212; English, Hindi, Assamese and Bengali &#8212; my native-tongue.
+                I can speak four languages &#8212; English, Hindi, Assamese and Bengali &#8212; my native-tongue.
                 Enjoy cooking to make wholesome foods for my loved ones. I'm also into biking and occasionally nowhere to be found on weekends.
                 I'm part of a professional rider's groups. So, both solo trips and group rides.
             </p>
