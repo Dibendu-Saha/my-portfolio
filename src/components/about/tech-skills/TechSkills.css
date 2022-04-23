@@ -29,9 +29,10 @@
     bottom: -20%;
     text-align: center;
     color: var(--font-color);
-    font-weight: 600;    
+    font-weight: 500;
+    letter-spacing: 0.8px;    
     opacity: 0;
-    transition: bottom 0.2s, opacity 0.2s;    
+    transition: bottom 0.4s, opacity 0.4s;    
 }
 
 .grid-item-api { grid-column: 2; }
@@ -44,13 +45,12 @@
 /* ********************************************************************** */
 .html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
 .redux-icon, .netcore-icon, .csharp-icon, .api-icon, .db-icon {    
-    transition: transform 0.2s; 
+    transition: transform 0.4s; 
 }
 
 :is(.html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
 .redux-icon, .netcore-icon, .csharp-icon, .api-icon, .db-icon):hover {    
     transform: translateY(-1rem);
-    transition-delay: 0s;
 }
 
 :is(.html-icon, .css-icon, .js-icon, .jquery-icon, .react-icon, 
