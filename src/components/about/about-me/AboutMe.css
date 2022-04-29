@@ -19,6 +19,8 @@
     color: #010190;
 } 
 
+.icon-new-window { width: 1.4rem; }
+
 .btn-wrapper a { color: var(--font-color); }
 
 .profile-picture { 
