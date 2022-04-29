@@ -10,8 +10,8 @@ export function Section({ children, id, className, reactRef, bgLinearGradientDeg
                 // backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
                 //         var(--light-bg) 0%, var(--light-bg) 50%, 
                 //         var(--primary-color) 50%, var(--primary-color) 100%)`
-                background: theme === "dark" ? "var(--secondary-color)" : "var(--primary-color)",
-                color: theme === "dark" ? "var(--light-bg)" : "var(--font-color)"
+                background: theme === "dark" ? "var(--primary-color)" : "var(--light-bg)",
+                // color: theme === "dark" ? "var(--light-bg)" : "var(--font-color)"
             }}
             className={className ?? ""}
             ref={reactRef}
