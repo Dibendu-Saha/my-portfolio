@@ -14,10 +14,7 @@
 }
 
 .about-me-content > p a { color: var(--font-color); } 
-.about-me-content > p a:hover { 
-    text-decoration: underline; 
-    color: #010190;
-} 
+.about-me-content > p a:hover { color: #010190; } 
 
 .icon-new-window { width: 1.4rem; }
 
