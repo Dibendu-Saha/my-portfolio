@@ -29,7 +29,7 @@ function ContactMe() {
     useReveal(refSection.current, refGithub.current);
 
     return (
-        <Section id="contact-me" bgLinearGradientDegree="120" reactRef={refSection}>
+        <Section id="contact-me" theme="dark" reactRef={refSection}>
             <Container>
                 <H1
                     weight="light"

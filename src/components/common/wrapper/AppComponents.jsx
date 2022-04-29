@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import "./AppComponents.css"
 
-export function Section({ children, id, className, reactRef, bgLinearGradientDegree }) {
+export function Section({ children, id, className, reactRef, bgLinearGradientDegree, theme }) {
     return (
         <section
             id={id ?? id}
             style={{
                 minHeight: "100vh",
-                backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
-                        var(--light-bg) 0%, var(--light-bg) 50%, 
-                        var(--primary-color) 50%, var(--primary-color) 100%)`
+                // backgroundImage: `linear-gradient(${bgLinearGradientDegree}deg, 
+                //         var(--light-bg) 0%, var(--light-bg) 50%, 
+                //         var(--primary-color) 50%, var(--primary-color) 100%)`
+                background: theme === "dark" ? "var(--secondary-color)" : "var(--primary-color)",
+                color: theme === "dark" ? "var(--light-bg)" : "var(--font-color)"
             }}
             className={className ?? ""}
             ref={reactRef}

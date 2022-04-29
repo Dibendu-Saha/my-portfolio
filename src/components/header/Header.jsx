@@ -9,24 +9,24 @@ function Header() {
 					<nav>
 						<ul className="nav-links-container">
 							<li>
-								<NavLink to="/" className={navData => navData.isActive ? "nav-link active" : "nav-link"}>
+								<a href="#" className="nav-link">
 									Home
-								</NavLink>
+								</a>
 							</li>
 							<li>
-								<NavLink to="/about" className={navData => navData.isActive ? "nav-link active" : "nav-link"}>
+								<a href="#about" className="nav-link">
 									About me
-								</NavLink>
+								</a>
 							</li>
 							<li>
-								<NavLink to="/work" className={navData => navData.isActive ? "nav-link active" : "nav-link"}>
+								<a href="#work" className="nav-link">
 									Work
-								</NavLink>
+								</a>
 							</li>
 							<li>
-								<NavLink to="/contact-me" className={navData => navData.isActive ? "nav-link active" : "nav-link"}>
+								<a href="#contact-me" className="nav-link">
 									Contact
-								</NavLink>
+								</a>
 							</li>
 						</ul>
 					</nav>

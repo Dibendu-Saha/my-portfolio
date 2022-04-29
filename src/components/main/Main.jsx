@@ -14,12 +14,12 @@ function Main() {
                 <BrowserRouter>
                     <Header />
                     <Routes>
-                        {/* <Route path="/" element={<LandingComponent />} exact /> */}
+                        <Route path="/" element={<LandingComponent />} exact />
 
-                        <Route path="/" element={<Home />} exact />
+                        {/* <Route path="/" element={<Home />} exact />
                         <Route path="/about" element={<AboutMe />} exact />
                         <Route path="/work" element={<TechSkills />} exact />
-                        <Route path="/contact-me" element={<ContactMe />} exact />
+                        <Route path="/contact-me" element={<ContactMe />} exact /> */}
                     </Routes>
                 </BrowserRouter>
             </main>
