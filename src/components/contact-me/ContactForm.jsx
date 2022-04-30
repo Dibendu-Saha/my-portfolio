@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Grid, Button } from "../common/wrapper/AppComponents";
 import axios from "axios";
+import { toast } from "react-toastify";
 import "./ContactForm.css";
 
 function ContactForm() {
@@ -12,8 +13,10 @@ function ContactForm() {
         const URL = `https://portfoliosendemailazurefunction.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
         const response = await axios.post(URL, { message });
 
-        if (response.status === 200)
-            alert('Email sent');
+        if (response.data.statusCode === 200)
+            toast.success('Email sent');
+        else
+            toast.error(response.data.message, { theme: "colored" });
     }
 
     return (
