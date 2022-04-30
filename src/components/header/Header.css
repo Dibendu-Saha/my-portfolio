@@ -30,7 +30,6 @@
 }
 
 .nav-link.active { 
-  font-weight: 400;
   border-bottom: 1px solid var(--primary-shade);
   padding-bottom: 4px;
 }
