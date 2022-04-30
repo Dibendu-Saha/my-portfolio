@@ -5,6 +5,8 @@ import Home from "../home/Home";
 import AboutMe from "../about/about-me/AboutMe";
 import TechSkills from "../about/tech-skills/TechSkills";
 import ContactMe from "../contact-me/ContactMe";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import "./Main.css"
 
 function Main() {
@@ -22,6 +24,7 @@ function Main() {
                         <Route path="/contact-me" element={<ContactMe />} exact />
                     </Routes>
                 </BrowserRouter>
+                <ToastContainer />
             </main>
         </>
     );
