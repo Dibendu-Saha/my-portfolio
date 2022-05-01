@@ -7,7 +7,7 @@ import TechSkills from "../about/tech-skills/TechSkills";
 import ContactMe from "../contact-me/ContactMe";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import "./Main.css"
+import "./Main.css";
 
 function Main() {
     return (
