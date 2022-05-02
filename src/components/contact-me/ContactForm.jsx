@@ -11,13 +11,21 @@ function ContactForm() {
 
     const handleSubmit = async () => {
         const URL = `https://portfoliosendemailazurefunction.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
-        const response = await axios.post(URL, { message });
-
-        if (response.data.statusCode === 200)
-            toast.success('Email sent');
-        else
-            toast.error(response.data.message, { theme: "colored" });
+        const URL_Stage = `https://portfoliosendemailazurefunction-stage.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
+        const response = await toast.promise(
+            axios.post(URL, { message }),
+            {
+                pending: "Sending email",
+                success: "Email sent",
+                error: {
+                    render({ data }) {
+                        return data.response.data.message ?? "Something went wrong!";
+                    }
+                }
+            }
+        );
     }
+
 
     return (
         <div className="grid grid--contact-form-layout contact-form">
