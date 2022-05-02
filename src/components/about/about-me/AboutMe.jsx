@@ -49,6 +49,7 @@ function AboutMe() {
                             showStatus={false}
                             autoPlay={true}
                             infiniteLoop={true}
+                            transitionTime={800}
                         >
                             <img src={profilePhoto} alt="portfolio 1" />
                             <img src={carousel_2} alt="carousel 2" />
