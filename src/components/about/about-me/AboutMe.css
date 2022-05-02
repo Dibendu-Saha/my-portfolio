@@ -31,7 +31,7 @@
     /* box-shadow: 0 0 20px var(--dark-bg); */
 }
 
-.profile-picture > img { width: 33rem; }
+.profile-picture { width: 33rem; }
 
 .know-work-btn-wrapper {
   position: absolute;
