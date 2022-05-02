@@ -18,7 +18,7 @@ function Home() {
     useReveal(refSection.current, refButton.current);
 
     return (
-        <Section bgLinearGradientDegree="120" reactRef={refSection}>
+        <Section bgLinearGradientDegree="90" reactRef={refSection}>
             <Container>
                 <Grid className="grid--intro">
                     <div className="intro-me reveal-header" ref={refHeader}>
