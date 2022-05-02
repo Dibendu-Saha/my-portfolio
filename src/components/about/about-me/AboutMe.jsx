@@ -49,6 +49,7 @@ function AboutMe() {
                             showStatus={false}
                             autoPlay={true}
                             infiniteLoop={true}
+                            interval={5000}
                             transitionTime={800}
                         >
                             <img src={profilePhoto} alt="portfolio 1" />
