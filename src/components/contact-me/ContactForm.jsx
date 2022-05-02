@@ -12,7 +12,8 @@ function ContactForm() {
     const handleSubmit = async () => {
         const URL = `https://portfoliosendemailazurefunction.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
         const URL_Stage = `https://portfoliosendemailazurefunction-stage.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
-        const response = await toast.promise(
+
+        await toast.promise(
             axios.post(URL, { message }),
             {
                 pending: "Sending email",
