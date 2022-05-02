@@ -25,13 +25,13 @@
 
 .btn-wrapper a { color: var(--font-color); }
 
-.profile-picture { 
+.carousel-container { 
     margin: auto;
     overflow: hidden; 
     /* box-shadow: 0 0 20px var(--dark-bg); */
 }
 
-.profile-picture { width: 33rem; }
+.carousel-container { width: 33rem; }
 
 .know-work-btn-wrapper {
   position: absolute;
@@ -51,13 +51,13 @@
 /* ********************************************************************** */
 /* ************ P H O T O   R E V E A L   A N I M A T I O N  ************ */
 /* ********************************************************************** */
-.profile-picture {
+.carousel-container {
     transform: translateY(2rem);
     opacity: 0;
     transition: all 1s ease-out;
     transition-delay: 0.4s;
 }
-.profile-picture.active {
+.carousel-container.active {
     transform: translateY(0);
     opacity: 1;
 }
@@ -81,8 +81,8 @@
 @media (max-width: 1122px) {
     .reveal-about-header { font-size: 7.2rem; }
     .flex--about-me { gap: 4.8rem; }    
-    .profile-picture { box-shadow: none; }
-    .profile-picture > img { width: 28rem; }
+    .carousel-container { box-shadow: none; }
+    .carousel-container img { width: 28rem; }
 }    
 
 @media (max-width: 1040px) {
@@ -92,7 +92,7 @@
         font-size: 1.4rem;    
         line-height: 2.2rem;              
     }
-    .profile-picture > img { width: 26rem; }
+    .carousel-container img { width: 26rem; }
 }
 
 @media (max-width: 960px) {
@@ -106,7 +106,7 @@
         font-size: 1.6rem;    
         line-height: 2.4rem;              
     }
-    .profile-picture { display: none; }   
+    .carousel-container { display: none; }   
 }
 
 @media (max-width: 800px) {

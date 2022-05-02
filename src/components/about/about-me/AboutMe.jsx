@@ -42,7 +42,7 @@ function AboutMe() {
                         <Content />
                     </div>
 
-                    <div className="profile-picture" ref={refProfilePhoto}>
+                    <div className="carousel-container" ref={refProfilePhoto}>
                         <Carousel
                             showThumbs={false}
                             showArrows={false}
