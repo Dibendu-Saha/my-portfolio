@@ -11,10 +11,14 @@
 
 .contact-form input {
     max-width: 40rem; 
-    height: 3.2rem;            
+    height: 3.2rem;   
+    letter-spacing: 1.2px;         
 } 
 
-.contact-form input { letter-spacing: 1.2px; }
+.contact-form input.error,
+.contact-form textarea.error { 
+    outline: 1px solid red; 
+}
 .contact-form textarea { resize: none; }
 
 .contact-form input, .contact-form textarea {

@@ -8,23 +8,51 @@ function ContactForm() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [isValidEmail, setEmailValidity] = useState(true);
+    const [isEmailTrigger, setEmailTrigger] = useState(false);
+
+    const validateEmail = () => {
+        let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        let isValid = emailRegex.test(email);
+
+        if (email.trim().length && !isValid)
+            setEmailValidity(false);
+        else
+            setEmailValidity(true);
+    }
 
     const handleSubmit = async () => {
+        setEmailTrigger(true);
+
+        if (!name.trim().length || !email.trim().length || !message.trim().length) {
+            toast.warn("Please fill in all the inputs");
+            return;
+        }
+
         const URL = `https://portfoliosendemailazurefunction.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
         const URL_Stage = `https://portfoliosendemailazurefunction-stage.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
 
-        await toast.promise(
-            axios.post(URL, { message }),
-            {
-                pending: "Sending email",
-                success: "Email sent",
-                error: {
-                    render({ data }) {
-                        return data.response.data.message ?? "Something went wrong!";
+        try {
+            await toast.promise(
+                axios.post(URL, { message }),
+                {
+                    pending: "Sending email...",
+                    success: "Email sent",
+                    error: {
+                        render({ data }) {
+                            return data.response.data.message ?? "Something went wrong!";
+                        }
                     }
                 }
-            }
-        );
+            );
+        }
+        catch (exception) {
+            if (exception.response.data.statusText !== "ERR_INPUT_STR")
+                alert('ERR: Exception!');
+        }
+        finally {
+            setEmailTrigger(false);
+        }
     }
 
 
@@ -37,6 +65,11 @@ function ContactForm() {
                 type="text"
                 value={name}
                 onChange={e => setName(e.target.value)}
+                className={
+                    isEmailTrigger && !name.trim().length
+                        ? "error"
+                        : ""
+                }
             />
 
             <label htmlFor="email">Email</label>
@@ -46,6 +79,12 @@ function ContactForm() {
                 type="text"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
+                onBlur={validateEmail}
+                className={
+                    !isValidEmail || (isEmailTrigger && !email.trim().length)
+                        ? "error"
+                        : ""
+                }
             />
 
             <label htmlFor="message">Message</label>
@@ -56,6 +95,11 @@ function ContactForm() {
                 onChange={e => setMessage(e.target.value)}
                 rows="6"
                 columns="10"
+                className={
+                    isEmailTrigger && !message.trim().length
+                        ? "error"
+                        : ""
+                }
             />
 
             <div className="empty"></div>
