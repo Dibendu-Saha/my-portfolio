@@ -25,7 +25,7 @@ function ContactForm() {
         setEmailTrigger(true);
 
         if (!name.trim().length || !email.trim().length || !message.trim().length) {
-            toast.warn("Please fill in all the inputs");
+            toast.warn("Please fill in all the input fields");
             return;
         }
 
