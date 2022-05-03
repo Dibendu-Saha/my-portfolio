@@ -29,8 +29,9 @@ function Home() {
                         {/* <p>...and I'm a</p>
                         <p>Full Stack Developer</p>
                         <p>by profession</p> */}
-                        <p>Developer.</p>
-                        <p>Design Enthusiast.</p>
+                        <p>Developer</p>
+                        <p>&amp;</p>
+                        <p>Design Enthusiast</p>
                     </Flex>
                 </Grid>
                 <div className="explore-btn-wrapper" ref={refButton}>

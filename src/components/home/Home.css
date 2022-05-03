@@ -1,5 +1,6 @@
 .grid--intro {  
   justify-items: center;
+  row-gap: 6.4rem;
   margin-top: 6.4rem;
   color: var(--secondary-shade);
 }
