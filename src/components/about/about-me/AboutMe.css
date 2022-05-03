@@ -2,7 +2,7 @@
 
 .about-me-content { 
     margin-top: 2.8rem; 
-    flex: 0.9;
+    flex: 1;
 }
 
 .about-me-content > p { 
@@ -26,12 +26,13 @@
 .btn-wrapper a { color: var(--font-color); }
 
 .carousel-container { 
+    flex: 1;
     margin: auto;
     overflow: hidden; 
     /* box-shadow: 0 0 20px var(--dark-bg); */
 }
 
-.carousel-container { width: 33rem; }
+.carousel-container .slide > img { width: 33rem; }
 
 .know-work-btn-wrapper {
   position: absolute;

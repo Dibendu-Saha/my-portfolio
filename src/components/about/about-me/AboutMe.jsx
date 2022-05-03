@@ -27,14 +27,14 @@ function AboutMe() {
     // useReveal(refSection.current, refButton.current);
 
     return (
-        <Section id="about" bgLinearGradientDegree="120" reactRef={refSection} >
+        <Section id="about" bgLinearGradientDegree="90" reactRef={refSection} >
             <Container>
                 <H1
                     weight="light"
                     className="reveal-header"
                     reactRef={refHeader}
                 >
-                    My personal space
+                    Personal space
                 </H1>
 
                 <Flex className="flex--about-me reveal-content" reactRef={refContent}>

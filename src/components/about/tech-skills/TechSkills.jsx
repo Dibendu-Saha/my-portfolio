@@ -18,10 +18,10 @@ function TechSkills() {
     useReveal(refSection.current, refContent.current);
 
     return (
-        <Section id="work" bgLinearGradientDegree="120" reactRef={refSection}>
+        <Section id="work" bgLinearGradientDegree="90" reactRef={refSection}>
             <Container>
                 <H1 weight="light" reactRef={refHeader} className="reveal-header">
-                    Tech overview
+                    Tech space
                 </H1>
                 <Flex className="flex--tech-overview reveal-content" reactRef={refContent}>
                     <div className="tech-background">
