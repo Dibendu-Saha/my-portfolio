@@ -1,21 +1,20 @@
-.flex--xp-column { flex-direction: column; }
-
-/* .flex--logo-wrapper { width: 200px; } */
+.flex--xp-column { 
+    flex-direction: column; 
+    gap: 3.2rem; 
+}
 
 .flex--logo-wrapper > img { 
     align-self: flex-start;
     width: 180px; 
 }
 
-.summary-header { margin-bottom: 18px; }
+.summary-header { margin-bottom: 8px; }
 
 .org-title { letter-spacing: -0.5px; }
 .org-duration { font-weight: 200; }
 
 .work-summary > p {
-    margin-bottom: 2.4rem; 
     font-size: 1.8rem;
-    letter-spacing: 0.3px;
     line-height: 2.6rem;   
     /* text-align: justify; */
 }
