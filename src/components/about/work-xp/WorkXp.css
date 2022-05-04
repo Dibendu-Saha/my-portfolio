@@ -25,7 +25,70 @@
 
 .work-summary > p {
     font-size: 1.8rem;
-    line-height: 3rem;  
     letter-spacing: 0.3px; 
     text-align: justify;
+}
+
+.more-btn-wrapper {
+    position: fixed;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-page-wrapper { 
+    position: relative;
+    margin-top: 8rem; 
+}
+
+
+
+
+/* ********************************************************************** */
+/* **** O R G A N I S A T I O N S   R E V E A L   A N I M A T I O N  **** */
+/* ********************************************************************** */
+.reveal-org-hpe {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.reveal-org-hpe.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-org-wf {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.4s;
+}
+.reveal-org-wf.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.reveal-org-tek {
+    transform: translateY(2rem);
+    opacity: 1;
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.reveal-org-tek.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-org-iq {
+    transform: translateY(2rem);
+    opacity: 1;
+    transition: all 1s ease-out;
+    transition-delay: 0.4s;
+}
+.reveal-org-iq.active {
+    transform: translateY(0);
+    opacity: 1;
 }

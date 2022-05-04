@@ -1,8 +1,11 @@
 import { Flex } from "../../common/wrapper/AppComponents";
 
-function Org({ children, logo, orgName, startMonth, endMonth }) {
+function Org({ children, className, logo, orgName, startMonth, endMonth, reactRef }) {
     return (
-        <Flex className="flex--org-wrapper">
+        <Flex
+            className={className ? `flex--org-wrapper ${className}` : "flex--org-wrapper"}
+            reactRef={reactRef}
+        >
             <Flex className="flex--logo-wrapper">
                 <img src={logo} alt={logo} />
             </Flex>
