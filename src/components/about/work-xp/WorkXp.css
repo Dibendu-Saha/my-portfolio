@@ -3,6 +3,12 @@
     gap: 3.2rem; 
 }
 
+.flex--org-wrapper { 
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+    padding: 0 5rem; 
+}
+
 .flex--logo-wrapper > img { 
     align-self: flex-start;
     width: 180px; 
@@ -10,11 +16,16 @@
 
 .summary-header { margin-bottom: 8px; }
 
-.org-title { letter-spacing: -0.5px; }
+.org-title { 
+    letter-spacing: -0.5px; 
+    font-weight: 500; 
+}
+
 .org-duration { font-weight: 200; }
 
 .work-summary > p {
     font-size: 1.8rem;
-    line-height: 2.6rem;   
-    /* text-align: justify; */
+    line-height: 3rem;  
+    letter-spacing: 0.3px; 
+    text-align: justify;
 }
