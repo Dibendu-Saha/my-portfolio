@@ -34,7 +34,7 @@ function AboutMe() {
                     className="reveal-header"
                     reactRef={refHeader}
                 >
-                    Personal space
+                    What's up!
                 </H1>
 
                 <Flex className="flex--about-me reveal-content" reactRef={refContent}>

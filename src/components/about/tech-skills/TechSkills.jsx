@@ -23,7 +23,7 @@ function TechSkills() {
         <Section id="work" bgLinearGradientDegree="90" reactRef={refSection}>
             <Container>
                 <H1 weight="light" reactRef={refHeader} className="reveal-header">
-                    Tech space
+                    What I do?
                 </H1>
 
                 <Flex className="flex--tech-overview reveal-content" reactRef={refContent}>
