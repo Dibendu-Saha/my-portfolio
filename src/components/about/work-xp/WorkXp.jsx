@@ -6,6 +6,8 @@ import hpe_logo from "../../../assets/images/hpe_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
 import tek_logo from "../../../assets/images/tek_logo.svg";
 import iqss_logo from "../../../assets/images/iqss_logo.svg";
+import expand from "../../../assets/images/icon-expand.png";
+import collapse from "../../../assets/images/icon-collapse.png";
 import "./WorkXp.css";
 import Org from "./Org";
 
@@ -27,7 +29,7 @@ function WorkXp() {
 
     useEffect(() => {
         console.log(location);
-        // navigate("/work-xp", { replace: true });
+        // navigate("/home", { replace: true });
     }, []);
 
     useEffect(() => setDummy("...to trigger a re-render"), []);
@@ -40,7 +42,7 @@ function WorkXp() {
 
     return (
         <>
-            <Section id="work-xp" bgLinearGradientDegree="90" reactRef={refSection}>
+            <Section id="home" bgLinearGradientDegree="90" reactRef={refSection}>
                 <Container>
                     <H1 weight="light" className="reveal-header" reactRef={refHeader} >
                         Work experience
@@ -79,7 +81,7 @@ function WorkXp() {
                 </Container>
             </Section>
 
-            <Section id="work-xp-next" bgLinearGradientDegree="90" reactRef={refSectionNext}>
+            <Section id="next" bgLinearGradientDegree="90" reactRef={refSectionNext}>
                 <Container>
                     <div className="next-page-wrapper">
                         <Org
@@ -116,12 +118,12 @@ function WorkXp() {
             </Section>
 
             <div className="more-btn-wrapper">
-                <Button
-                    title={isSeeMore ? "See more" : "Go to top"}
-                    type="primary"
-                    href={isSeeMore ? "#work-xp" : "#work-xp-next"}
-                    onClick={() => setSeeMore(!isSeeMore)}
-                />
+                <a href={isSeeMore ? "#home" : "#next"} onClick={() => setSeeMore(!isSeeMore)}>
+                    <img
+                        src={isSeeMore ? expand : collapse}
+                        alt="See more work experience"
+                    />
+                </a>
             </div>
         </>
     )

@@ -34,11 +34,22 @@
     top: 92%;
     left: 50%;
     transform: translateX(-50%);
+    animation-name: swing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-
+.more-btn-wrapper img {
+    width: 3.2rem;
+}
 
 .next-page-wrapper { margin-top: 8rem; }
 
+
+@keyframes swing {
+    0% {top: 92%;}
+    50% {top: 90%;}
+    100% {top: 92%;}
+}
 
 
 
