@@ -35,6 +35,20 @@
 .grid-item-api { grid-column: 2; }
 .grid-item-sql { grid-column: 3; }
 
+.work-xp-btn-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: top 1s ease-out, opacity 1s ease-out;
+    transition-delay: 2.6s;
+}
+.work-xp-btn-wrapper.active {
+    top: 88%;
+    opacity: 1;
+}
+
 
 
 /* ********************************************************************** */
