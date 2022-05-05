@@ -1,0 +1,103 @@
+.flex--xp-column { 
+    flex-direction: column; 
+    gap: 3.2rem; 
+}
+
+.flex--org-wrapper { 
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+    padding: 0 5rem; 
+}
+
+.flex--logo-wrapper > img { 
+    align-self: flex-start;
+    width: 180px; 
+}
+
+.summary-header { margin-bottom: 8px; }
+
+.org-title { 
+    letter-spacing: -0.5px; 
+    font-weight: 500; 
+}
+
+.org-duration { font-weight: 200; }
+
+.work-summary > p {
+    font-size: 1.8rem;
+    letter-spacing: 0.3px; 
+    text-align: justify;
+}
+
+.more-btn-wrapper {
+    position: fixed;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: swing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.more-btn-wrapper img {
+    width: 3.2rem;
+}
+
+.next-page-wrapper { margin-top: 8rem; }
+
+
+@keyframes swing {
+    0% {top: 92%;}
+    50% {top: 90%;}
+    100% {top: 92%;}
+}
+
+
+
+/* ********************************************************************** */
+/* **** O R G A N I S A T I O N S   R E V E A L   A N I M A T I O N  **** */
+/* ********************************************************************** */
+.reveal-org-hpe {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.reveal-org-hpe.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-org-wf {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.4s;
+}
+.reveal-org-wf.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.reveal-org-tek {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.reveal-org-tek.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-org-iq {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.4s;
+}
+.reveal-org-iq.active {
+    transform: translateY(0);
+    opacity: 1;
+}

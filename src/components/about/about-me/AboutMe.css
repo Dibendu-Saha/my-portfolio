@@ -1,9 +1,6 @@
 .flex--about-me { gap: 8rem; }
 
-.about-me-content { 
-    margin-top: 2.8rem; 
-    flex: 1;
-}
+.about-me-content { flex: 1; }
 
 .about-me-content > p { 
     margin-bottom: 2.4rem; 

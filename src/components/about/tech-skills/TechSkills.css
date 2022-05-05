@@ -3,17 +3,14 @@
     gap: 5.6rem;    
 }
 
-.tech-background { 
-    flex: 1; 
-    margin-top: 2.8rem;
-}
+.tech-background { flex: 1; }
 
 .tech-background > p { 
     margin-bottom: 2.4rem; 
-    letter-spacing: 0.5px;
+    font-size: 1.8rem;
+    letter-spacing: 0.3px;
     line-height: 2.6rem;   
     text-align: justify;
-    font-size: 1.8rem;
 }
 
 .grid--skills { 
@@ -37,6 +34,20 @@
 
 .grid-item-api { grid-column: 2; }
 .grid-item-sql { grid-column: 3; }
+
+.work-xp-btn-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: top 1s ease-out, opacity 1s ease-out;
+    transition-delay: 2.6s;
+}
+.work-xp-btn-wrapper.active {
+    top: 88%;
+    opacity: 1;
+}
 
 
 

@@ -24,11 +24,12 @@
 
 .explore-btn-wrapper {  
   position: absolute;
-  top: 90%;
+  top: 87%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;  
-  transition: all 1s ease-out;
+  transition: top 1s ease-out, opacity 1s ease-out;
+  transition-delay: 0.2s;
 }
 .explore-btn-wrapper.active {  
   top: 85%;
