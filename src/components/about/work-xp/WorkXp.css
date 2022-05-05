@@ -36,10 +36,8 @@
     transform: translateX(-50%);
 }
 
-.next-page-wrapper { 
-    position: relative;
-    margin-top: 8rem; 
-}
+
+.next-page-wrapper { margin-top: 8rem; }
 
 
 
@@ -73,7 +71,7 @@
 
 .reveal-org-tek {
     transform: translateY(2rem);
-    opacity: 1;
+    opacity: 0;
     transition: all 1s ease-out;
     transition-delay: 0.2s;
 }
@@ -84,7 +82,7 @@
 
 .reveal-org-iq {
     transform: translateY(2rem);
-    opacity: 1;
+    opacity: 0;
     transition: all 1s ease-out;
     transition-delay: 0.4s;
 }

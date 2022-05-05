@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { useHref, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Section, Container, H1, Button } from "../../common/wrapper/AppComponents";
 import hpe_logo from "../../../assets/images/hpe_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
@@ -11,6 +11,7 @@ import Org from "./Org";
 
 function WorkXp() {
     let location = useLocation();
+    let navigate = useNavigate();
 
     const refSection = useRef();
     const refHeader = useRef();
@@ -26,6 +27,7 @@ function WorkXp() {
 
     useEffect(() => {
         console.log(location);
+        // navigate("/work-xp", { replace: true });
     }, []);
 
     useEffect(() => setDummy("...to trigger a re-render"), []);
@@ -74,18 +76,10 @@ function WorkXp() {
                             back-end developer, developing app codes using C#, ASP.NET MVC, LINQ, Entity Framework and Web API.
                         </Org>
                     </div>
-                    <div className="more-btn-wrapper">
-                        <Button
-                            title={isSeeMore ? "See more" : "Go to top"}
-                            type="primary"
-                            href={isSeeMore ? "#work-xp" : "#work-xp-next"}
-                            onClick={() => setSeeMore(!isSeeMore)}
-                        />
-                    </div>
                 </Container>
             </Section>
 
-            <Section id="work-xp-next" bgLinearGradientDegree="90" ref={refSectionNext}>
+            <Section id="work-xp-next" bgLinearGradientDegree="90" reactRef={refSectionNext}>
                 <Container>
                     <div className="next-page-wrapper">
                         <Org
@@ -120,6 +114,15 @@ function WorkXp() {
 
                 </Container>
             </Section>
+
+            <div className="more-btn-wrapper">
+                <Button
+                    title={isSeeMore ? "See more" : "Go to top"}
+                    type="primary"
+                    href={isSeeMore ? "#work-xp" : "#work-xp-next"}
+                    onClick={() => setSeeMore(!isSeeMore)}
+                />
+            </div>
         </>
     )
 }
