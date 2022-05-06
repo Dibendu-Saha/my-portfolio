@@ -64,7 +64,7 @@ function AboutMe() {
                 </Flex>
 
                 <div className="work-btn-wrapper" ref={refButton}>
-                    <Button title="What I do" type="primary" link="/work" />
+                    <Button title="Learn more" type="primary" link="/work" />
                 </div>
             </Container>
         </Section>
