@@ -1,12 +1,12 @@
 import { Highlight } from "../../common/wrapper/AppComponents";
+import icon_new_window from "../../../assets/images/icon-new-window.png";
 
 function Content() {
     return (
         <>
             <p>
-                I'm a <Highlight>full-stack developer</Highlight> by profession and have around 8 years
-                of industry experience. I design web user interfaces and hook them up with backend API's
-                to build complete data-driven solutions for end-clients.
+                I'm a <Highlight>full-stack developer</Highlight> by profession. I design web user interfaces
+                and hook them up with backend API's to build complete data-driven solutions for end-clients.
             </p>
 
             <p>
@@ -14,6 +14,15 @@ function Content() {
                 than the usual jQuery but since I'm passionate about web design, graphics and design in general,
                 I managed to get my hands dirty into the world of UI and UX &#8212; working exclusively on the
                 frontend tech stack &#8212; HTML5, CSS3, JavaScript and React.
+            </p>
+
+            <p>
+                I also hold a certification in <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank">
+                    <span className="link-text">
+                        Azure Fundamentals
+                    </span>
+                    <span> <img src={icon_new_window} alt="Open in new window icon" className="icon-new-window" /></span>
+                </a> from Microsoft.
             </p>
 
             <p>

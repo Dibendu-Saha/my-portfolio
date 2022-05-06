@@ -1,5 +1,4 @@
-import { Button, Card, Highlight } from "../../common/wrapper/AppComponents";
-import icon_new_window from "../../../assets/images/icon-new-window.png";
+import { Highlight } from "../../common/wrapper/AppComponents";
 
 function Content() {
     return (

@@ -13,6 +13,16 @@
     text-align: justify;
 }
 
+.tech-background > p a { 
+    color: var(--font-color); 
+    text-decoration: none; 
+} 
+.tech-background > p a:hover { color: #010190; } 
+
+.link-text { border-bottom: 1px solid; }
+
+.icon-new-window { width: 1.4rem; }
+
 .grid--skills { 
     flex: 1; 
     justify-items: center;
