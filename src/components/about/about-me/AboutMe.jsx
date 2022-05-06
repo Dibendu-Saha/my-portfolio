@@ -15,7 +15,7 @@ function AboutMe() {
     const refHeader = useRef();
     const refContent = useRef();
     const refProfilePhoto = useRef();
-    // const refButton = useRef();
+    const refButton = useRef();
 
     const [_, setDummy] = useState("");
 
@@ -24,7 +24,7 @@ function AboutMe() {
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
     useReveal(refSection.current, refProfilePhoto.current);
-    // useReveal(refSection.current, refButton.current);
+    useReveal(refSection.current, refButton.current);
 
     return (
         <Section id="about" bgLinearGradientDegree="90" reactRef={refSection} >
@@ -42,27 +42,30 @@ function AboutMe() {
                         <Content />
                     </div>
 
-                    <div className="carousel-container" ref={refProfilePhoto}>
-                        <Carousel
-                            showThumbs={false}
-                            showArrows={false}
-                            showStatus={false}
-                            autoPlay={true}
-                            infiniteLoop={true}
-                            interval={5000}
-                            transitionTime={800}
-                        >
-                            <img src={profilePhoto} alt="portfolio 1" />
-                            <img src={carousel_2} alt="carousel 2" />
-                            <img src={carousel_3} alt="carousel 3" />
-                            <img src={carousel_4} alt="carousel 5" />
-                        </Carousel>
+                    <div className="carousel-wrapper" ref={refProfilePhoto}>
+                        <div className="carousel-container">
+                            <Carousel
+                                showThumbs={false}
+                                showArrows={false}
+                                showStatus={false}
+                                autoPlay={true}
+                                infiniteLoop={true}
+                                interval={5000}
+                                transitionTime={800}
+                                className="carousel"
+                            >
+                                <img src={profilePhoto} alt="portfolio 1" />
+                                <img src={carousel_2} alt="carousel 2" />
+                                <img src={carousel_3} alt="carousel 3" />
+                                <img src={carousel_4} alt="carousel 5" />
+                            </Carousel>
+                        </div>
                     </div>
                 </Flex>
 
-                {/* <div className="know-work-btn-wrapper" ref={refButton}>
-                    <Button title="Know more" type="primary" link="/work" />
-                </div> */}
+                <div className="work-btn-wrapper" ref={refButton}>
+                    <Button title="What I do" type="primary" link="/work" />
+                </div>
             </Container>
         </Section>
     )

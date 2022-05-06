@@ -22,26 +22,37 @@
 
 .btn-wrapper a { color: var(--font-color); }
 
-.carousel-container { 
+.carousel-wrapper { 
     flex: 1;
     margin: auto;
-    overflow: hidden; 
+    overflow: hidden;     
     /* box-shadow: 0 0 20px var(--dark-bg); */
 }
 
-.carousel-container .slide > img { width: 33rem; }
-
-.know-work-btn-wrapper {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;  
-  transition: all 1s ease-out;
+.carousel-container { 
+    margin-left: 50% !important;
+    transform: translateX(-50%);
 }
-.know-work-btn-wrapper.active {  
-  top: 85%;
-  opacity: 1;  
+
+.carousel { max-width: 100%; }
+
+.carousel-container, 
+.carousel .slide > img { 
+    width: 33rem; 
+}
+
+.work-btn-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: top 1s ease-out, opacity 1s ease-out;
+    transition-delay: 1s;
+    }
+.work-btn-wrapper.active {  
+    top: 88%;
+    opacity: 1;  
 }
 
 
@@ -49,13 +60,13 @@
 /* ********************************************************************** */
 /* ************ P H O T O   R E V E A L   A N I M A T I O N  ************ */
 /* ********************************************************************** */
-.carousel-container {
+.carousel-wrapper {
     transform: translateY(2rem);
     opacity: 0;
     transition: all 1s ease-out;
     transition-delay: 0.4s;
 }
-.carousel-container.active {
+.carousel-wrapper.active {
     transform: translateY(0);
     opacity: 1;
 }
@@ -79,8 +90,8 @@
 @media (max-width: 1122px) {
     .reveal-about-header { font-size: 7.2rem; }
     .flex--about-me { gap: 4.8rem; }    
-    .carousel-container { box-shadow: none; }
-    .carousel-container img { width: 28rem; }
+    .carousel-wrapper { box-shadow: none; }
+    .carousel img { width: 28rem; }
 }    
 
 @media (max-width: 1040px) {
@@ -90,7 +101,7 @@
         font-size: 1.4rem;    
         line-height: 2.2rem;              
     }
-    .carousel-container img { width: 26rem; }
+    .carousel img { width: 26rem; }
 }
 
 @media (max-width: 960px) {
@@ -104,7 +115,7 @@
         font-size: 1.6rem;    
         line-height: 2.4rem;              
     }
-    .carousel-container { display: none; }   
+    .carousel-wrapper { display: none; }   
 }
 
 @media (max-width: 800px) {
