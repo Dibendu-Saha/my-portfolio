@@ -8,8 +8,8 @@ import tek_logo from "../../../assets/images/tek_logo.svg";
 import iqss_logo from "../../../assets/images/iqss_logo.svg";
 import expand from "../../../assets/images/icon-expand.png";
 import collapse from "../../../assets/images/icon-collapse.png";
-import "./WorkXp.css";
 import Org from "./Org";
+import "./WorkXp.css";
 
 function WorkXp() {
     let location = useLocation();
