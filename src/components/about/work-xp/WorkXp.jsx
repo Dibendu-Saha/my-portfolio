@@ -25,6 +25,7 @@ function WorkXp() {
     const refOrgIq = useRef();
 
     const [isSeeMore, setSeeMore] = useState(true);
+    const [seeMoreIcon, setSeeMoreIcon] = useState(expand);
     const [_, setDummy] = useState("");
 
     useEffect(() => {
@@ -39,6 +40,21 @@ function WorkXp() {
     useReveal(refSection.current, refOrgWf.current);
     useReveal(refSectionNext.current, refOrgTek.current);
     useReveal(refSectionNext.current, refOrgIq.current);
+
+    let options = { root: null, threshold: 0.7 };
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(param => {
+            if (param.isIntersecting)
+                setSeeMoreIcon(collapse);
+            else
+                setSeeMoreIcon(expand)
+        });
+    }, options);
+
+    if (refSectionNext.current)
+        obs.observe(refSectionNext.current);
+
+
 
     return (
         <>
@@ -120,7 +136,7 @@ function WorkXp() {
             <div className="more-btn-wrapper">
                 <a href={isSeeMore ? "#home" : "#next"} onClick={() => setSeeMore(!isSeeMore)}>
                     <img
-                        src={isSeeMore ? expand : collapse}
+                        src={seeMoreIcon}
                         alt="See more work experience"
                     />
                 </a>
