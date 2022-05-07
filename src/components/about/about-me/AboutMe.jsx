@@ -50,7 +50,7 @@ function AboutMe() {
                                 showStatus={false}
                                 autoPlay={true}
                                 infiniteLoop={true}
-                                interval={5000}
+                                interval={4000}
                                 transitionTime={800}
                                 className="carousel"
                             >
