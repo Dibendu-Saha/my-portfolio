@@ -16,7 +16,7 @@ function WorkXp() {
     const refHeader = useRef();
     const refOrgHpe = useRef();
     const refOrgWf = useRef();
-    // const refDownloadCv = useRef();
+    const refDownloadCv = useRef();
 
     const refSectionNext = useRef();
     const refOrgTek = useRef();
@@ -30,12 +30,17 @@ function WorkXp() {
     const URL_STAGE = "https://downloadcvazfn-stage.azurewebsites.net/api/DownloadCv";
 
 
-    useEffect(() => setDummy("...to trigger a re-render"), []);
+    useEffect(() => {
+        setDummy("...to trigger a re-render");
+        setTimeout(() => {
+            if (refDownloadCv.current)
+                refDownloadCv.current.classList.add("active");
+        }, 600);
+    }, []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refOrgHpe.current);
     useReveal(refSection.current, refOrgWf.current);
-    // useReveal(refSection.current, refDownloadCv.current);
     useReveal(refSectionNext.current, refOrgTek.current);
     useReveal(refSectionNext.current, refOrgIq.current);
 
@@ -130,12 +135,11 @@ function WorkXp() {
                 </Container>
             </Section>
 
-            <div className="download-cv-wrapper reveal-cv">
+            <div className="download-cv-wrapper reveal-cv" ref={refDownloadCv}>
                 <a href={URL} target="_blank">
                     <img src={download_cv} alt="Download CV icon" className="cv-icon" />
                     <p className="download-text">Download CV</p>
                 </a>
-
             </div>
 
             <div className="more-btn-wrapper">

@@ -83,7 +83,7 @@
 /* ********************************************************************** */
 /* **** O R G A N I S A T I O N S   R E V E A L   A N I M A T I O N  **** */
 /* ********************************************************************** */
-/* .reveal-cv {
+.reveal-cv {
     transform: translateY(1rem);
     opacity: 0;
     transition: transform 1.2s ease-out, opacity 1.2s ease-out;
@@ -92,7 +92,7 @@
 .reveal-cv.active {
     transform: translateY(0);
     opacity: 1;
-} */
+}
 
 
 .reveal-org-hpe {
