@@ -1,24 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { useNavigate, useLocation } from "react-router-dom";
-import { Section, Container, H1, Button } from "../../common/wrapper/AppComponents";
+import { Section, Container, H1 } from "../../common/wrapper/AppComponents";
 import hpe_logo from "../../../assets/images/hpe_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
 import tek_logo from "../../../assets/images/tek_logo.svg";
 import iqss_logo from "../../../assets/images/iqss_logo.svg";
 import expand from "../../../assets/images/icon-expand.png";
 import collapse from "../../../assets/images/icon-collapse.png";
+import download_cv from "../../../assets/images/icon-resume.png";
 import Org from "./Org";
 import "./WorkXp.css";
 
 function WorkXp() {
-    let location = useLocation();
-    let navigate = useNavigate();
-
     const refSection = useRef();
     const refHeader = useRef();
     const refOrgHpe = useRef();
     const refOrgWf = useRef();
+    // const refDownloadCv = useRef();
 
     const refSectionNext = useRef();
     const refOrgTek = useRef();
@@ -28,16 +26,13 @@ function WorkXp() {
     const [seeMoreIcon, setSeeMoreIcon] = useState(expand);
     const [_, setDummy] = useState("");
 
-    useEffect(() => {
-        console.log(location);
-        // navigate("/home", { replace: true });
-    }, []);
 
     useEffect(() => setDummy("...to trigger a re-render"), []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refOrgHpe.current);
     useReveal(refSection.current, refOrgWf.current);
+    // useReveal(refSection.current, refDownloadCv.current);
     useReveal(refSectionNext.current, refOrgTek.current);
     useReveal(refSectionNext.current, refOrgIq.current);
 
@@ -53,7 +48,6 @@ function WorkXp() {
 
     if (refSectionNext.current)
         obs.observe(refSectionNext.current);
-
 
 
     return (
@@ -132,6 +126,14 @@ function WorkXp() {
 
                 </Container>
             </Section>
+
+            <div className="download-cv-wrapper reveal-cv">
+                <a href="https://downloadcvazfn.azurewebsites.net/api/DownloadCv" target="_blank">
+                    <img src={download_cv} alt="Download CV icon" className="cv-icon" />
+                    <p className="download-text">Download CV</p>
+                </a>
+
+            </div>
 
             <div className="more-btn-wrapper">
                 <a href={isSeeMore ? "#home" : "#next"} onClick={() => setSeeMore(!isSeeMore)}>
