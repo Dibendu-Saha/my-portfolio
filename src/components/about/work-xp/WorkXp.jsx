@@ -26,6 +26,9 @@ function WorkXp() {
     const [seeMoreIcon, setSeeMoreIcon] = useState(expand);
     const [_, setDummy] = useState("");
 
+    const URL = "https://downloadcvazfn.azurewebsites.net/api/DownloadCv";
+    const URL_STAGE = "https://downloadcvazfn-stage.azurewebsites.net/api/DownloadCv";
+
 
     useEffect(() => setDummy("...to trigger a re-render"), []);
 
@@ -128,7 +131,7 @@ function WorkXp() {
             </Section>
 
             <div className="download-cv-wrapper reveal-cv">
-                <a href="https://downloadcvazfn.azurewebsites.net/api/DownloadCv" target="_blank">
+                <a href={URL} target="_blank">
                     <img src={download_cv} alt="Download CV icon" className="cv-icon" />
                     <p className="download-text">Download CV</p>
                 </a>
