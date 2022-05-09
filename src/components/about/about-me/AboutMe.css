@@ -10,11 +10,7 @@
     text-align: justify;
 }
 
-.about-me-content > p a { 
-    color: var(--font-color); 
-    text-decoration: none; 
-} 
-.about-me-content > p a:hover { color: #010190; } 
+.about-me-content > p > i { font-size: 16px; }
 
 .link-text { border-bottom: 1px solid; }
 
