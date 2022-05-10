@@ -25,7 +25,15 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--primary-color);
 }
+
+::-webkit-scrollbar { 
+  width: 8px;
+  background: var(--primary-color); 
+}
+::-webkit-scrollbar-thumb { background: var(--secondary-color); }
 
 body {
   font-size: 1.6rem;
