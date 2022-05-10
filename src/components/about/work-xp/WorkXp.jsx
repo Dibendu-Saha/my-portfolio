@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { Section, Container, H1 } from "../../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex } from "../../common/wrapper/AppComponents";
 import hpe_logo from "../../../assets/images/hpe_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
 import tek_logo from "../../../assets/images/tek_logo.svg";
@@ -8,6 +9,7 @@ import iqss_logo from "../../../assets/images/iqss_logo.svg";
 import expand from "../../../assets/images/icon-expand.png";
 import collapse from "../../../assets/images/icon-collapse.png";
 import download_cv from "../../../assets/images/icon-resume.png";
+import icon_chat from "../../../assets/images/icon-chat.png";
 import Org from "./Org";
 import "./WorkXp.css";
 
@@ -21,6 +23,7 @@ function WorkXp() {
     const refSectionNext = useRef();
     const refOrgTek = useRef();
     const refOrgIq = useRef();
+    const refContact = useRef();
 
     const [isSeeMore, setSeeMore] = useState(true);
     const [seeMoreIcon, setSeeMoreIcon] = useState(expand);
@@ -43,6 +46,7 @@ function WorkXp() {
     useReveal(refSection.current, refOrgWf.current);
     useReveal(refSectionNext.current, refOrgTek.current);
     useReveal(refSectionNext.current, refOrgIq.current);
+    useReveal(refSectionNext.current, refContact.current);
 
     let options = { root: null, threshold: 0.7 };
     const obs = new IntersectionObserver(entries => {
@@ -132,6 +136,14 @@ function WorkXp() {
                         </Org>
                     </div>
 
+                    <Flex className="flex--contact-wrapper reveal-contact-logo" reactRef={refContact}>
+                        <Link to="/contact-me" className="chat-icon-wrapper">
+                            <img src={icon_chat} alt="Chat icon" />
+                        </Link>
+                        <Flex className="talk-helper-text">
+                            <p>Let's talk?</p>
+                        </Flex>
+                    </Flex>
                 </Container>
             </Section>
 
@@ -144,10 +156,7 @@ function WorkXp() {
 
             <div className="more-btn-wrapper">
                 <a href={isSeeMore ? "#home" : "#next"} onClick={() => setSeeMore(!isSeeMore)}>
-                    <img
-                        src={seeMoreIcon}
-                        alt="See more work experience"
-                    />
+                    <img src={seeMoreIcon} alt="See more work experience" />
                 </a>
             </div>
         </>
