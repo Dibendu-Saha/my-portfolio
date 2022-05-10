@@ -26,12 +26,9 @@ function Home() {
                         <H1 weight="light">I'm Dibendu</H1>
                     </div>
                     <Flex className="flex--profession grid--intro-about reveal-content" reactRef={refContent}>
-                        {/* <p>...and I'm a</p>
-                        <p>Full Stack Developer</p>
-                        <p>by profession</p> */}
                         <p>Developer</p>
-                        <p>&amp;</p>
-                        <p>Design Enthusiast</p>
+                        {/* <p>&amp;</p>
+                        <p>Design Enthusiast</p> */}
                     </Flex>
                 </Grid>
                 <div className="explore-btn-wrapper" ref={refButton}>

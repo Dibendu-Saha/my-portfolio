@@ -15,7 +15,28 @@
   font-size: 2.4rem;
   font-weight: 200;
   letter-spacing: 5px;
+
+  overflow: hidden;
+  border-right: 1px solid;
+  /* white-space: nowrap; */
+  /* margin: 0 auto; */
+
+  animation:
+    typing 5s steps(15, end) infinite,
+    cursor 1s infinite
 }
+
+@keyframes typing {
+  0%, 100% { width: 0 ; }
+  40% { width: 100%; }
+  80% { width: 100%; }
+}
+
+@keyframes cursor {
+  from, to { border-color: var(--secondary-color); }
+  50% { border-color: transparent; }  
+}
+
 
 .flex--profession {
   flex-direction: column;
