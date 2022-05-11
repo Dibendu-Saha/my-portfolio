@@ -38,7 +38,7 @@ function WorkXp() {
         setTimeout(() => {
             if (refDownloadCv.current)
                 refDownloadCv.current.classList.add("active");
-        }, 600);
+        }, 1800);
     }, []);
 
     useReveal(refSection.current, refHeader.current);

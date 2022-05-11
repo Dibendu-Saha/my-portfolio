@@ -80,7 +80,7 @@
     exchanged the chat and 'Let's talk' text to
     fake it to be the next sibling
 */
-.chat-icon-wrapper { transform: translateX(130%); }
+.chat-icon-wrapper { transform: translateX(140%); }
 .chat-icon-wrapper:hover + .talk-helper-text { 
     transform: translateX(-90%); 
     opacity: 1;
@@ -116,7 +116,6 @@
     transform: translateY(1rem);
     opacity: 0;
     transition: transform 1.2s ease-out, opacity 1.2s ease-out;
-    transition-delay: 0.6s;
 }
 .reveal-cv.active {
     transform: translateY(0);
@@ -128,7 +127,7 @@
     transform: translateY(2rem);
     opacity: 0;
     transition: all 1s ease-out;
-    transition-delay: 0.2s;
+    transition-delay: 1.2s;
 }
 .reveal-org-hpe.active {
     transform: translateY(0);
@@ -139,7 +138,7 @@
     transform: translateY(2rem);
     opacity: 0;
     transition: all 1s ease-out;
-    transition-delay: 0.4s;
+    transition-delay: 1.4s;
 }
 .reveal-org-wf.active {
     transform: translateY(0);

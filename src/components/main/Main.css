@@ -134,7 +134,7 @@ body {
   transform: translateY(2rem);
   opacity: 0;
   transition: all 1s ease-out;
-  transition-delay: 0.2s;
+  transition-delay: 0.8s;
 }
 .reveal-content.active { 
   transform: translateY(0);
