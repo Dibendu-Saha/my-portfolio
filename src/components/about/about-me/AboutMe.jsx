@@ -31,7 +31,7 @@ function AboutMe() {
             <Container>
                 <H1
                     weight="light"
-                    className="reveal-header"
+                    className="typewriter reveal-header"
                     reactRef={refHeader}
                 >
                     What's up!

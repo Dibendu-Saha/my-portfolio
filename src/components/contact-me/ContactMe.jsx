@@ -33,7 +33,7 @@ function ContactMe() {
             <Container>
                 <H1
                     weight="light"
-                    className="reveal-header"
+                    className="typewriter reveal-header"
                     reactRef={refHeader}
                 >
                     Let's talk
