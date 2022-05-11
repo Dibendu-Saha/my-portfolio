@@ -66,7 +66,7 @@ function WorkXp() {
         <>
             <Section id="home" bgLinearGradientDegree="90" reactRef={refSection}>
                 <Container>
-                    <H1 weight="light" className="reveal-header" reactRef={refHeader} >
+                    <H1 weight="light" className="typewriter reveal-header" reactRef={refHeader} >
                         Work experience
                     </H1>
 

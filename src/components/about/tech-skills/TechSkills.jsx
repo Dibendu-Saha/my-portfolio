@@ -22,7 +22,7 @@ function TechSkills() {
     return (
         <Section id="work" bgLinearGradientDegree="90" reactRef={refSection}>
             <Container>
-                <H1 weight="light" reactRef={refHeader} className="reveal-header">
+                <H1 weight="light" reactRef={refHeader} className="typewriter reveal-header">
                     What I do?
                 </H1>
 

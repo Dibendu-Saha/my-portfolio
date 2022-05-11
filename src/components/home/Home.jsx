@@ -23,12 +23,14 @@ function Home() {
                 <Grid className="grid--intro">
                     <div className="intro-me reveal-header" ref={refHeader}>
                         <H1>Hey there!</H1>
-                        <H1 weight="light">I'm Dibendu</H1>
+                        <H1
+                            weight="light"
+                            className="typewriter-home"
+                        >
+                            I'm Dibendu
+                        </H1>
                     </div>
                     <Flex className="flex--profession grid--intro-about reveal-content" reactRef={refContent}>
-                        {/* <p>...and I'm a</p>
-                        <p>Full Stack Developer</p>
-                        <p>by profession</p> */}
                         <p>Developer</p>
                         <p>&amp;</p>
                         <p>Design Enthusiast</p>

@@ -1,6 +1,5 @@
 .grid--intro {  
   justify-items: center;
-  /* row-gap: 0.8rem; */
   margin-top: 6.4rem;
   color: var(--secondary-shade);
 }
@@ -16,6 +15,7 @@
   font-weight: 200;
   letter-spacing: 5px;
 }
+
 
 .flex--profession {
   flex-direction: column;
@@ -34,6 +34,19 @@
 .explore-btn-wrapper.active {  
   top: 85%;
   opacity: 1;  
+}
+
+.typewriter-home {
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(40, end);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100% }
 }
 
 
