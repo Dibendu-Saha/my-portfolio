@@ -47,18 +47,21 @@
 /* ********************************************************************** */
 /* *************************  MEDIA QUERIES  **************************** */
 /* ********************************************************************** */
-@media (max-width: 1122px) {
-  
-}    
-
-@media (max-width: 1028px) {
-  
-}
-
 @media (max-width: 945px) {
   .nav-link { letter-spacing: 4px !important; }
 }
 
 @media (max-width: 630px) {
   .nav-link { letter-spacing: 2px !important; }
+}
+
+
+/* ************************ FOR ZOOMED-IN SCREENS *********************** */
+
+@media (max-width: 1420px) {    
+  .nav-link { font-size: 1.4rem; }   
+}
+
+@media (max-width: 1290px) {
+  .nav-link { font-size: 1.3rem; }   
 }

@@ -52,9 +52,11 @@
 .org-duration { font-weight: 200; }
 
 .work-summary > p {
-    font-size: 1.8rem;
-    letter-spacing: 0.3px; 
+    font-size: 1.6rem;
+    letter-spacing: 0.3px;
+    line-height: 2.6rem; 
     text-align: justify;
+    margin-bottom: 1.4rem;
 }
 
 .more-btn-wrapper {
@@ -70,8 +72,7 @@
 .next-page-wrapper { margin-top: 8rem; }
 
 .flex--contact-wrapper {
-    justify-content: flex-end;
-    margin-top: 4.8rem;
+    justify-content: flex-end;    
     padding-right: 3%;    
 }
 
@@ -91,9 +92,9 @@
     justify-content: center;
     height: 5rem;
     padding: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--font-color);
-    border: 2px solid var(--secondary-color); 
+    border: 1px solid var(--secondary-color); 
     border-radius: 20px;
     opacity: 0;
     transform: translateX(-100%);   
@@ -233,5 +234,38 @@
     .reveal-header { font-size: 4rem; }
     .flex--org-wrapper { gap: 4px; }    
     .work-summary > p { font-size: 1.3rem; }    
+}
+
+
+/* ************************ FOR ZOOMED-IN SCREENS *********************** */
+
+@media (max-width: 1420px) {
+    .work-summary > p { 
+        font-size: 1.5rem; 
+        margin-bottom: 1.2rem;
+        line-height: 2.2rem;         
+    }    
+    
+    .cv-icon, 
+    .chat-icon { width: 6.4rem; }
+    
+    .download-text { font-size: 1.5rem; }
+    .chat-icon { width: 6.4rem; }
+    .talk-helper-text { font-size: 1.5rem; }
+}
+
+@media (max-width: 1290px) {
+    .work-summary > p { 
+        font-size: 1.3rem; 
+        margin-bottom: 1.6rem;
+        line-height: 2rem;         
+    }
+    
+    .cv-icon, 
+    .chat-icon { width: 5.6rem; }
+
+    .download-text { font-size: 1.3rem; }
+    .chat-icon { width: 5.6rem; }
+    .talk-helper-text { font-size: 1.3rem; }
 }
 

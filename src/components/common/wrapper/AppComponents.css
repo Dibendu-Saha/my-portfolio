@@ -10,10 +10,12 @@
 }
 
 .app-header-light {
-    font-size: 8rem;
+    font-size: 6.4rem;
     font-weight: 100;
     margin-bottom: 2.8rem;        
 }
+
+.header-home { font-size: 8rem; }
 
 .typewriter {
     overflow: hidden;

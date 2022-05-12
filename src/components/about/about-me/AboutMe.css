@@ -4,13 +4,13 @@
 
 .about-me-content > p { 
     margin-bottom: 2.4rem; 
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 0.3px;
-    line-height: 2.6rem;   
+    line-height: 2.8rem;   
     text-align: justify;
 }
 
-.about-me-content > p > i { font-size: 1.6rem; }
+.about-me-content > p > i { font-size: 1.4rem; }
 
 .link-text { border-bottom: 1px solid; }
 
@@ -34,7 +34,7 @@
 
 .carousel-container, 
 .carousel .slide > img { 
-    width: 33rem; 
+    width: 30rem; 
 }
 
 .work-btn-wrapper {
@@ -123,5 +123,38 @@
         margin-bottom: 1.4rem; 
         font-size: 1.4rem;    
         line-height: 2.2rem;              
+    }
+}
+
+
+/* ************************ FOR ZOOMED-IN SCREENS *********************** */
+
+@media (max-width: 1420px) {    
+    .about-me-content > p { 
+        font-size: 1.5rem; 
+        margin-bottom: 2.4rem;
+        line-height: 2.6rem;         
+    }
+
+    .about-me-content > p > i { font-size: 1.3rem; }
+    
+    .carousel-container, 
+    .carousel .slide > img { 
+        width: 28rem; 
+    }
+}
+
+@media (max-width: 1290px) {    
+    .about-me-content > p { 
+        font-size: 1.4rem; 
+        margin-bottom: 2.2rem;
+        line-height: 2.4rem;           
+    }
+
+    .about-me-content > p > i { font-size: 1.2rem; }
+
+    .carousel-container, 
+    .carousel .slide > img { 
+        width: 26rem; 
     }
 }

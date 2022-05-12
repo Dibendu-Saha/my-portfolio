@@ -25,7 +25,7 @@ function Home() {
                         <H1>Hey there!</H1>
                         <H1
                             weight="light"
-                            className="typewriter-home"
+                            className="header-home typewriter-home"
                         >
                             I'm Dibendu
                         </H1>

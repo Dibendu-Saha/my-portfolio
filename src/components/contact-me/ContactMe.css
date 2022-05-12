@@ -90,3 +90,35 @@
         min-width: 27rem; 
     }
 }
+
+
+/* ************************ FOR ZOOMED-IN SCREENS *********************** */
+
+@media (max-width: 1420px) {    
+    .contact-form-container { 
+        font-size: 1.5rem; 
+        line-height: 2.2rem;         
+    }   
+    .grid--contact-form-layout { width: 55rem; } 
+    .contact-form input {
+        height: 2.8rem;   
+        font-size: 1.5rem;         
+    } 
+    .contact-form textarea { height: 15rem; }
+    .grid--social-icons img { width: 10rem; }
+}
+
+@media (max-width: 1290px) {
+    .contact-form-container { 
+        font-size: 1.4rem; 
+        line-height: 2.2rem;         
+    }
+    .grid--contact-form-layout { width: 50rem; } 
+    .contact-form input {
+        height: 2.8rem;   
+        font-size: 1.4rem;                 
+    } 
+    .contact-form textarea { height: 13rem; }
+    .btn--send-message { padding: 1rem !important; }
+    .grid--social-icons img { width: 9rem; }
+}
