@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
-import { Section, Container, H1, Flex, Grid, Card, Button } from "../../common/wrapper/AppComponents";
+import { Section, Container, H1, Flex, Button } from "../../common/wrapper/AppComponents";
 import Content from "./Content";
 import profilePhoto from "../../../assets/images/photo_1.jpg";
 import carousel_2 from "../../../assets/images/photo_2.jpg";
