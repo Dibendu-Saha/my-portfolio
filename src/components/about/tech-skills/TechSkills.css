@@ -176,7 +176,6 @@
 
 
 /* ************************ FOR ZOOMED-IN SCREENS *********************** */
-
 @media (max-width: 1420px) {    
     .tech-background > p { 
         font-size: 1.5rem; 
