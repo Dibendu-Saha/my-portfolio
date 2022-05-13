@@ -12,7 +12,6 @@
   padding: 2.8rem 0;
 }
 
-/* TODO: border-bottom visible slightly */
 .nav-link {
   font-weight: 300;
   color: var(--primary-shade);
