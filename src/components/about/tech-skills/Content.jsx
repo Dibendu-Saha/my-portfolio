@@ -17,7 +17,7 @@ function Content() {
             </p>
 
             <p>
-                I also hold a certification in <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank">
+                I also hold a certification in <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank" rel="noreferrer">
                     <span className="link-text">
                         Azure Fundamentals
                     </span>
