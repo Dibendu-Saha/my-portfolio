@@ -238,7 +238,6 @@
 
 
 /* ************************ FOR ZOOMED-IN SCREENS *********************** */
-
 @media (max-width: 1420px) {
     .work-summary > p { 
         font-size: 1.5rem; 
