@@ -12,10 +12,6 @@
 
 .about-me-content > p > i { font-size: 1.4rem; }
 
-.link-text { border-bottom: 1px solid; }
-
-.icon-new-window { width: 1.4rem; }
-
 .btn-wrapper a { color: var(--font-color); }
 
 .carousel-wrapper { 
