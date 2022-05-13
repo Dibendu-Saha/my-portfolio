@@ -136,7 +136,7 @@ function WorkXp() {
                         </Org>
                     </div>
 
-                    <Flex className="flex--contact-wrapper reveal-contact-logo" reactRef={refContact}>
+                    <Flex className="flex--contact-wrapper reveal-contact-icon" reactRef={refContact}>
                         <Link to="/contact-me" className="chat-icon-wrapper">
                             <img src={icon_chat} alt="Chat icon" className="chat-icon" />
                         </Link>

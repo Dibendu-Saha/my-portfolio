@@ -1,12 +1,12 @@
 .download-cv-wrapper {
     position: fixed;
     top: 11.2rem;
-    right: 7.5%;    
+    right: 7.5%;
     transition: top 0.5s;
 }
 
-.download-cv-wrapper > a { 
-    display: flex; 
+.download-cv-wrapper > a {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
@@ -22,31 +22,31 @@
 .download-text {
     font-weight: 500;
     color: var(--font-color);
-    transform: translateY(1.2rem);    
+    transform: translateY(1.2rem);
     opacity: 0;
     transition: transform 0.5s, opacity 0.5s;
 }
-.cv-icon:hover + .download-text { 
-    transform: translateY(-4px); 
+.cv-icon:hover + .download-text {
+    transform: translateY(-4px);
     opacity: 1;
 }
 
-.flex--org-wrapper { 
+.flex--org-wrapper {
     gap: 3.2rem;
     margin-top: 3.2rem;
-    padding: 0 5rem; 
+    padding: 0 5rem;
 }
 
-.flex--logo-wrapper > img { 
+.flex--logo-wrapper > img {
     align-self: flex-start;
-    width: 18rem; 
+    width: 18rem;
 }
 
 .summary-header { margin-bottom: 8px; }
 
-.org-title { 
-    letter-spacing: -0.5px; 
-    font-weight: 500; 
+.org-title {
+    letter-spacing: -0.5px;
+    font-weight: 500;
 }
 
 .org-duration { font-weight: 200; }
@@ -54,7 +54,7 @@
 .work-summary > p {
     font-size: 1.6rem;
     letter-spacing: 0.3px;
-    line-height: 2.6rem; 
+    line-height: 2.6rem;
     text-align: justify;
     margin-bottom: 1.4rem;
 }
@@ -72,18 +72,19 @@
 .next-page-wrapper { margin-top: 8rem; }
 
 .flex--contact-wrapper {
-    justify-content: flex-end;    
-    padding-right: 3%;    
+    justify-content: flex-end;
+    padding-right: 3%;
+    margin-top: 4rem;
 }
 
-/* 
+/*
     Since there is no previous sibling selector,
     exchanged the chat and 'Let's talk' text to
     fake it to be the next sibling
 */
 .chat-icon-wrapper { transform: translateX(140%); }
-.chat-icon-wrapper:hover + .talk-helper-text { 
-    transform: translateX(-90%); 
+.chat-icon-wrapper:hover + .talk-helper-text {
+    transform: translateX(-90%);
     opacity: 1;
 }
 
@@ -94,10 +95,10 @@
     padding: 1rem;
     font-weight: 400;
     color: var(--font-color);
-    border: 1px solid var(--secondary-color); 
+    border: 1px solid var(--secondary-color);
     border-radius: 20px;
     opacity: 0;
-    transform: translateX(-100%);   
+    transform: translateX(-100%);
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
@@ -171,13 +172,13 @@
 }
 
 
-.reveal-contact-logo {
+.reveal-contact-icon {
     transform: translateY(2rem);
     opacity: 0;
     transition: transform 1.2s ease-out, opacity 1.2s ease-out;
     transition-delay: 0.6s;
 }
-.reveal-contact-logo.active {
+.reveal-contact-icon.active {
     transform: translateY(0);
     opacity: 1;
 }
@@ -187,84 +188,88 @@
 /* ********************************************************************** */
 /* *************************  MEDIA QUERIES  **************************** */
 /* ********************************************************************** */
-@media (max-width: 1400px) {        
+@media (max-width: 1400px) {
     .flex--org-wrapper { padding: 0 3rem; }
     .work-summary > p { line-height: 2.6rem; }
-    
+
 }
 
-@media (max-width: 1310px) {        
-    .flex--org-wrapper { padding: 0 1rem; }    
-    .work-summary > p { font-size: 1.7rem; }    
+@media (max-width: 1310px) {
+    .flex--org-wrapper { padding: 0 1rem; }
+    .work-summary > p { font-size: 1.7rem; }
 }
 
-@media (max-width: 1160px) {        
+@media (max-width: 1160px) {
     .flex--org-wrapper { padding: 0; }
     .org-title,
-    .org-duration { 
-        font-size: 2.2rem; 
+    .org-duration {
+        font-size: 2.2rem;
     }
     .work-summary > p {
-        font-size: 1.6rem;        
-        line-height: 2.4rem;        
-    }    
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
 }
 
-@media (max-width: 980px) {   
+@media (max-width: 980px) {
     .reveal-header { font-size: 5.6rem; }
     .flex--org-wrapper { gap: 2.2rem; }
     .org-title,
-    .org-duration { 
-        font-size: 2.1rem; 
-    }     
-    .work-summary > p { font-size: 1.5rem; }    
+    .org-duration {
+        font-size: 2.1rem;
+    }
+    .work-summary > p { font-size: 1.5rem; }
 }
 
-@media (max-width: 817px) {   
+@media (max-width: 817px) {
     .reveal-header { font-size: 4.8rem; }
     .flex--org-wrapper { gap: 8px; }
     .org-title,
-    .org-duration { 
-        font-size: 2rem; 
-    }     
-    .work-summary > p { font-size: 1.4rem; }    
+    .org-duration {
+        font-size: 2rem;
+    }
+    .work-summary > p { font-size: 1.4rem; }
 }
 
-@media (max-width: 740px) {   
+@media (max-width: 740px) {
     .reveal-header { font-size: 4rem; }
-    .flex--org-wrapper { gap: 4px; }    
-    .work-summary > p { font-size: 1.3rem; }    
+    .flex--org-wrapper { gap: 4px; }
+    .work-summary > p { font-size: 1.3rem; }
 }
 
 
 /* ************************ FOR ZOOMED-IN SCREENS *********************** */
 @media (max-width: 1420px) {
-    .work-summary > p { 
-        font-size: 1.5rem; 
+    .work-summary > p {
+        font-size: 1.5rem;
         margin-bottom: 1.2rem;
-        line-height: 2.2rem;         
-    }    
-    
-    .cv-icon, 
-    .chat-icon { width: 6.4rem; }
-    
-    .download-text { font-size: 1.5rem; }
-    .chat-icon { width: 6.4rem; }
-    .talk-helper-text { font-size: 1.5rem; }
+        line-height: 2.2rem;
+    }
+    .cv-icon,
+    .chat-icon {
+        width: 6.4rem;
+    }
+    .flex--contact-wrapper { margin-top: 0; }
+    .download-text,
+    .talk-helper-text { 
+        font-size: 1.5rem; 
+    }
 }
 
 @media (max-width: 1290px) {
-    .work-summary > p { 
-        font-size: 1.3rem; 
+    .work-summary > p {
+        font-size: 1.3rem;
         margin-bottom: 1.6rem;
-        line-height: 2rem;         
+        line-height: 2rem;
     }
-    
-    .cv-icon, 
-    .chat-icon { width: 5.6rem; }
-
-    .download-text { font-size: 1.3rem; }
-    .chat-icon { width: 5.6rem; }
-    .talk-helper-text { font-size: 1.3rem; }
+    .cv-icon,
+    .chat-icon {
+        width: 5.6rem;
+    }
+    .flex--contact-wrapper { margin-top: -3.2rem; }
+    .download-text,
+    .talk-helper-text { 
+        font-size: 1.3rem; 
+    }    
 }
 
