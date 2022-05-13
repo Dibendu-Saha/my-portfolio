@@ -185,6 +185,7 @@
     }
     .grid--skills { row-gap: 3.2rem; }
     .grid--skills img { width: 8.8rem !important; }    
+    .grid--skills > div > p { font-size: 1.5rem; }
 }
 
 @media (max-width: 1290px) {
@@ -193,5 +194,6 @@
         margin-bottom: 1.6rem;
         line-height: 2rem;         
     }
-    .grid--skills img { width: 8.5rem !important; }    
+    .grid--skills img { width: 8.5rem !important; }  
+    .grid--skills > div > p { font-size: 1.3rem; }  
 }

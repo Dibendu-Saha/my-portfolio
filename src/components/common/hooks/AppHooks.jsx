@@ -10,10 +10,6 @@ export function useReveal(elementToObserve, elementToReveal) {
                     if (!elementToReveal.classList.contains("active")) {
                         elementToReveal.classList.add("active");
                     }
-                } else {
-                    if (elementToReveal.classList.contains("active")) {
-                        elementToReveal.classList.remove("active");
-                    }
                 }
             });
         }
