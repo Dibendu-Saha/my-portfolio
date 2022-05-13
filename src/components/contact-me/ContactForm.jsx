@@ -29,15 +29,15 @@ function ContactForm() {
             return;
         }
 
-        const URL = `https://portfoliosendemailazurefunction.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
-        const URL_Stage = `https://portfoliosendemailazurefunction-stage.azurewebsites.net/api/SendEmail?name=${name}&email=${email}`;
+        const URL = `${process.env.REACT_APP_EMAIL_API_ENDPOINT}?name=${name}&email=${email}`;
+        const URL_Stage = `${process.env.REACT_APP_EMAIL_API_ENDPOINT_STAGE}?name=${name}&email=${email}`;
 
         try {
             await toast.promise(
                 axios.post(URL, { message }),
                 {
                     pending: "Sending email...",
-                    success: "Email sent",
+                    success: "Thank you for your email. I shall get back to you as soon as possible.",
                     error: {
                         render({ data }) {
                             return data.response.data.message ?? "Something went wrong!";

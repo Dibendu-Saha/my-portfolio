@@ -29,8 +29,8 @@ function WorkXp() {
     const [seeMoreIcon, setSeeMoreIcon] = useState(expand);
     const [_, setDummy] = useState("");
 
-    const URL = "https://downloadcvazfn.azurewebsites.net/api/DownloadCv";
-    const URL_STAGE = "https://downloadcvazfn-stage.azurewebsites.net/api/DownloadCv";
+    const URL = process.env.REACT_APP_CV_API_ENDPOINT;
+    const URL_STAGE = process.env.REACT_APP_CV_API_ENDPOINT_STAGE;
 
 
     useEffect(() => {
