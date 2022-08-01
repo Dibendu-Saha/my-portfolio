@@ -17,13 +17,13 @@ function Main() {
                 <BrowserRouter>
                     <Header />
                     <Routes>
-                        {/* <Route path="/" element={<LandingComponent />} exact /> */}
+                        {/* <Route path="/" element={<LandingComponent />} /> */}
 
-                        <Route path="/" element={<Home />} exact />
-                        <Route path="/about" element={<AboutMe />} exact />
-                        <Route path="/work" element={<TechSkills />} exact />
-                        <Route path="/work-xp" element={<WorkXp />} exact />
-                        <Route path="/contact-me" element={<ContactMe />} exact />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<AboutMe />} />
+                        <Route path="/work" element={<TechSkills />} />
+                        <Route path="/work-xp" element={<WorkXp />} />
+                        <Route path="/contact-me" element={<ContactMe />} />
                     </Routes>
                 </BrowserRouter>
                 <ToastContainer />
