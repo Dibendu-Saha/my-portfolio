@@ -6,9 +6,6 @@
 trigger:
 - main_azure_pipeline
 
-# pool:
-#   vmImage: ubuntu-latest
-
 steps:
 - task: AzureStaticWebApp@0
   inputs:

@@ -36,7 +36,7 @@ function ContactMe() {
                     className="typewriter reveal-header"
                     reactRef={refHeader}
                 >
-                    Let's talk
+                    Let's talk !!
                 </H1>
                 <Flex className="flex--contact-me reveal-content" reactRef={refContent}>
                     <div className="contact-form-container">
