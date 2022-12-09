@@ -22,7 +22,7 @@ function Home() {
             <Container>
                 <Grid className="grid--intro">
                     <div className="intro-me reveal-header" ref={refHeader}>
-                        <H1>Hey there!</H1>
+                        <H1>Hey there!!</H1>
                         <H1
                             weight="light"
                             className="header-home typewriter-home"
