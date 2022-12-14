@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useReveal } from "../common/hooks/AppHooks";
 import { Section, Container, H1, Flex, Grid, Button } from "../common/wrapper/AppComponents";
+import axios from "axios";
 import "./Home.css";
 
 function Home() {
@@ -11,11 +12,18 @@ function Home() {
 
     const [_, setDummy] = useState("");
 
-    useEffect(() => setDummy("...to trigger a re-render"), []);
+    useEffect(() => {
+        setDummy("...to trigger a re-render");
+        LogVisit();
+    }, []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
     useReveal(refSection.current, refButton.current);
+
+    const LogVisit = () => axios.get(
+        process.env.REACT_APP_LOG_VISIT_API_ENDPOINT
+    );
 
     return (
         <Section bgLinearGradientDegree="90" reactRef={refSection}>
