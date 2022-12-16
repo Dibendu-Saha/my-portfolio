@@ -14,14 +14,14 @@ function Home() {
 
     useEffect(() => {
         setDummy("...to trigger a re-render");
-        LogSiteVisit("Home");
-    }, []);
+        LogSiteVisit("Home");        
+    }, []);    
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
     useReveal(refSection.current, refButton.current);
 
-    
+
     return (
         <Section bgLinearGradientDegree="90" reactRef={refSection}>
             <Container>
