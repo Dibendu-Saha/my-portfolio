@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useReveal } from "../../common/hooks/AppHooks";
 import { Section, Container, H1, Flex } from "../../common/wrapper/AppComponents";
+import { LogSiteVisit } from "../../common/utils/LogSiteVisit";
 import hpe_logo from "../../../assets/images/hpe_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
 import tek_logo from "../../../assets/images/tek_logo.svg";
@@ -39,6 +40,8 @@ function WorkXp() {
             if (refDownloadCv.current)
                 refDownloadCv.current.classList.add("active");
         }, 1800);
+
+        LogSiteVisit("Work - Work experience");
     }, []);
 
     useReveal(refSection.current, refHeader.current);
@@ -148,7 +151,7 @@ function WorkXp() {
             </Section>
 
             <div className="download-cv-wrapper reveal-cv" ref={refDownloadCv}>
-                <a href={URL} target="_blank" rel="noreferrer">
+                <a href={URL} target="_blank" rel="noreferrer" onClick={() => LogSiteVisit("Download CV")}>
                     <img src={download_cv} alt="Download CV icon" className="cv-icon" />
                     <p className="download-text">Download CV</p>
                 </a>

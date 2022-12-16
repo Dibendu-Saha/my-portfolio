@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useReveal } from "../../common/hooks/AppHooks";
+import { LogSiteVisit } from "../../common/utils/LogSiteVisit";
 import { Section, Container, H1, Flex, Grid, Button } from "../../common/wrapper/AppComponents";
 import Content from "./Content";
 import IconsTech from "./IconsTech";
@@ -13,7 +14,10 @@ function TechSkills() {
 
     const [_, setDummy] = useState("");
 
-    useEffect(() => setDummy("...to trigger a re-render"), []);
+    useEffect(() => {
+        setDummy("...to trigger a re-render");
+        LogSiteVisit("Work - What I do");
+    }, []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);

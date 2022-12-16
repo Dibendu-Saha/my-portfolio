@@ -1,13 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { useReveal } from "../common/hooks/AppHooks";
 import { Section, Container, H1, Flex, Grid, Button } from "../common/wrapper/AppComponents";
 import { LogSiteVisit } from "../common/utils/LogSiteVisit";
 import "./Home.css";
 
 function Home() {
-    const path = useLocation();
-
     const refSection = useRef();
     const refHeader = useRef();
     const refContent = useRef();
@@ -17,7 +14,7 @@ function Home() {
 
     useEffect(() => {
         setDummy("...to trigger a re-render");
-        LogSiteVisit(path);
+        LogSiteVisit("Home");
     }, []);
 
     useReveal(refSection.current, refHeader.current);

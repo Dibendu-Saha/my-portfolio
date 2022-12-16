@@ -6,6 +6,7 @@ import fb_icon from "../../assets/images/icon-facebook.svg";
 import ig_icon from "../../assets/images/icon-instagram.svg";
 import github_icon from "../../assets/images/icon-github.svg";
 import ContactForm from "./ContactForm";
+import { LogSiteVisit } from "../common/utils/LogSiteVisit";
 import "./ContactMe.css"
 
 function ContactMe() {
@@ -19,7 +20,10 @@ function ContactMe() {
 
     const [_, setDummy] = useState("");
 
-    useEffect(() => setDummy("...to trigger a re-render"), []);
+    useEffect(() => {
+        setDummy("...to trigger a re-render");
+        LogSiteVisit("Contact");
+    }, []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);

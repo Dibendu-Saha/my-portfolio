@@ -6,6 +6,7 @@ import profilePhoto from "../../../assets/images/photo_1.jpg";
 import carousel_2 from "../../../assets/images/photo_2.jpg";
 import carousel_3 from "../../../assets/images/photo_3.jpg";
 import carousel_4 from "../../../assets/images/photo_5.jpg";
+import { LogSiteVisit } from "../../common/utils/LogSiteVisit";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./AboutMe.css";
@@ -19,7 +20,10 @@ function AboutMe() {
 
     const [_, setDummy] = useState("");
 
-    useEffect(() => setDummy("...to trigger a re-render"), []);
+    useEffect(() => {
+        setDummy("...to trigger a re-render");
+        LogSiteVisit("About");
+    }, []);
 
     useReveal(refSection.current, refHeader.current);
     useReveal(refSection.current, refContent.current);
