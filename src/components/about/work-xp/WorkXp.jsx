@@ -151,7 +151,7 @@ function WorkXp() {
             </Section>
 
             <div className="download-cv-wrapper reveal-cv" ref={refDownloadCv}>
-                <a href={URL} target="_blank" rel="noreferrer" onClick={() => LogSiteVisit("Download CV")}>
+                <a href={URL} target="_blank" rel="noreferrer" onClick={() => LogSiteVisit("download_CV")}>
                     <img src={download_cv} alt="Download CV icon" className="cv-icon" />
                     <p className="download-text">Download CV</p>
                 </a>

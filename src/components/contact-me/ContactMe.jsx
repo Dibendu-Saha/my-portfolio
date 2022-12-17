@@ -56,16 +56,39 @@ function ContactMe() {
                     <div className="contact-social">
                         <p>Follow me on</p>
                         <Grid col="4" className="grid--social-icons">
-                            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer" className="linkedin-wrapper" ref={refLinkedIn}>
+                            <a href="https://www.linkedin.com/in/dibendu-saha/"
+                                target="_blank" rel="noreferrer"
+                                className="linkedin-wrapper"
+                                onClick={() => LogSiteVisit("click_Social_LinkedIn")}
+                                ref={refLinkedIn}
+                            >
                                 <IconTile icon={linkedin_icon} className="linkedin-icon" />
                             </a>
-                            <a href="https://www.instagram.com/dibendu.s/" target="_blank" rel="noreferrer" className="ig-wrapper" ref={refInstagram}>
+
+                            <a href="https://www.instagram.com/dibendu.s/"
+                                target="_blank" rel="noreferrer"
+                                className="ig-wrapper"
+                                onClick={() => LogSiteVisit("click_Social_Instagram")}
+                                ref={refInstagram}
+                            >
                                 <IconTile icon={ig_icon} className="ig-icon" />
                             </a>
-                            <a href="https://www.facebook.com/dibendu03" target="_blank" rel="noreferrer" className="fb-wrapper" ref={refFacebook}>
+
+                            <a href="https://www.facebook.com/dibendu03"
+                                target="_blank" rel="noreferrer"
+                                className="fb-wrapper"
+                                onClick={() => LogSiteVisit("click_Social_Facebook")}
+                                ref={refFacebook}
+                            >
                                 <IconTile icon={fb_icon} className="fb-icon" />
                             </a>
-                            <a href="https://github.com/Dibendu-Saha" target="_blank" rel="noreferrer" className="github-wrapper" ref={refGithub}>
+
+                            <a href="https://github.com/Dibendu-Saha"
+                                target="_blank" rel="noreferrer"
+                                className="github-wrapper"
+                                onClick={() => LogSiteVisit("click_Social_GitHub")}
+                                ref={refGithub}
+                            >
                                 <IconTile icon={github_icon} className="github-icon" />
                             </a>
                         </Grid>
