@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useReveal } from "../../common/hooks/AppHooks";
 import { Section, Container, H1, Flex } from "../../common/wrapper/AppComponents";
 import { LogSiteVisit } from "../../common/utils/LogSiteVisit";
+import natwest_logo from "../../../assets/images/natwest_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
 import tek_logo from "../../../assets/images/tek_logo.svg";
 import iqss_logo from "../../../assets/images/iqss_logo.svg";
@@ -69,21 +70,21 @@ function WorkXp() {
             <Section id="home" bgLinearGradientDegree="90" reactRef={refSection}>
                 <Container>
                     <H1 weight="light" className="typewriter reveal-header" reactRef={refHeader} >
-                        Work experience
+                        Experience highlights
                     </H1>
 
                     <div>
                         <Org
-                            logo={tek_logo}
-                            orgName="TEKsystems"
-                            startMonth="October 2021"
+                            logo={natwest_logo}
+                            orgName="NatWest Group"
+                            startMonth="December 2022"
                             endMonth="Present"
                             className="reveal-org-hpe"
                             reactRef={refOrgHpe}
                         >
-                            Built and contributed to replace Hewlett Packard Enterprise&#39;s manual workflow for creation 
-                            and management of statement of works, employing React.js and Redux for the frontend of the tool 
-                            while interfacing with the backend APIs using C#, ASP.NET Core and Entity Framework Core.
+                            Working on the bank's internal application from inception, leveraging Webpack, React.js and Redux 
+                            for developing the web components, embracing a modular-approach and a dynamic and responsive user 
+                            interface with HTML5 and native CSS3. 
                         </Org>
 
                         <Org
@@ -94,9 +95,9 @@ function WorkXp() {
                             className="reveal-org-wf"
                             reactRef={refOrgWf}
                         >
-                            Primarily worked on the front-end tech stack for Wells Fargo&#39;s investment application, responsible 
-                            for designing and developing the UI/UX components based on Wells Fargo&#39;s proprietary web framework 
-                            along with React.js, Redux and JavaScript. Prior to this, mainly worked as a back-end developer, 
+                            Primarily worked on the front-end tech stack for Wells Fargo&#39;s investment application, responsible
+                            for designing and developing the UI/UX components based on Wells Fargo&#39;s proprietary web framework
+                            along with React.js, Redux and JavaScript. Prior to this, mainly worked as a back-end developer,
                             developing app codes using C#, ASP.NET MVC, LINQ, Entity Framework and Web API.
                         </Org>
                     </div>
@@ -109,6 +110,19 @@ function WorkXp() {
                         <Org
                             logo={tek_logo}
                             orgName="TEKsystems"
+                            startMonth="October 2021"
+                            endMonth="November 2022"
+                            className="reveal-org-hpe"
+                            reactRef={refOrgHpe}
+                        >
+                            Built and contributed to replace Hewlett Packard Enterprise&#39;s manual workflow for creation
+                            and management of statement of works, employing React.js and Redux for the frontend of the tool
+                            while interfacing with the backend APIs using C#, ASP.NET Core and Entity Framework Core.
+                        </Org>
+
+                        <Org
+                            logo={tek_logo}
+                            orgName="TEKsystems"
                             startMonth="April 2016"
                             endMonth="March 2018"
                             className="reveal-org-tek"
@@ -116,11 +130,11 @@ function WorkXp() {
                         >
                             Deputed to client location, Hewlett Packard Enterprise, worked mainly on C#, ASP.NET, MVC 5,
                             LINQ, Entity Framework 6.0 and Web API 2.0 on an all-round HPE&#39;s Consulting Business Management
-                            tool &#8212; a platform for resource-onboarding and remote-consulting, starting from project initiation, 
+                            tool &#8212; a platform for resource-onboarding and remote-consulting, starting from project initiation,
                             resource engagement and timesheet, travel plans, approvals and estimations to billing and project closure.
                         </Org>
 
-                        <Org
+                        {/* <Org
                             logo={iqss_logo}
                             orgName="IQ Software Services"
                             startMonth="March 2014"
@@ -132,7 +146,7 @@ function WorkXp() {
                             to working on MSI package for bundling a Java application &#8212; to JavaScript, jQuery, AJAX &#8212; to
                             ASP.NET MVC, Entity Framework and SQL Server &#8212; the opportunity to work on multiple
                             projects and clients &#8212; the organization taught me all.
-                        </Org>
+                        </Org> */}
                     </div>
 
                     <Flex className="flex--contact-wrapper reveal-contact-icon" reactRef={refContact}>
