@@ -75,7 +75,7 @@ function WorkXp() {
                     <div>
                         <Org
                             logo={tek_logo}
-                            orgName="Hewlett Packard Enterprise"
+                            orgName="TEKsystems"
                             startMonth="October 2021"
                             endMonth="Present"
                             className="reveal-org-hpe"
