@@ -17,12 +17,13 @@ import "./WorkXp.css";
 function WorkXp() {
     const refSection = useRef();
     const refHeader = useRef();
-    const refOrgHpe = useRef();
+    const refOrgNatwest = useRef();
     const refOrgWf = useRef();
     const refDownloadCv = useRef();
 
     const refSectionNext = useRef();
-    const refOrgTek = useRef();
+    const refOrgTek1 = useRef();
+    const refOrgTek2 = useRef();
     const refOrgIq = useRef();
     const refContact = useRef();
 
@@ -45,9 +46,10 @@ function WorkXp() {
     }, []);
 
     useReveal(refSection.current, refHeader.current);
-    useReveal(refSection.current, refOrgHpe.current);
+    useReveal(refSection.current, refOrgNatwest.current);
     useReveal(refSection.current, refOrgWf.current);
-    useReveal(refSectionNext.current, refOrgTek.current);
+    useReveal(refSectionNext.current, refOrgTek1.current);
+    useReveal(refSectionNext.current, refOrgTek2.current);
     useReveal(refSectionNext.current, refOrgIq.current);
     useReveal(refSectionNext.current, refContact.current);
 
@@ -79,8 +81,8 @@ function WorkXp() {
                             orgName="NatWest Group"
                             startMonth="December 2022"
                             endMonth="Present"
-                            className="reveal-org-hpe"
-                            reactRef={refOrgHpe}
+                            className="reveal-org-nw"
+                            reactRef={refOrgNatwest}
                         >
                             Working on the bank's internal application from inception, leveraging Webpack, React.js and Redux 
                             for developing the web components, embracing a modular-approach and a dynamic and responsive user 
@@ -112,8 +114,8 @@ function WorkXp() {
                             orgName="TEKsystems"
                             startMonth="October 2021"
                             endMonth="November 2022"
-                            className="reveal-org-hpe"
-                            reactRef={refOrgHpe}
+                            className="reveal-org-tek"
+                            reactRef={refOrgTek1}
                         >
                             Built and contributed to replace Hewlett Packard Enterprise&#39;s manual workflow for creation
                             and management of statement of works, employing React.js and Redux for the frontend of the tool
@@ -125,8 +127,8 @@ function WorkXp() {
                             orgName="TEKsystems"
                             startMonth="April 2016"
                             endMonth="March 2018"
-                            className="reveal-org-tek"
-                            reactRef={refOrgTek}
+                            className="reveal-org-tek-2"
+                            reactRef={refOrgTek2}
                         >
                             Deputed to client location, Hewlett Packard Enterprise, worked mainly on C#, ASP.NET, MVC 5,
                             LINQ, Entity Framework 6.0 and Web API 2.0 on an all-round HPE&#39;s Consulting Business Management
