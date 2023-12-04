@@ -75,18 +75,16 @@ function WorkXp() {
 
                     <div>
                         <Org
-                            logo={hpe_logo}
+                            logo={tek_logo}
                             orgName="Hewlett Packard Enterprise"
                             startMonth="October 2021"
                             endMonth="Present"
                             className="reveal-org-hpe"
                             reactRef={refOrgHpe}
                         >
-                            Deputed to client location &#8212; Hewlett Packard Enterprise, working as a full-stack developer on an
-                            internal application responsible for creating and managing “Statements of Work” that captures all projects
-                            related details including but not limited to resources, costing and billing required for various clients.
-                            The application is based on React and Redux for its frontend tech stack while the API is based on the .NET
-                            core framework.
+                            Built and contributed to replace Hewlett Packard Enterprise&#39;s manual workflow for creation 
+                            and management of statement of works, employing React.js and Redux for the frontend of the tool 
+                            while interfacing with the backend APIs using C#, ASP.NET Core and Entity Framework Core.
                         </Org>
 
                         <Org
@@ -97,10 +95,10 @@ function WorkXp() {
                             className="reveal-org-wf"
                             reactRef={refOrgWf}
                         >
-                            Primarily worked on the front-end tech stack on a trading-based application, responsible for
-                            designing and developing the UI/UX components based on Wells Fargo&#39;s proprietary web
-                            framework along with React, JavaScript, HTML and CSS. Prior to this, I've mainly worked as a
-                            back-end developer, developing app codes using C#, ASP.NET MVC, LINQ, Entity Framework and Web API.
+                            Primarily worked on the front-end tech stack for Wells Fargo&#39;s investment application, responsible 
+                            for designing and developing the UI/UX components based on Wells Fargo&#39;s proprietary web framework 
+                            along with React.js, Redux and JavaScript. Prior to this, mainly worked as a back-end developer, 
+                            developing app codes using C#, ASP.NET MVC, LINQ, Entity Framework and Web API.
                         </Org>
                     </div>
                 </Container>
@@ -117,11 +115,10 @@ function WorkXp() {
                             className="reveal-org-tek"
                             reactRef={refOrgTek}
                         >
-                            Placed at Hewlett Packard Enterprise, a client of TEKsystems, working mainly on C#, ASP.NET, MVC 5,
+                            Deputed to client location, Hewlett Packard Enterprise, worked mainly on C#, ASP.NET, MVC 5,
                             LINQ, Entity Framework 6.0 and Web API 2.0 on an all-round HPE&#39;s Consulting Business Management
-                            tool &#8212; RCMS &#8212; a platform for resource-onboarding and remote-consulting, starting from
-                            Project initiation, Resource Engagement and Timesheet, Travel Plans, Approvals and Estimations to
-                            Billing and Project Closure.
+                            tool &#8212; a platform for resource-onboarding and remote-consulting, starting from project initiation, 
+                            resource engagement and timesheet, travel plans, approvals and estimations to billing and project closure.
                         </Org>
 
                         <Org
