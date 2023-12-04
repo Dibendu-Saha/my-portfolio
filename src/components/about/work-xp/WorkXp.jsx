@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useReveal } from "../../common/hooks/AppHooks";
 import { Section, Container, H1, Flex } from "../../common/wrapper/AppComponents";
 import { LogSiteVisit } from "../../common/utils/LogSiteVisit";
-import hpe_logo from "../../../assets/images/hpe_logo.svg";
 import wf_logo from "../../../assets/images/wf_logo.svg";
 import tek_logo from "../../../assets/images/tek_logo.svg";
 import iqss_logo from "../../../assets/images/iqss_logo.svg";
